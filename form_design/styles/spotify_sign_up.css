@@ -1,0 +1,43 @@
+body {background-color: #222;}
+main {width: 500px; margin: 97px auto 200px;}
+main h1 {text-align: center; margin: 0 0 86.95px;}
+main h1 a {}
+main h1 a img {}
+/* ================================================================= 탭 메뉴 */
+main .tab_menu {text-align: center; margin: 0 0 52px;}
+main .tab_menu a {display: inline-block; padding: 3px 0; font-size: 1.25rem; letter-spacing: -0.02em; color: #fff;}
+main .tab_menu a:first-child {margin-right: 136px;}
+main .tab_menu .active {border-bottom: 3px solid #1ED760;}
+/* ================================================================= 가입 폼 */
+main .tab_wrap {}
+main .tab_wrap #upFrm {}
+main .tab_wrap #upFrm .upFrm_wrap {padding-bottom: 60px;}
+main .tab_wrap #upFrm .upFrm_wrap dt {font-size: 1.25rem; letter-spacing: -0.02em; color: #fff; margin: 0 0 14px;}
+main .tab_wrap #upFrm .upFrm_wrap dd {position: relative; overflow: hidden;}
+main .tab_wrap #upFrm .upFrm_wrap dd input[name^=user] {width: 100%; padding: 20px 40px; border-radius: 36.5px;}
+main .tab_wrap #upFrm .upFrm_wrap dd input[name^=user]::placeholder {color: #aaa; letter-spacing: -0.02rem;}
+main .tab_wrap #upFrm .upFrm_wrap dd input[name=user_pw] {margin-bottom: 14px;}
+main .tab_wrap #upFrm .upFrm_wrap dd .common_btn {
+    padding: 20px 30px;
+    color:#fff; background-color: #1ED760; border-radius: 36.5px;
+    font-weight: 700; letter-spacing: -0.02em; height: 100%;
+}
+main .tab_wrap #upFrm .upFrm_wrap dd .name_check_btn {position: absolute; right: 0;}
+main .tab_wrap #upFrm .upFrm_wrap dd.refer {
+    margin: 7px 0 30px; padding-left: 40px; color: #aaa;
+    font-size: 0.88rem; letter-spacing: -0.04em; line-height: 1.4;
+}
+main .tab_wrap #upFrm .upFrm_wrap dd input[name=user_email] {width: 260px; float: left; margin-right: 16px;}
+main .tab_wrap #upFrm .upFrm_wrap dd img {float: left; margin-top: 19.5px;}
+main .tab_wrap #upFrm .upFrm_wrap dd select[name=e_domain] {
+    width: 185px; height: 100%; float: right; padding: 20px 40px; border-radius: 36.5px;
+    background: #fff url(../images/keyboard_arrow_down.png) no-repeat 143px center;
+}
+main .tab_wrap #upFrm .upFrm_wrap dd select[name=e_domain] option {}
+main .tab_wrap #upFrm .upFrm_wrap dd select[name=e_domain] option[value=none] {color: ;#aaa}
+main .tab_wrap #upFrm .upFrm_wrap dd .get_code_btn {position: absolute; right: 0;}
+main .tab_wrap #upFrm .submit_btn {}
+main .tab_wrap #upFrm .submit_btn .sign_up_btn {
+    width: 100%; padding: 20px 40px; border-radius: 36.5px;
+    background-color: #1ED760; color: #fff; font-weight: 700; letter-spacing: -0.02em;
+} 

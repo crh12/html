@@ -1,0 +1,8 @@
+/* 외부스타일시트 위치(별도의 .css파일생성) */
+/* 외부스타일시트에서는 HTML태그를 < > 작성해선 안되며 오직 선택자와 속성, 값만 작성할 수 있다. */
+/* <head><body> (X) */
+/* 선택자 {속성:값; 속성:값:} (O) */
+body {background-color: lightgrey;}
+p {color: darkgreen; background-color: aqua;}
+.info {color: blue; background-color: aquamarine;}
+#wrap {color: khaki;}

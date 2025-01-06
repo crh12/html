@@ -1,0 +1,32 @@
+.plan {
+    margin:0 auto;
+}
+.plan thead {
+    background-color:#fafafa;
+    border:2px solid #000; border-left:0; border-right:0;
+}
+.plan thead tr {}
+.plan thead tr th,
+.plan tbody tr th,
+.plan tbody tr td {text-align:center; padding:20px 0;}
+.plan thead tr:first-child th:nth-child(2) {
+    border-bottom:1px dashed #aaa;
+    padding:30px 0;
+}
+.plan thead tr:nth-child(2) th {font-weight:700;}
+.plan thead tr th img {}
+.plan thead tr th h1 {margin:0 0 12px; font-size:1.25rem; font-weight:600;}
+.plan thead tr th h2 {font-size:1.13rem; font-weight:700;}
+.plan thead tr th h2+p {font-size:0.88rem;}
+.plan thead tr th p {color:#777;}
+.plan tbody {
+    background-color:yellow;
+}
+.plan tbody tr {border-bottom:1px solid #ddd;}
+.plan tbody tr th {width:250px;}
+.plan tbody tr td {width:170px;}
+.plan tbody tr td:nth-child(2) {width:150px;}
+.plan tbody tr td:nth-child(3) {width:350px;}
+.plan tbody tr th,
+.plan tbody tr td {font-weight:500;}
+.plan tbody tr td em {color:#EE239B; font-weight:700;}

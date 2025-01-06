@@ -1,0 +1,31 @@
+.book {
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+/* ==================================== 공통 선택자 */
+.book tr {background-color: #f2f2f2;}
+.book tr th {}
+.book tr td {
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    padding: 16px 0;
+}
+/* ==================================== 개별 선택자 */
+.book tr:first-child {background-color: #FF0066;}
+.book tr:first-child th {
+    text-align: center; color: #fff;
+    font-size: 1.13rem; font-weight: 700;
+    padding: 20px 0;
+}
+.book tr:nth-child(3) {
+    border: 2px solid #FF0066;
+    background-color: #e8e8e8; color: #FF0066;
+}
+.book tr:nth-child(5) {background-color: #e8e8e8; }
+.book tr th:first-child {
+    width: 250px;
+    font-weight: 500;
+    padding-left: 16px;
+}

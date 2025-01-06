@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify_sign_up.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/Logo.svg" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#">SIGN IN</a>
+            <a href="#" class="active">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <form action="#" method="post" id="upFrm">
+                <dl class="upFrm_wrap">
+                    <dt>User name</dt>
+                    <dd>
+                        <input type="text" name="user_name" placeholder="Enter your name or id" required>
+                        <button type="button" class="name_check_btn common_btn">Check</button>
+                    </dd>
+                    <dd class="refer">4-12 characters/English lowercase letters<br>(number combination available)</dd>
+                    <dt>Password</dt>
+                    <dd>
+                        <input type="password" name="user_pw" placeholder="Enter your password" required>
+                        <input type="password" name="user_pw_re" placeholder="Enter to check your password" required>
+                    </dd>
+                    <dd class="refer">8-20 characters/a combination of two or more upper case letters,<br>lower case letters, numbers, and special characters</dd>
+                    <dt>User Email</dt>
+                    <dd>
+                        <input type="email" name="user_email" placeholder="Your email" required>
+                        <img src="./images/alternate_email.png" alt="at">
+                        <select name="e_domain">
+                            <option value="none">select</option>
+                            <option value="gmail">gmail.com</option>
+                            <option value="naver">naver.com</option>
+                            <option value="kakao">kakao.com</option>
+                            <option value="nate">nate.com</option>
+                        </select>
+                    </dd>
+                    <dd class="refer">To make your account more secure, please sign up and proceed with<br>email authentication at [My Information > Modify Member Information</dd>
+                    <dt>Phone number</dt>
+                    <dd>
+                        <input type="cell" name="user_cell" placeholder="Enter your phone number" required>
+                        <button type="button" class="get_code_btn common_btn">Get code</button>
+                    </dd>
+                </dl>
+                <div class="submit_btn">
+                    <button type="submit" class="sign_up_btn">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

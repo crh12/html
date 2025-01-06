@@ -1,0 +1,34 @@
+@media screen and (max-width:1400px){
+  /* ======================================== S : 태블릿 경우 (너비가 1400 이하) */
+  .h_bg {padding: 0 80px;}
+  /* ======================================== E : 태블릿 경우 (너비가 1400 이하) */
+}
+@media screen and (max-width:850px){
+  /* ======================================== S : 태블릿 경우 (너비가 850 이하) */
+  .h_bg header {
+    flex-flow: column nowrap; align-items: flex-start;
+    justify-content: center; position: relative;
+  }
+  .h_bg header h1 {position:absolute; top: 20px;}
+  .h_bg header h1 a img {width: 100px;}
+  .h_bg header .h_right {width: 100%; padding: 0;}
+  /* ======================================== E : 태블릿 경우 (너비가 850 이하) */
+}
+@media screen and (max-width:730px){
+  /* ======================================== S : 모바일 경우 (너비가 730 이하) */
+  .h_bg {padding: 0 15px;}
+  .h_bg header .h_right .h_btm .h_b_left a,
+  .h_bg header .h_right .h_btm nav > a {font-size:0.88rem;}
+  /* ======================================== E : 모바일 경우 (너비가 730 이하) */
+}
+@media screen and (max-width:600px){
+  /* ======================================== S : 모바일 경우 (너비가 600 이하) */
+  .h_bg header {flex-flow: row nowrap; align-items: center;}
+  .h_bg header h1 {position:relative; top: 0;}
+  .h_bg header .h_right .h_top {margin: 0;}
+  .h_bg header .h_right .h_top > a,
+  .h_bg header .h_right .h_btm {display: none;}
+  .h_bg header .h_right .h_top .search > a img {width: 24px;}
+  .h_bg header .h_right .h_top .search .m_nav {display: block;}
+  /* ======================================== E : 모바일 경우 (너비가 600 이하) */
+}

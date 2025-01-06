@@ -1,0 +1,34 @@
+.profile {}
+.profile h1 {
+    font-family: "Noto Serif KR", "맑은 고딕", sans-serif;
+    font-size: 1.56rem;
+    font-weight: 700;
+}
+.profile .ambition_g {}
+.profile .ambition_g .photo {}
+.profile .ambition_g .photo img {width:97px}
+.profile .ambition {font-size: 1.94rem;}
+.profile .ambition em {
+    font-weight: 700;
+    color: #41680B;
+}
+.profile .basic {
+    color: #41680B;
+    font-size: 1.13rem;
+}
+.profile .basic li {}
+.profile h2 {
+    font-family: "Noto Serif KR", "맑은 고딕", sans-serif;
+    font-size: 1.25rem;
+}
+.profile .experience {
+    color: #41680B;
+    letter-spacing:-0.04em;
+}
+.profile .experience li {}
+.profile .experience li .date {font-weight: 500;}
+.profile .experience li .name {}
+.profile .license {color: #41680B;}
+.profile .license li {}
+.profile .license li .date {font-weight: 500;}
+.profile .license li .name {}

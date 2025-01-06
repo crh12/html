@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형웹 min, max 공부</title>
+  <style>
+    .box {
+      background-color: coral;
+      height: 500px;
+      max-width: 1000px;
+      /* 사용자가 보는 해상도 기준 box의 최대너비를 1000px로 고정하여 1000px 이상은 커지게 하지 않고 그 이하로 해상도를 볼 경우 100% 가변형으로 자동으로 변경되어 가로스크롤이 나타나지 않게 만들어주는 반응형웹의 기본개념 */
+      min-width: 320px;
+      /* 사용자가 보는 해상도가 너무 작아 레이아웃이 깨지는 문제를 막기 위해서 최소 제한 너비를 설정하는 min-width, 가장 작은 해상도 기준 아이폰5 320 또는 그보다 여유있게 360~400 정도도 많이 사용한다. */
+      margin: 0 auto;
+    }
+    .box h1 {}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>반응형웹은 사용자가 이용하는 디바이스 해상도에 따라 자동으로 레이아웃을 재배열하는 웹을 뜻한다.</h1>
+  </div>
+</body>
+</html>

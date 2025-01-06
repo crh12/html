@@ -1,0 +1,110 @@
+#wrap header {background-color:lime;}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {background-color: blue;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {}
+#wrap header .right_menu {background-color: yellow;}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a{}
+#wrap header .right_menu ul li a img {}
+/* ==========================================메인시작 */
+#wrap main {}
+#wrap main .path {
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 10px 80px 10px 0;
+}
+#wrap main .path a {
+    font-size: 0.88rem; ;
+}
+#wrap main .path a img {}
+#wrap main .path em {
+    font-size: 0.88rem; font-weight: 600;
+}
+#wrap main .main_content {}
+#wrap main .main_content h2 {
+    text-align: center;
+    font-size: 3.13rem; font-weight: 700;
+    margin: 80px 0 25px 0;
+}
+#wrap main .main_content > p {
+    text-align: center;
+    font-size: 1.19rem; font-weight: 500;
+    margin-bottom: 50px;
+}
+#wrap main .main_content .bg {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+#wrap main .main_content .bg ul {}
+#wrap main .main_content .bg ul li {    
+    width: 1140px;
+    margin: 0 auto 50px;
+}
+#wrap main .main_content .bg ul li > p {display: inline-block;}
+#wrap main .main_content .bg ul li > p img {}
+#wrap main .main_content .bg ul li .contents {
+    display: inline-block; width: 366px;
+    margin: 0 20px;
+}
+#wrap main .main_content .bg ul li .contents .number {
+    font-size: 6.25rem; font-weight: 700;
+    letter-spacing: -0.5rem;
+    color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+#wrap main .main_content .bg ul li .contents h3 {
+    font-size: 1.88rem; font-weight: 500;
+    margin-bottom: 32px;
+    text-align: left;
+}
+#wrap main .main_content .bg ul li .contents p:nth-child(3) {
+    text-align: left;
+    line-height: 1.7; letter-spacing: -0.01rem;
+    color: #555;
+}
+/* ==================================================01 종합식품사업 */
+#wrap main .main_content .bg ul .food {}
+#wrap main .main_content .bg ul .food > p {}
+#wrap main .main_content .bg ul .food > p img {}
+#wrap main .main_content .bg ul .food .contents {}
+#wrap main .main_content .bg ul .food .contents .number {}
+#wrap main .main_content .bg ul .food .contents h3 {}
+#wrap main .main_content .bg ul .food .contents p:nth-child(3) {}
+/* ==================================================02 점포사업 */
+#wrap main .main_content .bg ul .business {text-align: right;}
+#wrap main .main_content .bg ul .business .contents {}
+#wrap main .main_content .bg ul .business .contents .number {}
+#wrap main .main_content .bg ul .business .contents h3 {}
+#wrap main .main_content .bg ul .business .contents p:nth-child(3) {}
+#wrap main .main_content .bg ul .business > p {}
+#wrap main .main_content .bg ul .business > p img {}
+/* ==================================================03 컨세션사업 */
+#wrap main .main_content .bg ul .concession {}
+#wrap main .main_content .bg ul .concession > p {}
+#wrap main .main_content .bg ul .concession > p img {}
+#wrap main .main_content .bg ul .concession .contents {}
+#wrap main .main_content .bg ul .concession .contents .number {}
+#wrap main .main_content .bg ul .concession .contents h3 {}
+#wrap main .main_content .bg ul .concession .contents p:nth-child(3) {}
+/* ==================================================04 서비스사업 */
+#wrap main .main_content .bg ul .service {text-align: right;}
+#wrap main .main_content .bg ul .service .contents {}
+#wrap main .main_content .bg ul .service .contents .number {}
+#wrap main .main_content .bg ul .service .contents h3 {}
+#wrap main .main_content .bg ul .service .contents p:nth-child(3) {}
+#wrap main .main_content .bg ul .service > p {}
+#wrap main .main_content .bg ul .service > p img {}
+/* ==================================================05 수출사업 */
+#wrap main .main_content .bg ul .export {}
+#wrap main .main_content .bg ul .export > p {}
+#wrap main .main_content .bg ul .export > p img {}
+#wrap main .main_content .bg ul .export .contents {}
+#wrap main .main_content .bg ul .export .contents .number {}
+#wrap main .main_content .bg ul .export .contents h3 {}
+#wrap main .main_content .bg ul .export .contents p:nth-child(3) {}

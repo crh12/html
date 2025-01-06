@@ -1,0 +1,118 @@
+/* =============================================================== 헤더 */
+header {position: fixed; z-index: 999;}
+header .h_wrap {
+    height: 80px; width: 100vw; padding: 0 80px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+header .h_wrap h1 {position: relative;}
+header .h_wrap h1 a {
+    font-size: 1.88rem; font-weight: 700;
+    padding-left: 65px;
+}
+header .h_wrap h1 a::before {
+    content: ''; display: block; width: 60px; height: 60px;
+    position: absolute; left: 0; top: -17px;
+    background-image: url(../images/h_logo.png);
+    background-size: cover;
+}
+header .h_wrap nav {
+    display: flex; flex-flow: row nowrap;
+}
+header .h_wrap nav a {
+    margin-right: 60px;
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em;
+}
+header .h_wrap nav a:last-child {margin-right: 0;}
+header .h_wrap nav a.active {border-bottom: #E1030F solid 3px;}
+/* =============================================================== 메인 시작 */
+main {padding: 80px 0 150px;}
+main .floor_wrap {text-align: center;}
+/* =============================================================== 상단 배너 */
+main .floor_wrap .title {
+    padding: 100px 0; position: relative;
+    background-image: url(../images/about_bg.jpg);
+    background-position-x: center;
+    background-position-y: 42%;
+    background-size: 120%;
+}
+main .floor_wrap .title::after {
+    content: ''; display: block; width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0; z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+main .floor_wrap .title p {
+    color: #fff; margin-bottom: 30px; position: relative; z-index: 150; 
+    line-height: 1.4; letter-spacing: -0.02em; text-transform: uppercase;
+}
+main .floor_wrap .title h1 {
+    position: relative; z-index: 150; 
+    color: #fff; font-size: 2.50rem; font-weight: 600;
+}
+/* =============================================================== 안내도 시작 */
+main .floor_wrap h2 {
+    display: inline-block; margin: 100px 0; padding-bottom: 20px;
+    font-size: 1.88rem; font-weight: 600; letter-spacing: -0.02em;
+    border-bottom: #E1030F solid 3px;
+}
+main .floor_wrap h2 span {margin-top: 10px; font-size: 1.25rem; font-weight: 500;}
+/* =============================================================== 층안내 공통 */
+main .floor_wrap .f_contents {
+    display: flex; flex-flow: row nowrap; justify-content: center;
+}
+main .floor_wrap .f_contents .f_img {
+    background-size: cover; background-position: center;
+    margin-right: 60px; width: 500px; height: 350px;
+}
+main .floor_wrap .f_contents .f_info {width: 700px; text-align: left;}
+main .floor_wrap .f_contents .f_info h3 {
+    padding: 15px 0 15px 35px; margin-bottom: 30px;
+    background-image: url(../images/floor.png); background-repeat: no-repeat;
+    background-position-y: center; border-bottom: rgba(225, 3, 15, 0.5) solid 1px;
+    font-size: 1.56rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main .floor_wrap .f_contents .f_info p {
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    margin-bottom: 25px;
+}
+main .floor_wrap .f_contents .f_info p:last-child {margin: 0;}
+main .floor_wrap .f_contents .f_info p span {
+    font-size: 1.00rem; line-height: 1.4; letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.7);
+}
+/* =============================================================== 층안내 개별 */
+main .floor_wrap .f1 .f_img {background-image: url(../images/1f.jpg);}
+main .floor_wrap .f2 .f_img {background-image: url(../images/2f.jpg);}
+main .floor_wrap .b1 .f_img {
+    height: 150px;
+    background-image: url(../images/b1.jpg); background-size: 120%;
+}
+main .floor_wrap .b1 .f_info p {line-height: 1.5;}
+/* =============================================================== footer */
+footer {
+    width: 100%; position: relative; padding: 66px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+footer .footer_top {}
+footer .footer_top a {
+    position: relative; display: inline-block; margin-right: 5px;
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em;
+}
+footer .footer_top a::after {
+    content: ''; display: inline-block; width: 1px; height: 16px;
+    background-color: #000; position: absolute; top: 2px; margin-left: 5px;
+}
+footer .footer_top a:last-child {margin: 0;}
+footer .footer_top a:last-child::after {display: none;}
+footer .footer_address {margin: 15px 0;}
+footer .footer_address address {}
+footer .footer_address address,
+footer .footer_bottom p {
+    font-size: 1.00rem; font-weight: 300; line-height: 1.5; letter-spacing: -0.02em;
+}
+footer .footer_address address span {font-size: 1.00rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;}
+footer .footer_bottom {}
+footer .footer_bottom p {}
+footer .mark {position: absolute; top: 25%; right: 3%;}
+footer .mark img {width: 150px; height: 150px;}

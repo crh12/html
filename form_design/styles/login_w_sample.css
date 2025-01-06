@@ -1,0 +1,17 @@
+#wrap {width:500px; margin:0 auto; padding-top:84px;}
+#wrap h1 {font-size:4.375rem; letter-spacing: -0.02em; font-weight:900;}
+#wrap h1+p {margin-top:25px; font-size:1.25rem; letter-spacing: -0.02em;}
+#wrap #login {}
+#wrap #login fieldset {}
+#wrap #login fieldset h2 {margin:79px 0 18px; font-size:1.875rem; font-weight:700; letter-spacing: -0.02em;}
+#wrap #login fieldset h2+p {}
+#wrap #login fieldset h2+p input {border-radius:10px; border:1px solid #aaa; padding:15px; width:100%;}
+#wrap #login fieldset h2+p .user_id {}
+#wrap #login fieldset h2+p .user_pw {}
+#wrap #login fieldset .btn_group {}
+#wrap #login fieldset .btn_group button {border-radius:10px; padding:15px;display:block; width:100%;}
+#wrap #login fieldset .btn_group #login_btn {background:#222; color:#fff; margin:0 0 18px;}
+#wrap #login fieldset .btn_group #sign_google_btn {border:1px solid #aaa; background:#fff;}
+#wrap .sign_up {margin-top:62px; text-align:center;}
+#wrap .sign_up span {color:#555; letter-spacing: -0.02em;}
+#wrap .sign_up a {font-weight:700; letter-spacing: -0.02em;}

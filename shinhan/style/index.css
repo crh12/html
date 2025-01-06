@@ -1,0 +1,263 @@
+#wrap {}
+#wrap header {
+    background-color:rgba(0,0,0,0.1);
+    padding: 21px 80px;
+    /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
+    height:80px;
+    position: fixed; width: 100%; left:0; top:0; z-index:999;
+}
+#wrap header h1 {
+    float: left; padding-top: 3px;
+}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    float: right;
+}
+#wrap header nav ul {overflow: hidden;}
+#wrap header nav ul li {
+    float: left; padding:10px 0;
+    margin-right: 80px;
+}
+#wrap header nav ul li:nth-child(4) {margin:0; padding:0;}
+#wrap header nav ul li a {
+    font-size: 1.13em; font-weight: 600;
+    color:#fff;
+}
+#wrap header nav ul li:nth-child(4) a {
+    border:1px solid #fff;
+    padding:10px 20px; border-radius: 25px;
+    display: block;
+}
+#wrap main {}
+/* ===============================================메인 1~4행 공통선택자 */
+#wrap main .container {}
+#wrap main .container .contents {
+    width: 1440px; height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3);/* 제거용 */
+}
+#wrap main .container .contents .txt {
+    background-color: orange;
+}
+#wrap main .container .contents .txt .sub_title {
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#wrap main .container .contents .txt h1 {
+    font-size: 4.38rem; font-weight: 700;
+    line-height: 1.3; color: #fff;
+}
+#wrap main .container .contents .txt h1 span {font-weight: 700; color: #5EE1FF;}
+#wrap main .container .contents .txt h1+p {
+    font-size: 1.56rem; font-weight: 500;
+    line-height: 1.5; color: #fff; letter-spacing: -0.02rem;
+    margin: 20px 0;
+}
+/* ===============================================메인 1행 결제 편리함 */
+#wrap main .pay {
+    background-image: url(../images/row1.jpg);
+    background-size:cover;
+}
+#wrap main .pay .contents {position:relative;}
+#wrap main .pay .contents .txt {
+    padding-top: 231px;
+}
+#wrap main .pay .contents .txt h1 {}
+#wrap main .pay .contents .txt h1 span {}
+#wrap main .pay .contents .txt p {}
+#wrap main .pay .contents .txt .bnr_btn_wrap {}
+#wrap main .pay .contents .txt .bnr_btn_wrap > * {margin-right: 10px;}
+#wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100px; height: 2px;
+    /* margin: 12px 0px 12px 10px; */
+    position:relative; bottom:12px
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-of-type(3) {background-color: rgb(255, 255, 255);}
+#wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .next {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
+#wrap main .pay .contents .scroll {
+    position: absolute; right: 0; bottom: 43px; 
+}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform: uppercase; /* 모두 대문자 */
+    font-size: 0.88rem; font-weight: 500; line-height: 1.3;
+    color:#fff;
+    position:relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display: inline-block;
+    width: 12px; height: 30px; border-radius:6px;
+    background-color: #555;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display: inline-block;
+    width: 8px; height: 8px; border-radius:50%;
+    background-color: #fff;
+    position: relative;
+    top: -5px;
+    left: 2px;
+}
+/* ===============================================메인 2행 서비스 */
+#wrap main .service {
+    background-image: url(../images/row2.jpg);
+    background-size:cover;
+}
+#wrap main .service .contents {overflow: hidden;}
+#wrap main .service .contents .txt {
+    padding-top: 311px;
+    float:left;
+}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .txt p:nth-child(3) {
+    width:509px;
+}
+/* ============================================  공동선택자 카드+계좌 */
+#wrap main .service .contents .right_content {
+    float: right;
+}
+#wrap main .service .contents .right_content li {
+    width: 331px;
+    display: inline-block;
+    background-position: left top;
+    position: relative;
+    padding-top: 200px; margin-left: 20px;
+    border-radius: 25px; overflow: hidden;
+    letter-spacing: -0.02rem;
+}
+#wrap main .service .contents .right_content li dl {
+    background-color:#fff;
+    padding: 20px;
+}
+#wrap main .service .contents .right_content li dl dt {
+    padding-top: 10px;
+    font-size: 1.56rem; font-weight: 600;
+}
+#wrap main .service .contents .right_content li dl dd:nth-of-type(1) {
+    margin: 35px 0;
+    line-height: 1.5;
+}
+#wrap main .service .contents .right_content li dl dd a {
+    display: block;
+    border-top: #000 solid 1px;
+    overflow: hidden; padding:10px 0;
+}
+#wrap main .service .contents .right_content li dl dd a span {
+    float: left;
+    font-size:600; line-height: 1.5; 
+}
+#wrap main .service .contents .right_content li dl dd a img {
+    float: right;
+}
+/* ============================================  개별선택자 카드 */
+#wrap main .service .contents .right_content .card {
+    background-image: url(../images/card_bg1.jpg);
+    background-size: contain;
+    top: 157px;
+}
+#wrap main .service .contents .right_content .card dl {}
+#wrap main .service .contents .right_content .card dl dt {}
+#wrap main .service .contents .right_content .card dl dd:nth-of-type(1) {}
+#wrap main .service .contents .right_content .card dl dd a {}
+#wrap main .service .contents .right_content .card dl dd a span {}
+#wrap main .service .contents .right_content .card dl dd a img {}
+/* ============================================  개별선택자 계좌 */
+#wrap main .service .contents .right_content .account {
+    background-image: url(../images/card_bg2.jpg);
+    background-size: 105%;
+    opacity: 0.6;
+    top: 311px;
+}
+#wrap main .service .contents .right_content .account dl {}
+#wrap main .service .contents .right_content .account dl dt {}
+#wrap main .service .contents .right_content .account dl dd:nth-of-type(1) {}
+#wrap main .service .contents .right_content .account dl dd a {}
+#wrap main .service .contents .right_content .account dl dd a span {}
+#wrap main .service .contents .right_content .account dl dd a img {}
+/*============================================  3행 차별화된 서비스 */
+#wrap main .different {
+    background-image: url(../images/row3.jpg);
+    background-size: cover;
+}
+#wrap main .different .contents {}
+#wrap main .different .contents .txt {
+    text-align: center;
+    padding-top: 162px;
+}
+#wrap main .different .contents .txt .sub_title {}
+#wrap main .different .contents .txt .sub_title h1 {}
+#wrap main .different .contents .txt .sub_title h1 span {}
+#wrap main .different .contents .txt .sub_title h1+p {}
+#wrap main .different .contents ol {
+    overflow: hidden;
+}
+#wrap main .different .contents ol li {
+    width: 290px; height: 290px; border-radius: 50%;
+    border: 20px solid rgba(255,255,255,0.5);
+    position: relative; /* after 가상요소의 부모설정 */
+    float: left; margin-right: 93.33px;
+    text-align: center;
+}
+#wrap main .different .contents ol li::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 250px; height: 250px; border-radius: 50%;
+    position:absolute; left:0; top:0; z-index: 100;
+}
+#wrap main .different .contents ol li > * {
+    position: relative; z-index: 150;
+}
+#wrap main .different .contents ol li:nth-child(4) {margin: 0;}
+#wrap main .different .contents ol li .num {
+    display:inline-block;
+    background-color: #5E91FF; border-radius: 20px;
+    font-size: 1.56rem; font-weight: 600; color: #fff;
+    margin: 67px 0px 10px; padding: 8.5px 20px;
+}
+#wrap main .different .contents ol li h2 {
+    font-size: 1.56rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.02rem;
+}
+/*============================================  4행 자주묻는질문 */
+#wrap main .question {}
+#wrap main .question .contents {}
+#wrap main .question .contents .txt {padding-top: 241px}
+#wrap main .question .contents .txt .sub_title {color: #5E91FF;}
+#wrap main .question .contents .txt h1 {
+    color: #000; margin-bottom: 60px;
+}
+#wrap main .question .contents .q_contents {}
+#wrap main .question .contents .q_contents a {
+    background-color: #eee;
+    display: block; width: 100%; border-radius: 8px;
+    overflow: hidden; margin-bottom: 20px;
+    padding: 20px;
+}
+#wrap main .question .contents .q_contents a:nth-of-type(3) {margin:0;}
+#wrap main .question .contents .q_contents a .q_left {
+    float: left; 
+}
+#wrap main .question .contents .q_contents a .q_left .category {
+    font-size: 1.25rem; font-weight: 400; line-height: 1.5; letter-spacing: -0.02rem;
+    margin-right: 25px;
+    position:relative; bottom: 2px;
+}
+#wrap main .question .contents .q_contents a .q_left img {
+    margin-right: 25px;
+    position:relative; top: 1px;
+}
+#wrap main .question .contents .q_contents a .q_left em {
+    font-size: 1.56rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02rem;
+}
+#wrap main .question .contents .q_contents a .q_down {
+    float: right;
+}
+#wrap main .question .contents .q_contents a .q_down img {position:relative; top: 7px;}

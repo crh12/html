@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position ㅣ css</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style>
+        .all {}
+        .all .box {}
+        .all .box {}
+        .all .a {}
+        .all .a p {}
+        .all .a p:nth-child(2) {}
+        .all .a p:nth-child(4) {}
+        .all .b {}
+        .all .b p {}
+        .all .c {}
+        .all .c p {}
+        .all .c p:nth-child(1) {}
+        header {}
+        /* header::after {clear:both; display: block; content:'';} */
+        header h1 {}
+        header .menu {}
+        header .menu a {}
+        header .menu .cs_popup {}
+        header .menu .cs_popup a {}
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="box a">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="box b">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="box c">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+    </div>
+    <header>
+        <h1>로고</h1>
+        <div class="menu">
+            <a href="#">회원가입</a>
+            <a href="#">로그인</a>
+            <a href="#">고객센터</a>
+            <!-- 고객센터 마우스 올렸을 시 -->
+            <div class="cs_popup">
+                <a href="#">공지사항</a>
+                <a href="#">자주하는 질문</a>
+                <a href="#">1:1문의</a>
+                <a href="#">대량주문 문의</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

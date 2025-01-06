@@ -1,0 +1,30 @@
+main {
+    background-color: aqua;
+    width: 782px;
+    margin: 0 auto;
+}
+main .title {overflow: hidden; margin-bottom: 19px;}
+main .title h1 {float: left; font-size: 1.25rem; font-weight: 700;}
+main .title p {float: right;}
+main .pay {width: 100%; margin: 19px 0; background-color: #f2f2f2;}
+main .pay thead {border: 2px solid #000; border-left: 0; border-right: 0;}
+main .pay thead tr {}
+main .pay thead tr th {
+    padding: 16px 0;
+    width: 150px; /* width:calc(100% / 5); */
+    text-align: center; font-weight: 500;
+}
+main .pay thead tr th:first-child {font-weight: 700; font-size: 1.06rem;}
+main .pay tbody {}
+main .pay tbody tr {}
+main .pay tbody tr:nth-child(4) {background-color: #A8D18D;}
+main .pay tbody tr th {
+    text-align: center;
+    font-weight: 700; font-size: 1.06rem;
+}
+main .pay tbody tr td {
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 500;
+}
+main > p {text-align: right;}

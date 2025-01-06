@@ -1,0 +1,72 @@
+#wrap {}
+#wrap header {}
+#wrap main {}
+#wrap main .path {
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 10px 80px 10px 0;
+}
+#wrap main .path a {font-size: 0.88rem; ;}
+#wrap main .path img {}
+#wrap main .path em {font-size: 0.88rem; font-weight: 600;}
+#wrap main h1 {
+    text-align: center;
+    margin: 158px 0 25px;
+    font-size: 3.13rem; font-weight: 700;
+}
+#wrap main > p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.19rem; font-weight: 500;
+}
+#wrap main .bg {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+#wrap main .bg .corporate {
+    background-color: yellow;
+    width: 1140px; margin: 0 auto;
+    overflow: hidden;
+}
+#wrap main .bg .corporate li {
+    background-color: aqua;
+    width: 250px; height: 250px;
+    border:1px solid #888;
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+    background-size: 100px auto;
+    background-image:url(../images/info/01.png);/* 공통 */
+    padding:30px;
+    display:inline-block;
+    margin-right: 42.5px;
+    float:left;
+}
+#wrap main .bg .corporate li:nth-child(1) {}
+#wrap main .bg .corporate li:nth-child(2) {background-image: url(../images/info/02.png);}
+#wrap main .bg .corporate li:nth-child(3) {background-image: url(../images/info/03.png);}
+#wrap main .bg .corporate li:nth-child(4) {margin:0;}
+/* #wrap main .bg .corporate li:nth-child(1) {
+    background-image: url(../images/info/01.png);
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+}
+#wrap main .bg .corporate li:nth-child(2) {
+    background-image: url(../images/info/02.png);
+    background-repeat: no-repeat;
+    background-size:100px auto;
+    background-position: 80% 85%;
+}
+#wrap main .bg .corporate li:nth-child(3) {
+    background-image: url(../images/info/03.png);
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+}
+#wrap main .bg .corporate li:nth-child(4) {
+    background: lime url(../images/info/01.png) no-repeat 80% 85%;
+} */
+#wrap main .bg .corporate li h2 {
+    font-size: 1.38rem; font-weight: 600;
+    margin-bottom: 20px;
+}
+#wrap main .bg .corporate li p {font-size: 1.13rem; line-height: 1.5;}
+#wrap footer {}

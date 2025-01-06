@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메포 연습용</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <style>
+    main {}
+    main .bnr_wrap {height: 650px;}
+    main .bnr_wrap .bnr_container {height: 100%;}
+    /* ======================================== 광고 배너 공통 */
+    main .bnr_wrap .bnr_container .bnr {height: 100%;}
+    main .bnr_wrap .bnr_container .bnr .bnr_contents {
+      border: 2px solid blue;
+      width: 1400px; height: 100%; margin: 0 auto;
+      display: flex;
+    }
+    main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_title {
+      border: 2px solid red; justify-content: center;
+    }
+    main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_title img {}
+    main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_title .bnr_link {
+      display: block; width: min-content;
+      padding: 10px 50px; background-color: #000; color: #fff; 
+      margin-top: 67px;
+      font-weight: 500; letter-spacing: -0.02em;
+    }
+    main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_title .bnr_link:hover {
+      background: linear-gradient(270deg, rgb(231, 204, 183), #000 50%);
+    }
+    /* ======================================== 광고 배너 개별 */
+    main .bnr_wrap .bnr_container .bnr1 {
+      background-image: url(./images/bnr1.jpg);
+    }
+    main .bnr_wrap .bnr_container .bnr1 .bnr_contents {
+    }
+    main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_title {}
+    main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_title img {}
+    main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_title a {}
+    main .bnr_wrap .bnr_container .bnr2 {
+      background-image: url(./images/bnr2.jpg);
+      display: none;
+    }
+    main .bnr_wrap .bnr_container .bnr2 .bnr_contents {}
+    main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_title {}
+    main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_title img {}
+    main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_title a {}
+    /* ======================================== 광고 배너 끝 */
+    main .bnr_wrap .prev_btn, main .bnr_wrap .next_btn {}
+    main .bnr_wrap .prev_btn img, main .bnr_wrap .next_btn img {}
+    main .bnr_wrap .prev_btn {}
+    main .bnr_wrap .prev_btn img {}
+    main .bnr_wrap .next_btn {}
+    main .bnr_wrap .next_btn img {}
+    main .bnr_wrap .scroll_bg {}
+    main .bnr_wrap .scroll_bg .scroll_bar {}
+  </style>
+</head>
+<body>
+  <main>
+    <!-- 1행 광고 배너 -->
+    <div class="bnr_wrap">
+      <div class="bnr_container">
+        <!-- 1번 광고 -->
+        <div class="bnr bnr1"> <!-- 배너 배경 -->
+          <div class="bnr_contents">
+            <div class="bnr_title">
+              <img src="./images/bnr1_title.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+              <a href="#" class="bnr_link">DISCOVER</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2번 광고 -->
+        <div class="bnr bnr2">
+          <div class="bnr_contents">
+            <div class="bnr_title">
+              <img src="./images/bnr2_title.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+              <a href="#" class="bnr_link">DISCOVER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 배너 이전, 다음 제어 버튼 -->
+      <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+      <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음 광고보기"></a>
+      <!-- 배너 스크롤 진행 상태 및 제어 -->
+      <div class="scroll_bg">
+        <div class="scroll_bar"></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

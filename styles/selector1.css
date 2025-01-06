@@ -1,0 +1,48 @@
+/* css 디자인 작성 순서 */
+/* 1. 대상으로 하는 HTML의 모든 대상을 선택자로 작성하기(속성은 빈중괄호) */
+/* 2. 작성 후 디자인에 맞춰서 각 속성과 값 작성하기 */
+/* body는 필요한 경우 아니면 생략, body 안 태그부터 선택자로 작성하기 */
+h1 {background-color: rgba(0,0,0,0.3);}
+ol {background-color: yellow;}
+ol li {color: #ff0000;}
+/* 선택자 작성하기 */
+.wrap {} /* div.wrap도 가능 */
+.wrap h2 {}
+.wrap p {}
+.wrap p em {}
+.wrap p#content {} /* p 생략가능 */
+.wrap #content span {}
+.wrap h3 {}
+.wrap .details {}
+.wrap .details em {}
+/* 선택자 작성 -2 */
+.all_box {}
+.all_box .title {}
+.all_box .title h2 {}
+.all_box .title p {}
+.all_box .content {}
+.all_box .content h3 {}
+.all_box .content .txt1 {}
+.all_box .content .txt1 li {}
+.all_box .content .txt1 li em {}
+.all_box .content .txt2 {}
+.all_box .content .txt2 em {}
+/* 선택자 작성 -3 */
+#wrapper {}
+#wrapper > h2 {}
+#wrapper > h2 span {}
+#wrapper p {}
+#wrapper .container {}
+#wrapper .container h2 {}
+#wrapper .container .list_wrap {}
+#wrapper .container .list_wrap li {}
+#wrapper .container .list_wrap li span {}
+#wrapper .container .list_wrap li em {}
+#wrapper .container .define_wrap {}
+#wrapper .container .define_wrap dt {}
+#wrapper .container .define_wrap dt span {}
+#wrapper .container .define_wrap dd {}
+/* 우선순위 연습 */
+h3 {background-color: aqua;}
+.name1 {background-color: lime}
+#name2 {background-color: yellow;}

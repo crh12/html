@@ -1,0 +1,161 @@
+#wrap {background-color: gray;}
+#wrap header {
+    background-color: aqua;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {background-color: yellow;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+#wrap header .right_menu {
+    background-color: lime;
+}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+/* ===============================================메인시작 */
+#wrap main {
+    background-color: #fff;
+}
+#wrap main .path {
+    background-color: #f9f9f9;
+    padding:11.5px 80px 11.5px 0;
+    text-align: right;
+}
+#wrap main .path a {
+    font-size: 0.88rem
+}
+#wrap main .path em {
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+#wrap main .path img {
+    margin:0 12px;
+    position: relative; top: 3px;
+}
+#wrap main h1 {
+    margin: 44px 0 49px 0;
+    text-align: center;
+    font-size: 3.13rem; font-weight: 700;
+}
+#wrap main > p {
+    text-align: center;
+    margin-bottom: 47px;
+    font-size: 1.13rem;
+    color: #555;
+}
+#wrap main .bg {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+#wrap main .bg p {
+    font-size: 1.13rem;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+#wrap main .bg h2 {
+    color: #36B4E5;
+    font-size: 1.38rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+#wrap main .bg h2:nth-of-type(4) {text-transform: uppercase;}
+#wrap main .bg p:nth-child(5) {margin-bottom: 50px;}
+#wrap main .bg p em {
+    font-size: 1.88rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+#wrap main .bg .goal_contents {
+    margin-bottom: 60px;
+}
+#wrap main .bg .goal_contents li {
+    display:inline-block;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    margin: -10px;
+    padding-top: 80.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#wrap main .bg .goal_contents li:nth-child(1) {
+    background-color: #36B4E5;
+    
+}
+#wrap main .bg .goal_contents li:nth-child(2) {
+    background-color: #fff;
+}
+#wrap main .bg .goal_contents li:nth-child(3) {
+    background-color: #F3C300;
+}
+#wrap main .bg .goal_contents li * {display: block;} /* *모든대상 */
+#wrap main .bg .goal_contents li img {display: inline-block;}
+#wrap main .bg .goal_contents li span {
+    font-size: 1.63rem; line-height: 1.5;
+    font-weight: 500; margin-top:10px; color: #fff;
+}
+#wrap main .bg .goal_contents li:nth-child(2) span {color: #000;}
+#wrap main .bg .strategy_contents {
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+    /* display: inline-block; */
+    width:max-content; margin: 0 auto;
+}
+#wrap main .bg .strategy_contents::after {clear:both; display:block; content:'';}
+#wrap main .bg .strategy_contents dl {
+    background-color: #eee;
+    width: 180px; height: 180px;
+    /* display: inline-block; */
+    border-radius: 50%;
+    margin-left: -10px;
+    /* padding-top: 47.5px; */
+    padding: 47.5px 15px 0 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+#wrap main .bg .strategy_contents dl dt:nth-child(5) {padding-top: 34px;}
+#wrap main .bg .strategy_contents dl dt * {line-height: 1.5;}
+#wrap main .bg .strategy_contents dl dt {
+    font-size: 1.13rem; font-weight: 500;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid black; */
+    text-decoration: underline;
+    /* 테두리vs밑줄 디자인 차이 */
+    /* 테두리(border) 별도 색상, 굵기, 여백 추가 입력 가능 */
+    /* 밑줄(underline) 별도 굵기, 여백 불가능. 글자와 동일한 색상만 적용 가능 */
+    text-transform:capitalize;
+}
+#wrap main .bg .strategy_contents dl dd {color: #555;}
+#wrap footer {
+    background-color: aqua;
+}
+#wrap footer .ft_left {
+    background-color: yellow;
+}
+#wrap footer .ft_left .ft_menu {
+    background-color: lime;
+}
+#wrap footer .ft_left .ft_menu a {}
+#wrap footer .ft_left .ft_menu a em {}
+#wrap footer .ft_left .ft_menu a img {}
+#wrap footer .ft_left address {
+    background-color: aquamarine;
+}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left p {}
+#wrap footer .ft_right  {
+    background-color: coral;
+}
+#wrap footer .ft_right .family {}
+#wrap footer .ft_right .family img {}
+#wrap footer .ft_right .site {}
+#wrap footer .ft_right .site img {}
