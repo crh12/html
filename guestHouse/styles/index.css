@@ -1,25 +1,15 @@
 /* =============================================================== 헤더 */
 header {
   background-color: rgba(0, 0, 0, 0.1);
-  position: fixed; z-index: 999;
+  position: fixed; left: 0; top: 0; z-index: 999;
 }
 header .h_wrap {
   height: 80px; width: 100vw; padding: 0 80px;
   display: flex; flex-flow: row nowrap;
   justify-content: space-between; align-items: center;
 }
-header .h_wrap h1 {position: relative;}
-header .h_wrap h1 a {
-  color: #fff;
-  font-size: 1.88rem; font-weight: 700;
-  padding-left: 65px;
-}
-header .h_wrap h1 a::before {
-  content: ''; display: block; width: 60px; height: 60px;
-  position: absolute; left: 0; top: -17px;
-  background-image: url(../images/h_logo_white.png);
-  background-size: cover;
-}
+header .h_wrap h1 {}
+header .h_wrap h1 a {}
 header .h_wrap nav {
   display: flex; flex-flow: row nowrap;
 }
