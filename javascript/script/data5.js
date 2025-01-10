@@ -215,6 +215,8 @@ const danInput = document.querySelector('#dan');
 const danBtn = document.querySelector('#danBtn');
 const dan99result = document.querySelector('.dan99result');
 
+danBtn.addEventListener('click',function(){dan99(danInput.value)});
+
 function dan99(num){
   dan99result.innerHTML =`
   ${num}*1=${num*1}<br>
@@ -232,5 +234,3 @@ function dan99(num){
   //dan99result.innerHTML += `${num}*2=${num*2}<br>`;
   //dan99result.innerHTML += `${num}*3=${num*3}<br>`;
 };
-
-danBtn.addEventListener('click',function(){dan99(danInput.value)});
