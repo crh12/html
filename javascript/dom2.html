@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 가족관계 생성/제거/디자인 | 자바스크립트</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <script src="./script/dom2.js" defer></script>
+  <style>
+    .child {padding:10px; background-color: yellow;}
+    .child:nth-child(even) {background-color: pink;}
+    /* JS에서 동적으로 불러올 클래스 리스트 */
+    .set1 {
+      padding: 20px; margin: 10px;
+      font-size: 1.5rem; color: red;
+      background-color: yellow;
+    }
+    .set2 {
+      border-bottom: 5px solid brown;
+    }
+    .set3 {
+      width: max-content; padding: 10px; border: 5px solid olive;
+      background-color: lime;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div class="child" id="child1">1</div>
+    <div class="child" id="child2">2</div>
+    <div class="child" id="child3">3</div>
+  </div>
+  <hr>
+  <ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li class="set2">9</li>
+  </ul>
+  <button type="button" id="add">적용</button>
+  <button type="button" id="onoff">교차적용</button>
+  <button type="button" id="re">교체</button>
+</body>
+</html>

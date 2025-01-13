@@ -1,0 +1,49 @@
+main {
+  padding: 100px; margin: 0 auto; width: max-content;
+  background-color: #879BFE;
+}
+main h1 {
+  width: max-content; padding: 0 12px 24px 12px; margin: 0 auto; border-bottom: 2px solid #fff;
+  color:#fff; text-align: center;
+}
+main .calc_wrap {}
+/* ==================================================================== 공통 */
+main .calc_wrap > * > .contents {
+  display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+  padding: 12px 20px;
+}
+main .calc_wrap * h2 {color: #5B76F3;}
+main .calc_wrap * h2 span {color: #FFE176;}
+main .calc_wrap > * .contents > * {margin-right: 20px;}
+main .calc_wrap > * .contents > *:last-child {margin: 0;}
+/* ==================================================================== 지금 */
+main .calc_wrap .now_container {margin: 48px 0; display: flex; flex-flow: row nowrap; justify-content: space-between;}
+main .calc_wrap .now_container .contents {
+  padding: 12px 20px; background-color: #fff;
+}
+main .calc_wrap .now_container .contents h2 {}
+main .calc_wrap .now_container .contents h2 span {}
+main .calc_wrap .now_container .contents p {}
+main .calc_wrap .now_container .contents p img {}
+main .calc_wrap .now_container .contents .now_input {}
+main .calc_wrap .now_container .contents .now_input > * > input::placeholder {text-align: center; color: #ccc;}
+main .calc_wrap .now_container .contents .now_input .input_h {}
+main .calc_wrap .now_container .contents .now_input .input_h span {color: #5B76F3;}
+main .calc_wrap .now_container .contents .now_input .input_h input#userHeight {}
+main .calc_wrap .now_container .contents .now_input .input_w {}
+main .calc_wrap .now_container .contents .now_input .input_w span {color: #5B76F3;}
+main .calc_wrap .now_container .contents .now_input .input_w input#userWeight {}
+/* ==================================================================== 계산 버튼 */
+main .calc_wrap .now_container .now_btn {background-color: #5B76F3; padding: 12px;}
+main .calc_wrap .now_container .now_btn #resultBtn {color: #fff;}
+main .calc_wrap .now_container .now_btn #resultBtn img {}
+/* ==================================================================== 목표 */
+main .calc_wrap .goal_container {background-color: #fff;}
+main .calc_wrap .goal_container .contents {}
+main .calc_wrap .goal_container .contents .h2 {}
+main .calc_wrap .goal_container .contents .h2 span {}
+main .calc_wrap .goal_container .contents p {}
+main .calc_wrap .goal_container .contents p img {}
+main .calc_wrap .goal_container .contents p {color: #5B76F3;}
+main .calc_wrap .goal_container .contents p .wNormal {}
+main .calc_wrap .goal_container .contents p .wOver {}

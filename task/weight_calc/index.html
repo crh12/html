@@ -5,17 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>적정 체중 계산기</title>
   <!-- 웹글꼴 -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
   <!-- 외부스타일시트 -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <!-- 외부스크립트 -->
   <script src="./script/index.js" defer></script>
 </head>
 <body>
-  <h1>적정 체중 계산기</h1>
-  <div class="calc_wrap">
-    <input type="number" name="userHeight" id="userHeight" placeholder="키를 입력하세요">
-    <input type="number" name="userWeight" id="userWeight" placeholder="몸무게를 입력하세요">
-    <button type="button" id="resultBtn">계산하기</button>
-    <p>적정체중은 <span class="wNormal"></span>kg이며 <span class="wOver"></span>kg 초과되셨습니다.</p>
-  </div>
+  <main>
+    <h1>적정 체중 계산기</h1>
+    <div class="calc_wrap">
+      <div class="now_container">
+        <div class="contents">
+          <h2>지금 <span>?</span></h2>
+          <p><img src="./images/line.png" alt=""></p>
+          <div class="now_input">
+            <div class="input_h">
+              <span>키 :</span>
+              <input type="number" name="userHeight" id="userHeight" placeholder="키를 입력하세요">
+            </div>
+            <div class="input_w">
+              <span>몸무게 :</span>
+              <input type="number" name="userWeight" id="userWeight" placeholder="몸무게를 입력하세요">
+            </div>
+          </div>
+        </div>
+        <div class="now_btn">
+          <button type="button" id="resultBtn">계산<img src="./images/enter.png" alt=""></button>
+        </div>
+      </div>
+      <div class="goal_container">
+        <div class="contents">
+          <h2>목표 <span>!</span></h2>
+          <p><img src="./images/line.png" alt=""></p>
+          <p>적정체중은 <span class="wNormal"></span>kg이며 <span class="wOver"></span>kg 초과되셨습니다.</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

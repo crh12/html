@@ -1,0 +1,100 @@
+main {width: 1136px; margin: 0 auto;}
+/* 상품 경로 */
+main .path {margin-bottom: 26px;}
+main .path a {}
+main .path span {}
+main .path a,
+main .path span {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .product_container {
+  display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+/* 상품 미리보기 이미지 */
+main .product_container .photo {
+  width: 630px; display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .product_container .photo .thumnail {}
+main .product_container .photo .thumnail a {
+  width: 56px; margin-bottom: 10px; display: block;
+  border-radius: 5px; overflow: hidden;
+}
+main .product_container .photo .thumnail a img {width: 100%;}
+main .product_container .photo .big {width: 559px; border-radius: 5px; overflow: hidden;}
+main .product_container .photo .big img {width: 100%;}
+/* ===================== ★★★★★ 상품 미리보기 이미지(JS 클래스 전용) ★★★★★ */
+/* thumnail a에 마우스를 올렸을 때 적용되는 테두리 디자인 */
+main .product_container .photo .thumnail a.active {border:3px solid #59AFFF;}
+/* 상품 이름, 가격, 배송, 주문 정보 */
+main .product_container .contents {
+  width: calc(100% - 654px);
+}
+main .product_container .contents > * {margin-bottom: 25px;}
+main .product_container .contents > *:last-child {margin-bottom: 0;}
+main .product_container .contents .brand {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .product_container .contents h1 {font-size:1.38rem;  letter-spacing: -0.02em;}
+main .product_container .contents .review {display: block; font-size: 0.81rem; letter-spacing: -0.02em;}
+/* 할인 전, 후 가격 */
+main .product_container .contents .price_before {letter-spacing: -0.02em;}
+main .product_container .contents .price_before .sale {}
+main .product_container .contents .price_before .price {color:#777; text-decoration: line-through;}
+main .product_container .contents .price_result {font-size:2rem;  letter-spacing: -0.02em;}
+main .product_container .contents .price_result em {font-weight: 700;}
+/* 혜택 & 배송 */
+main .product_container .contents dl {padding: 15px 0; display: flex; flex-flow: row wrap;}
+main .product_container .contents dl dt {width: 80px; letter-spacing: -0.02em;}
+main .product_container .contents dl dd {
+  width: calc(100% - 80px);
+  display: flex; flex-flow: column nowrap;
+}
+main .product_container .contents dl dd:nth-of-type(1) {display: inline-block; margin-bottom: 30px;}
+main .product_container .contents dl dd > em {font-weight: 700; letter-spacing: -0.02em; margin-bottom: 10px;}
+main .product_container .contents dl dd > span {margin-bottom: 10px; letter-spacing: -0.02em;}
+main .product_container .contents dl dd .ship_schedule {
+  padding: 15px 10px; background-color: #eee; border-radius: 7px;
+  margin: 0;
+}
+main .product_container .contents dl dd .ship_schedule em {font-weight: 700;}
+/* ship_schedule 클릭 시 열리는 영역 */
+main .product_container .contents dl dd .schedule_open {
+  padding: 15px 10px; background-color: #eee; border-radius: 7px;
+  border-top: 1px solid #c5c5c5; margin: 0;
+}
+main .product_container .contents dl dd .schedule_open em {}
+main .product_container .contents dl dd .schedule_open em span {}
+main .product_container .contents dl dd .schedule_open > span {}
+/* 주문 관련 내용 모음 */
+main .product_container .contents .order_contents {}
+main .product_container .contents .order_contents .select_contents {}
+main .product_container .contents .order_contents .select_contents select {
+  width: 100%; padding: 15px 17px;
+  border: 1px solid #59AFFF; border-radius: 5px;
+  background-repeat: no-repeat; background-position: right; 
+  font-size: 0.88rem; letter-spacing: -0.02em;
+}
+main .product_container .contents .order_contents .select_contents select option {}
+/* 선택 - 개별 */
+main .product_container .contents .order_contents .select_contents select#color {
+  background-image: url(../images/down_blue.png);
+  margin-bottom: 25px;
+}
+main .product_container .contents .order_contents .select_contents select#color option {}
+main .product_container .contents .order_contents .select_contents select#size {
+  background-image: url(../images/down_grey.png);
+}
+main .product_container .contents .order_contents .select_contents select#size option {}
+/* 최종 주문 금액 */
+main .product_container .contents .order_price {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+main .product_container .contents .order_price h2 {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .product_container .contents .order_price p {font-size: 1.06rem; font-weight: 700; letter-spacing: -0.02em;}
+main .product_container .contents .order_price p .price {font-size: 1.25rem;}
+/* 주문 버튼 */
+main .product_container .contents .order_btn {}
+main .product_container .contents .order_btn button {
+  padding: 20px 0; width: calc((100% - 10px) / 2);
+  border: 1px solid #59AFFF; border-radius: 5px;
+}
+main .product_container .contents .order_btn #cart_btn {
+  color: #59AFFF; 
+}
+main .product_container .contents .order_btn #buy_btn {
+  color: #fff; background-color: #59AFFF;
+}
