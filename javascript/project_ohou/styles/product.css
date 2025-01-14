@@ -20,7 +20,7 @@ main .product_container .photo .thumnail a {
 main .product_container .photo .thumnail a img {width: 100%;}
 main .product_container .photo .big {width: 559px; border-radius: 5px; overflow: hidden;}
 main .product_container .photo .big img {width: 100%;}
-/* ===================== ★★★★★ 상품 미리보기 이미지(JS 클래스 전용) ★★★★★ */
+/* ===================== ★★★★★ 상품 미리보기 이미지 (JS 클래스 전용) ★★★★★ */
 /* thumnail a에 마우스를 올렸을 때 적용되는 테두리 디자인 */
 main .product_container .photo .thumnail a.active {border:3px solid #59AFFF;}
 /* 상품 이름, 가격, 배송, 주문 정보 */
@@ -54,9 +54,14 @@ main .product_container .contents dl dd .ship_schedule {
 }
 main .product_container .contents dl dd .ship_schedule em {font-weight: 700;}
 /* ship_schedule 클릭 시 열리는 영역 */
+/* ===================== ★★★★★ 배송정보 (JS 클래스 전용) ★★★★★ */
+/* toggle 메서드를 활용할 교차 클래스 생성 목적 */
+main .product_container .contents dl dd .hide {display: none !important;} /* 강제우선순위설정 */
+/* JS 관계없는 정적 CSS schedule_open(아래) */
 main .product_container .contents dl dd .schedule_open {
   padding: 15px 10px; background-color: #eee; border-radius: 7px;
   border-top: 1px solid #c5c5c5; margin: 0;
+  display:block;
 }
 main .product_container .contents dl dd .schedule_open em {}
 main .product_container .contents dl dd .schedule_open em span {}
@@ -81,15 +86,27 @@ main .product_container .contents .order_contents .select_contents select#size {
   background-image: url(../images/down_grey.png);
 }
 main .product_container .contents .order_contents .select_contents select#size option {}
+/* 주문 개수 설정 */
+main .product_container .contents .order_contents .num {float: right; margin-top: 25px;}
+main .product_container .contents .order_contents .num #product_num {
+  border: 1px solid #ccc; width: 50px; border-radius: 5px; margin-left: 10px;
+}
+main .product_container .contents .order_contents .num #minus {}
+main .product_container .contents .order_contents .num #plus {}
+main .product_container .contents .order_contents .num button {
+  background-color: #eee; width: 25px; height: 25px; border-radius: 5px;
+}
 /* 최종 주문 금액 */
-main .product_container .contents .order_price {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+main .product_container .contents .order_price {
+  display: flex; justify-content: space-between;  margin:25px 0;
+}
 main .product_container .contents .order_price h2 {font-size: 0.88rem; letter-spacing: -0.02em;}
 main .product_container .contents .order_price p {font-size: 1.06rem; font-weight: 700; letter-spacing: -0.02em;}
-main .product_container .contents .order_price p .price {font-size: 1.25rem;}
+main .product_container .contents .order_price p .price {font-size: 1.25rem; font-weight: 800;}
 /* 주문 버튼 */
-main .product_container .contents .order_btn {}
+main .product_container .contents .order_btn {display:flex; justify-content: space-between;}
 main .product_container .contents .order_btn button {
-  padding: 20px 0; width: calc((100% - 10px) / 2);
+  padding: 20px; width: calc((100% - 10px) / 2);
   border: 1px solid #59AFFF; border-radius: 5px;
 }
 main .product_container .contents .order_btn #cart_btn {
@@ -97,4 +114,27 @@ main .product_container .contents .order_btn #cart_btn {
 }
 main .product_container .contents .order_btn #buy_btn {
   color: #fff; background-color: #59AFFF;
+}
+/* 장바구니 클릭시 실행되는 팝업 */
+main .cart_open_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed; left: 0; top: 0;
+  width: 100%; height: 100vh; padding: 200px;
+}
+main .cart_open_bg .cart_container {
+  width: 700px; background-color: #fff;
+  margin: 0 auto; padding: 50px; border-radius: 5px;
+}
+main .cart_open_bg .cart_container p {
+  text-align: center; margin-bottom: 36px;
+  font-size: 1.13rem;
+}
+main .cart_open_bg .cart_container .link {display: flex; justify-content: center;}
+main .cart_open_bg .cart_container .link a {
+  text-align: center; margin: 0 5px; padding: 15px 45px;
+  border: 1px solid #59AFFF; border-radius: 5px;
+  font-weight: 700;
+}
+main .cart_open_bg .cart_container .link a:nth-child(1) {color: #59AFFF; }
+main .cart_open_bg .cart_container .link a:nth-child(2) {color: #fff; background-color: #59AFFF;
 }

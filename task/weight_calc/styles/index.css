@@ -4,28 +4,26 @@ main {
 }
 main h1 {
   width: max-content; padding: 0 12px 24px 12px; margin: 0 auto; border-bottom: 2px solid #fff;
-  color:#fff; text-align: center;
+  color:#fff; text-align: center; font-size: 1.88rem;
 }
 main .calc_wrap {}
 /* ==================================================================== 공통 */
 main .calc_wrap > * > .contents {
   display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-  padding: 12px 20px;
+  padding: 12px 20px; border-radius: 20px; background-color: #fff;
 }
-main .calc_wrap * h2 {color: #5B76F3;}
+main .calc_wrap * h2 {color: #5B76F3; font-size: 1.88rem;}
 main .calc_wrap * h2 span {color: #FFE176;}
 main .calc_wrap > * .contents > * {margin-right: 20px;}
 main .calc_wrap > * .contents > *:last-child {margin: 0;}
 /* ==================================================================== 지금 */
-main .calc_wrap .now_container {margin: 48px 0; display: flex; flex-flow: row nowrap; justify-content: space-between;}
-main .calc_wrap .now_container .contents {
-  padding: 12px 20px; background-color: #fff;
-}
+main .calc_wrap .now_container {margin: 48px 0; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+main .calc_wrap .now_container .contents {margin-right: 12px;}
 main .calc_wrap .now_container .contents h2 {}
 main .calc_wrap .now_container .contents h2 span {}
 main .calc_wrap .now_container .contents p {}
 main .calc_wrap .now_container .contents p img {}
-main .calc_wrap .now_container .contents .now_input {}
+main .calc_wrap .now_container .contents .now_input {font-size: 1.25rem;}
 main .calc_wrap .now_container .contents .now_input > * > input::placeholder {text-align: center; color: #ccc;}
 main .calc_wrap .now_container .contents .now_input .input_h {}
 main .calc_wrap .now_container .contents .now_input .input_h span {color: #5B76F3;}
@@ -34,16 +32,20 @@ main .calc_wrap .now_container .contents .now_input .input_w {}
 main .calc_wrap .now_container .contents .now_input .input_w span {color: #5B76F3;}
 main .calc_wrap .now_container .contents .now_input .input_w input#userWeight {}
 /* ==================================================================== 계산 버튼 */
-main .calc_wrap .now_container .now_btn {background-color: #5B76F3; padding: 12px;}
-main .calc_wrap .now_container .now_btn #resultBtn {color: #fff;}
-main .calc_wrap .now_container .now_btn #resultBtn img {}
+main .calc_wrap .now_container .now_btn {background-color: #5B76F3; padding: 12px; border-radius: 20px; height: 100%;}
+main .calc_wrap .now_container .now_btn #resultBtn {color: #fff; font-size: 1.25rem; height: 100%;}
+main .calc_wrap .now_container .now_btn #resultBtn img {position: relative; top: 10px; margin-left: 12px;}
 /* ==================================================================== 목표 */
-main .calc_wrap .goal_container {background-color: #fff;}
+main .calc_wrap .goal_container {}
 main .calc_wrap .goal_container .contents {}
 main .calc_wrap .goal_container .contents .h2 {}
 main .calc_wrap .goal_container .contents .h2 span {}
 main .calc_wrap .goal_container .contents p {}
 main .calc_wrap .goal_container .contents p img {}
-main .calc_wrap .goal_container .contents p {color: #5B76F3;}
-main .calc_wrap .goal_container .contents p .wNormal {}
-main .calc_wrap .goal_container .contents p .wOver {}
+main .calc_wrap .goal_container .contents .goal_result {width: 100%; font-size: 1.25rem;}
+main .calc_wrap .goal_container .contents .goal_result p {color: #5B76F3;}
+main .calc_wrap .goal_container .contents .goal_result p:first-child {text-align: left; margin-bottom: 12px;}
+main .calc_wrap .goal_container .contents .goal_result p:last-child {text-align: right;}
+main .calc_wrap .goal_container .contents .goal_result p span {}
+main .calc_wrap .goal_container .contents .goal_result p .wNormal {}
+main .calc_wrap .goal_container .contents .goal_result p .wOver {}
