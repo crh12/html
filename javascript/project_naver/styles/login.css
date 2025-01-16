@@ -1,0 +1,196 @@
+#login_wrap {
+  width: 743px; margin: 0 auto; background-color: aqua;
+}
+#login_wrap #lang_select {float: right;}
+#login_wrap #lang_select option {}
+#login_wrap h1 {
+  clear: both;
+  width: 135px; height: 26px; margin: 0 auto 48px;
+  background-color: lime;
+  background-image: url(../images/m_sp.png);
+  background-position: -316px -104px;
+  /* 스프라이트이미지 사용 시 의미적으로 작성한 글자를 숨겨야 할 경우, 글자를 가진 태그의 부모 대상에 text-indent 들여쓰기+내어쓰기속성을 사용하여 화면 바깥쪽으로 글자를 내보내 안보이게 설정한다. */
+  text-indent: -9999px;
+}
+#login_wrap h1 a {display: block; height: 100%;}
+#login_wrap main {
+  width: 458px; margin: 0 auto; background-color: yellow;
+}
+#login_wrap main form {}
+/* 제목 탭 구성 */
+#login_wrap main form .title {
+  display: flex;
+}
+#login_wrap main form .title h2 {
+  background-color: #f8f9fa; /* 비활성화 제목배경 */
+  width: calc(100% / 3); position: relative;
+  height: 68px; border-bottom: 1px solid #cdcdce;
+  border-top: 1px solid #cdcdce;
+  border-right: 1px solid #cdcdce;
+}
+#login_wrap main form .title h2.active {
+  border: 1px solid #cdcdce; border-radius: 12px;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff; /* 활성화 제목변경 */
+}
+#login_wrap main form .title h2.active::before {
+  content: ''; display: block;
+  width: 19px; height: 78px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: -21px -176px;
+  position:absolute; left: -11px; top: -1px;
+}
+#login_wrap main form .title h2.active::after {
+  content: ''; display: block;
+  width: 19px; height: 78px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: 0 -176px;
+  position:absolute; right: -3px; top: -1px; 
+}
+#login_wrap main form .title h2:nth-child(1)::before {display: none;}
+#login_wrap main form .title h2:nth-child(3)::after {display: none;}
+#login_wrap main form .title h2 a {
+  /* 부모의 높이가 px 정해져있고 정렬하는 자식요소가 한줄일 경우 수직정렬 */
+  line-height: 68px;
+  display: block; text-align: center;
+}
+/* 제목 탭 구성 - QR코드 */
+#login_wrap main form .title h2 a em {}
+#login_wrap main form .title h2 a .message {
+  /* text-wrap:nowrap; width 대신 작성 가능 */
+  width: max-content; padding: 3px 8px;
+  background-color: #fff; border: 1px solid #09aa5c; border-radius: 12px;
+  position: absolute; right: -37px; top: -17px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+#login_wrap main form .title h2 a .message strong {
+  font-size: 0.63rem; color: #09aa5c;
+}
+#login_wrap main form .title h2 a .message .close {
+  font-size: 0.63rem; color: #09aa5c;
+}
+/* =========================================================== 내용 탭 구성 */
+#login_wrap main form .login_container {}
+/* =========================================================== 내용 탭 공통 */
+#login_wrap main form .login_container .login_box {
+  padding: 25px 30px;
+  background-color: #fff;
+  border: 1px solid #cdcdce; border-top: 0;
+}
+/* =========================================================== 내용 탭 1. ID로그인 */
+#login_wrap main form .login_container .id_login {}
+#login_wrap main form .login_container .id_login ul {margin-bottom: 12px;}
+#login_wrap main form .login_container .id_login ul li {
+  border: 1px solid #cdcdce;
+  padding: 15px 20px 15px 40px; position: relative;
+}
+#login_wrap main form .login_container .id_login ul li:first-child {
+  border-radius: 12px 12px 0 0;
+}
+#login_wrap main form .login_container .id_login ul li:last-child {
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+#login_wrap main form .login_container .id_login ul li::before {
+  content: ''; display: block; width: 20px; height: 22px;
+  background-image: url(../images/m_sp_login.png);
+  background-position-y: -256px;
+  position: absolute; left: 14px;
+}
+#login_wrap main form .login_container .id_login ul li:first-child::before {
+  background-position-x: -118px;
+}
+#login_wrap main form .login_container .id_login ul li:last-child::before {
+  background-position-x: -163px;
+}
+#login_wrap main form .login_container .id_login ul li input {width: 100%;}
+#login_wrap main form .login_container .id_login ul li input#user_id {}
+#login_wrap main form .login_container .id_login ul li input#user_id::placeholder {}
+#login_wrap main form .login_container .id_login ul li input#user_pw {}
+#login_wrap main form .login_container .id_login ul li input#user_pw::placeholder {}
+#login_wrap main form .login_container .id_login .state_group {}
+#login_wrap main form .login_container .id_login .state_group .login_state {}
+#login_wrap main form .login_container .id_login .state_group .login_state input#login_state_y {}
+#login_wrap main form .login_container .id_login .state_group .login_state input#login_state_y:checked+label {}
+#login_wrap main form .login_container .id_login .state_group .login_state label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state {}
+#login_wrap main form .login_container .id_login .state_group .ip_state a {}
+#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on {}
+#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on:checked+label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {}
+#login_wrap main form .login_container .id_login .state_group .login_btn {}
+#login_wrap main form .login_container .id_login .state_group .login_btn #login {}
+/* =========================================================== 내용 탭 2. 일회용로그인 */
+#login_wrap main form .login_container .one_time_login {}
+#login_wrap main form .login_container .one_time_login .one_time_notice {text-align: center; padding: 10px 0;}
+#login_wrap main form .login_container .one_time_login .one_time_notice p {line-height: 1.4; text-wrap: nowrap;}
+#login_wrap main form .login_container .one_time_login .one_time_notice p span {color: #09aa5c;}
+#login_wrap main form .login_container .one_time_login .one_time_notice p span .setting {
+  display: inline-block; width: 20px; height: 20px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: -109px -217px;
+  position: relative; top: 4px;
+}
+#login_wrap main form .login_container .one_time_login .one_time_notice .q_more {
+  display: inline-block; width: 14px; height: 15px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: -250px -65px;
+}
+#login_wrap main form .login_container .one_time_login .one_time_input {border: 1px solid #cdcdce; border-radius: 12px; padding: 15px; margin-bottom: 8px;}
+#login_wrap main form .login_container .one_time_login .one_time_input input#one_time_num {width: 100%;}
+#login_wrap main form .login_container .one_time_login .one_time_input input#one_time_num::placeholder {text-align: center;}
+#login_wrap main form .login_container .one_time_login .login_btn {}
+#login_wrap main form .login_container .one_time_login .login_btn #login {}
+/* =========================================================== 내용 탭 3. QR로그인 (작성중) */
+#login_wrap main form .login_container .qr_login {}
+#login_wrap main form .login_container .qr_login .qr_state {text-align: center; position: relative; margin-bottom: 15px;}
+#login_wrap main form .login_container .qr_login .qr_state .qr_img {width: 100px; height: 100px; display: inline-block;}
+#login_wrap main form .login_container .qr_login .qr_state .qr_img img {width: 100%;}
+#login_wrap main form .login_container .qr_login .qr_state .qr_time_wrap {
+  text-align: left; position: absolute; right: 70px; top: 52px;
+}
+#login_wrap main form .login_container .qr_login .qr_state .qr_time_wrap .qr_time_text {margin-bottom: 8px;}
+#login_wrap main form .login_container .qr_login .qr_state .qr_time_wrap .qr_realtime {
+  font-family: AppleSDGothicNeoB; color: #09aa5c;
+}
+#login_wrap main form .login_container .qr_login .qr_notice {text-align: center;}
+#login_wrap main form .login_container .qr_login .qr_notice p {line-height: 1.2;}
+#login_wrap main form .login_container .qr_login .qr_notice p:nth-child(1) {margin-bottom: 4px; font-size: 0.88rem;}
+#login_wrap main form .login_container .qr_login .qr_notice p:nth-child(2) {font-size: 0.75rem; color: #666;}
+#login_wrap main form .login_container .qr_login .qr_notice p span {
+  display: inline-block; content: ''; width: 14px; height: 14px;
+  background-image: url(../images/m_sp_login.png);
+  background-position-x: -250px;
+  position: relative; top: 3px;
+}
+#login_wrap main form .login_container .qr_login .qr_notice p .app_circle {background-position-y: -82px;}
+#login_wrap main form .login_container .qr_login .qr_notice p .lens {background-position-y: -98px;}
+#login_wrap main form .login_container .qr_login .qr_notice p em {
+  background-color: #000; color: #fff; padding: 1px 8px; border-radius: 8px;
+  font-family: AppleSDGothicNeoB;
+}
+#login_wrap main form .login_container .qr_login .qr_notice p .q_more {
+  display: inline-block; width: 14px; height: 15px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: -250px -65px;
+  position: relative; top: 3px;
+}
+/* =========================================================== 찾기-가입-광고 */
+#login_wrap main .search_join {}
+#login_wrap main .search_join a {}
+#login_wrap main .adver {}
+#login_wrap main .adver a {}
+#login_wrap main .adver a img {width: 100%;}
+/* =========================================================== footer */
+#login_wrap footer {
+  width: 458px; margin: 0 auto; background-color: coral;
+}
+#login_wrap footer .menu {}
+#login_wrap footer .menu a {}
+#login_wrap footer .copyright {}
+#login_wrap footer .copyright .logo {}
+#login_wrap footer .copyright span {}
