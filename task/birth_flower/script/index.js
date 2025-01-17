@@ -48,3 +48,34 @@ month:12,
 flower:'포인세티아',
 content:'축하, 감사'
 }]
+
+const bgImg = document.querySelector('.wrap');
+const birthYear = document.querySelector('#birth_year');
+const birthMonth = document.querySelector('#birth_month');
+const birthDate = document.querySelector('#birth_date');
+const resultBtn = document.querySelector('#resultBtn');
+const errorMsg = document.querySelector('.error_message');
+const userResult = document.querySelectorAll('.result span');
+
+userResult[0].parentElement.style.display = 'none';
+console.log(bgImg.style.backgroundImage = 'url()');
+bgImg.style.backgroundImage = 'url(../images/bg.jpg)';
+
+function resultFunc(num){
+    errorMsg.textContent = '';
+    userResult[0].parentElement.style.display = 'block';
+    userResult[0].textContent = birthday_flower[num-1].month;
+    userResult[1].textContent = birthday_flower[num-1].flower;
+    userResult[2].textContent = birthday_flower[num-1].content;
+}
+
+resultBtn.addEventListener('click',()=>{
+    userResult[0].parentElement.style.display = 'none';
+    if (birthYear.value === "") errorMsg.textContent = '출생년도를 입력해주세요'
+    else if (birthMonth.value === "") errorMsg.textContent = '출생월을 입력해주세요'
+    else if (birthMonth.value < 0, birthMonth.value > 12) errorMsg.textContent = '출생월을 다시 확인해주세요'
+    else if (birthDate.value === "") errorMsg.textContent = '출생일을 입력해주세요'
+    else if (birthDate.value < 0, birthDate.value > 31) errorMsg.textContent = '출생일을 다시 확인해주세요';
+    else if (birthMonth.value > 0, birthMonth.value <= 12) resultFunc(birthMonth.value);
+    else errorMsg.textContent = '입력하신 출생년월일을 다시 확인해주세요';
+})
