@@ -1,0 +1,28 @@
+main {}
+main .wrap {
+  background-color: lightblue;
+  width: 600px; margin: 0 auto; padding: 100px 40px;
+  display: flex; flex-flow: column nowrap; align-items: center;
+  text-align: center;
+}
+main .wrap .input_container {
+  width: 80%; margin: 0 auto 24px; 
+}
+main .wrap .input_container input {
+  width: 100px; margin-left: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+main .wrap .input_container input:first-child {margin: 0;}
+main .wrap .input_container input::placeholder {
+  font-size: 0.75rem; text-align: center;
+}
+main .wrap .input_container input#birth_year {}
+main .wrap .input_container input#birth_month {}
+main .wrap .input_container input#birth_date {}
+main .wrap .btn_container {width: 100%;}
+main .wrap .btn_container #resultBtn {
+  width: 80%; padding: 16px;
+  background-color: brown; color: #fff; border-radius: 24px;
+}
+main .wrap .result {}

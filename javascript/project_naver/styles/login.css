@@ -110,20 +110,55 @@
 #login_wrap main form .login_container .id_login ul li input#user_id::placeholder {}
 #login_wrap main form .login_container .id_login ul li input#user_pw {}
 #login_wrap main form .login_container .id_login ul li input#user_pw::placeholder {}
-#login_wrap main form .login_container .id_login .state_group {}
-#login_wrap main form .login_container .id_login .state_group .login_state {}
+#login_wrap main form .login_container .id_login .state_group {display: flex; justify-content: space-between;}
+/* =========================================================== 로그인 상태 유지 */
+#login_wrap main form .login_container .id_login .state_group .login_state {
+  position: relative; top: -8px;
+}
 #login_wrap main form .login_container .id_login .state_group .login_state input#login_state_y {}
 #login_wrap main form .login_container .id_login .state_group .login_state input#login_state_y:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .login_state label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state {}
-#login_wrap main form .login_container .id_login .state_group .ip_state a {}
+#login_wrap main form .login_container .id_login .state_group .login_state input#login_state_y:checked+label::before {
+  background-position-y: -211px;
+}
+#login_wrap main form .login_container .id_login .state_group .login_state label::before {
+  content: ''; display: inline-block; width: 23px; height: 23px; margin-right: 6px;
+  background-image: url(../images/m_sp_login.png);
+  background-position: -308px -110px;
+}
+#login_wrap main form .login_container .id_login .state_group .login_state label {display: flex; align-items: center;}
+/* =========================================================== IP 보안 on/off */
+#login_wrap main form .login_container .id_login .state_group .ip_state {
+  display: flex; align-items: center;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state a {margin-right:6px;}
 #login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on {}
-#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {}
-#login_wrap main form .login_container .id_login .state_group .login_btn {}
-#login_wrap main form .login_container .id_login .state_group .login_btn #login {}
+#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on:checked+label {
+  background-color: #09aa5c;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on:checked+label .switch {
+  left:auto; right: 3px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state input#ip_on:checked+label .switch_state {
+  left: 7px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label {
+  background-color: #a5adb8; width: 45px; height: 20px; border-radius: 12px;
+  display: inline-block; position: relative;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {
+  background-color: #fff; width: 16px; height: 16px; border-radius: 50%; display: block;
+  position: absolute; left: 3px; top: 2px;
+  display: flex; align-items: center;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {
+  color: #fff; position: absolute; right: 4px; top: 5.4px; font-size: 0.7rem; font-family: AppleSDGothicNeoB;
+}
+/* =========================================================== 로그인 버튼 */
+#login_wrap main form .login_container .id_login .login_btn {width: 100%;}
+#login_wrap main form .login_container .id_login .login_btn #login {
+  background-color: #09aa5c;color: #fff; font-family: AppleSDGothicNeoB, sans-serif;
+  width: 100%; padding: 13px 0; border-radius: 8px;
+}
 /* =========================================================== 내용 탭 2. 일회용로그인 */
 #login_wrap main form .login_container .one_time_login {}
 #login_wrap main form .login_container .one_time_login .one_time_notice {text-align: center; padding: 10px 0;}
@@ -144,7 +179,10 @@
 #login_wrap main form .login_container .one_time_login .one_time_input input#one_time_num {width: 100%;}
 #login_wrap main form .login_container .one_time_login .one_time_input input#one_time_num::placeholder {text-align: center;}
 #login_wrap main form .login_container .one_time_login .login_btn {}
-#login_wrap main form .login_container .one_time_login .login_btn #login {}
+#login_wrap main form .login_container .one_time_login .login_btn #login {
+  background-color: #09aa5c;color: #fff; font-family: AppleSDGothicNeoB;
+  width: 100%; padding: 13px 0; border-radius: 8px;
+}
 /* =========================================================== 내용 탭 3. QR로그인 (작성중) */
 #login_wrap main form .login_container .qr_login {}
 #login_wrap main form .login_container .qr_login .qr_state {text-align: center; position: relative; margin-bottom: 15px;}

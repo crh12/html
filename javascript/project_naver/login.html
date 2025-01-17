@@ -45,17 +45,17 @@
               </div>
               <div class="ip_state">
                 <a href="#" target="_blank">IP보안</a>
-                <input type="checkbox" name="ip_on" id="ip_on">
+                <input type="checkbox" name="ip_on" id="ip_on" checked>
                 <label for="ip_on">
                   <span class="switch"></span>
-                  <span class="switch_state">OFF</span>
+                  <span class="switch_state">ON</span>
                 </label>
               </div>
-              <!-- 로그인 오류 메세지 출력 위치 (JS) -->
-              
-              <div class="login_btn">
-                <button type="button" id="login">로그인</button>
-              </div>
+            </div>
+            <!-- 로그인 오류 메세지 출력 위치 (JS) -->
+            <p class="error_message"></p>
+            <div class="login_btn">
+              <button type="button" id="login">로그인</button>
             </div>
           </div>
           <!-- 내용2. 일회용 로그인 -->
@@ -68,6 +68,7 @@
             <div class="one_time_input">
               <input type="number" name="one_time_num" id="one_time_num" placeholder="번호를 입력하세요.">
             </div>
+            <p class="error_message"></p>
             <div class="login_btn">
               <button type="button" id="login">로그인</button>
             </div>
