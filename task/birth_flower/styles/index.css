@@ -16,7 +16,7 @@ main .wrap .input_container {
 }
 main .wrap .input_container input {
   width: 100px; margin-left: 12px;
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(0, 0, 0, 0.5); 
   border-radius: 12px; text-align: center; color: #fff; 
 }
 main .wrap .input_container input:first-child {margin: 0;}
@@ -29,12 +29,12 @@ main .wrap .input_container input#birth_date {}
 main .wrap .btn_container {width: 80%; margin: 50px auto;}
 main .wrap .btn_container #resultBtn {
   width: 100%; padding: 16px;
-  background-color: rgba(255, 255, 255, 0.2); color: #fff;
+  background-color: rgba(0, 0, 0, 0.2); color: #fff;
   border-radius: 24px; border: 2px solid rgba(255, 255, 255, 0.5);
 }
 main .wrap .error_message {color: #f00; text-align: center;}
 main .wrap .result {line-height: 3; color: #fff; text-align: center;}
 main .wrap .result span {
   padding: 5px 12px;
-  background-color: rgba(255, 255, 255, 0.2); border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;
 }
