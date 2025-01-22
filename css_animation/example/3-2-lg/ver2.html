@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <style>
         body {background:#000;}
-        body * {border:1px solid aqua;}
+        body * {/* order:1px solid aqua; */}
         header {
             padding:20px 0; width:1400px; margin:0 auto;
             display:flex; justify-content:space-between; align-items:center;
@@ -27,7 +27,7 @@
         }
         main .video_bg {
             width:790px; height:640px; position:relative;
-            overflow:hidden; 
+            overflow:hidden;
         }
         main .video_bg video {
             position:absolute;
@@ -42,6 +42,12 @@
             background:url(images/bg_flow.png) repeat-x left top;
             height:150px; width:100%;
             position:absolute; z-index:30;
+            animation: txtMove 60s linear infinite;
+        }
+        /* 애니메이션 */
+        @keyframes txtMove {
+            0% {background-position-x: 0;}
+            100% {background-position-x: -3244px;}
         }
     </style>
 </head>

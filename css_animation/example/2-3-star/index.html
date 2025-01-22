@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>음료 | 스타벅스 코리아</title>
     <link rel="stylesheet" href="reset.css">
+    <script src="./script/index.js" defer></script>
     <style>
         /* design */
         #h_bg {background:#f6f5ef;}
@@ -38,23 +39,30 @@
         }
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
-            border-radius:10px; 
+            border-radius:10px;
+            transition: border-radius 0.3s;
         }
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
+        .menu_contents .menu a:hover {border-radius: 50%;}
         /* 커피정보 */
         .menu_contents .menu .info {
-            background:rgba(0,102,51,0.8); /*#006633 == rgb(0,102,051)*/
+            /* background:rgba(0,102,51,0.8); */ /*#006633 == rgb(0,102,051)*/
             color:#fff;
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
             text-align:center;
+            transition: background 0.5s 0.5s;
         }
+        .menu_contents .menu a:hover .info {background: rgba(0,102,51,0.8);}
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
             display:block; font-weight: 600;
-            line-height:1.5;
+            line-height:1.5; color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s 0.5s;
         }
+        .menu_contents .menu a:hover .info span {opacity: 1;}
         /* active class + animation */
         .active {font-weight:800;}
         .active::after {
@@ -62,6 +70,7 @@
             width:100%; height:2px; background:#006633;
             position:absolute; bottom:-10px; left:0;
         }
+        /* ================================================ 애니메이션 */
     </style>
     <script>
         window.onload=function(){

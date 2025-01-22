@@ -1,0 +1,20 @@
+/* 메인 배경 */
+main .bg_wrap .bg1 {animation: viewBg 100s linear infinite;}
+main .bg_wrap .bg2 {animation: viewBg 30s linear infinite;}
+main .bg_wrap .bg3 {animation: viewBg 10s linear infinite;}
+/* 바퀴 */
+main .car #left_tire, main .car #right_tire {animation: rotate360 1s linear infinite;}
+/* 메인 스크롤 아이콘 */
+main .scroll {animation: upDown 1s linear alternate infinite;}
+@keyframes upDown {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-25px);}
+}
+@keyframes rotate360 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(-360deg);}
+}
+@keyframes viewBg {
+  0% {background-position-x: 0;}
+  100% {background-position-x: 1000px;}
+}
