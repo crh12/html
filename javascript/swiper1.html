@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper슬라이드플러그인 | 자바스트립트</title>
+  <!-- Swiper 사용을 위한 필수 CSS, JS 연결 파일(순서 중요!!) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- 직접 작성한 CSS JS 연결 위치(아래) -->
+  <script src="./script/swiper1.js" defer></script>
+  <style>
+    .slide1 {
+      width: 600px;
+      height: 300px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <!-- 움직이는 슬라이드가 보이는 overflow 부모 영역 -->
+  <div class="swiper slide1">
+    <!-- 실제 움직이는 슬라이드 부모 대상 -->
+    <div class="swiper-wrapper">
+      <!-- 개별슬라이드(자식, 자손 태그 작성 자유) -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -64,13 +64,21 @@
         }
         .menu_contents .menu a:hover .info span {opacity: 1;}
         /* active class + animation */
-        .active {font-weight:800;}
+        .active {
+            font-weight:800;
+        }
         .active::after {
             content:''; display:block;
             width:100%; height:2px; background:#006633;
             position:absolute; bottom:-10px; left:0;
+            transform: scaleX(0);
+            animation: menuActive 0.8s both;
         }
         /* ================================================ 애니메이션 */
+        @keyframes menuActive {
+            0% {transform: scaleX(0);}
+            100% {transform: scaleX(1);}
+        }
     </style>
     <script>
         window.onload=function(){
