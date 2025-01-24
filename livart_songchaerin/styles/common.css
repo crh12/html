@@ -1,0 +1,26 @@
+/* ============================================================================== header 시작 */
+.header_bg {width: 100%; position: sticky; left: 0; top: 0; background-color: #fff; z-index: 999;}
+.header_bg header {
+  max-width: 1400px; height: 90px; margin: 0 auto;
+  display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+.header_bg header .h_left {display: flex; flex-flow: row nowrap; align-items: center;}
+.header_bg header .h_left h1 {margin-right: 24px;}
+.header_bg header .h_left h1 a {}
+.header_bg header .h_left h1 a img {}
+.header_bg header .h_left .h_l_menu {}
+.header_bg header .h_left .h_l_menu a,
+.header_bg header .h_center nav a {font-weight:600; letter-spacing:-0.02em;} /* 헤더메뉴 폰트 그룹 */
+.header_bg header .h_left .h_l_menu a {}
+.header_bg header .h_left .h_l_menu a:nth-child(1),
+.header_bg header .h_left .h_l_menu a:nth-child(2) {color: #DB9428;} /* 왼쪽 추가색상 메뉴 그룹 */
+.header_bg header .h_left .h_l_menu a:nth-child(2) {margin: 0 30px;}
+.header_bg header .h_center {}
+.header_bg header .h_center nav {}
+.header_bg header .h_center nav a {margin-right: 30px;}
+.header_bg header .h_center nav a:last-child {margin-right: 0px;}
+.header_bg header .h_right {}
+.header_bg header .h_right a {}
+.header_bg header .h_right a:nth-child(2) {margin: 0 20px;}
+.header_bg header .h_right a img {}
+/* ============================================================================== footer 시작 */

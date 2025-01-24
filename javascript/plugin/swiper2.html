@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper 2. 옵션추가</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <script src="./script/swiper2.js" defer></script>
+  <style>
+    /* ========================================================= 슬라이더 시작 */
+    .best_swiper {
+      width: 100%; height: 100vh; margin: 0 auto;
+    }
+    .best_swiper .swiper-wrapper {}
+    .best_swiper .swiper-wrapper .swiper-slide {
+      background-size: cover; background-position: center;
+      position: relative;
+    }
+    .best_swiper .swiper-wrapper .swiper-slide > * {
+      width: 1200px; position: absolute; left: 50%; transform: translateX(-50%);
+    }
+    /* ========================================================= 슬라이드 1 */
+    .best_swiper .swiper-wrapper .slide1 {
+      background-image: url(./images/bnr1.jpg);
+    }
+    .best_swiper .swiper-wrapper .slide1 .contents {
+      /* margin: 0 auto; */
+      /* padding-top: 600px; */ padding-left: 36px;
+      bottom: 250px;
+      /* border: 2px solid yellow; */
+    }
+    .best_swiper .swiper-wrapper .slide1 .contents .sub_title {
+      font-size: 1.38rem; /* 22 */
+      margin-bottom: 24px;
+    }
+    .best_swiper .swiper-wrapper .slide1 .contents h1 {
+      font-size: 3.13rem; /* 50 */ font-weight: 700;
+      margin-bottom:24px; letter-spacing: -0.02em;
+    }
+    .best_swiper .swiper-wrapper .slide1 .contents p {
+      line-height: 1.5;
+    }
+    /* ========================================================= 슬라이드 2 */
+    .best_swiper .swiper-wrapper .slide2 {
+      background-image: url(./images/bnr2.jpg);
+    }
+    .best_swiper .swiper-wrapper .slide2 .contents {
+      padding-left: 70px; top:18%;
+    }
+    .best_swiper .swiper-wrapper .slide2 .contents .sub_title {
+      font-size: 1.38rem; /* 22 */
+      margin-bottom: 24px;
+    }
+    .best_swiper .swiper-wrapper .slide2 .contents h1 {
+      font-size: 3.13rem; /* 50 */ font-weight: 700;
+      margin-bottom:24px; letter-spacing: -0.02em;
+    }
+    .best_swiper .swiper-wrapper .slide2 .contents p {line-height: 1.5;}
+    /* ========================================================= 슬라이드 3 */
+    .best_swiper .swiper-wrapper .slide3 {
+      background-image: url(./images/bnr3.jpg);
+    }
+    .best_swiper .swiper-wrapper .slide3::before {
+      display: block; content: ''; position: absolute; left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(transparent, #000);
+    }
+    .best_swiper .swiper-wrapper .slide3 .contents {
+      text-align: right; bottom: 145px;
+    }
+    .best_swiper .swiper-wrapper .slide3 .contents .sub_title {
+      font-size: 1.38rem; /* 22 */ color: #fff;
+      margin-bottom: 24px;
+    }
+    .best_swiper .swiper-wrapper .slide3 .contents h1 {
+      font-size: 3.13rem; /* 50 */ font-weight: 700; color: #fff;
+      margin-bottom:24px; letter-spacing: -0.02em;
+    }
+    .best_swiper .swiper-wrapper .slide3 .contents p {line-height: 1.5; color: #fff;}
+  </style>
+</head>
+<body>
+  <!-- <h1>Swiper 자바스크립트 슬라이드 제작 플러그인</h1>
+    <p>1. Swiper사용을 위한 css, js 외부파일 경로연결</p>
+    <p>2. 정해진 클래스를 주의하면서 HTML 작성하기</p>
+    <p>2-1. (위) 요소에 사용자정의 클래스 별도로 설정하기</p>
+    <p>3. swiper의 가장바깥쪽 부모에 width, height CSS 설정하기</p>
+    <p>3-1. swiper 자식, 자손 정해진 요소들의 css는 함부로 설정하지 않기</p>
+    <p>4. swiper 대입될 변수 생성하고 new Swiper 함수명으로 2-1에서 설정한 사용자정의클래스(가장 바깥쪽 swiper 기준) 대입하기</p>
+    <p>5. 필요에 따라 Swiper 자바스크립트 속성:값 추가 가능</p>
+    <hr> -->
+  <!-- swiper 슬라이드가 보이는 영역(사용자정의클래스 필수!!) -->
+  <div class="swiper best_swiper">
+    <!-- 실제 움직이는 영역 -->
+    <div class="swiper-wrapper">
+      <!-- 개별슬라이드(사용자정의클래스 작성권장) -->
+      <div class="swiper-slide slide1"><!-- bnr1 -->
+        <div class="contents">
+          <p class="sub_title">역사의 향기가 머무는곳</p>
+          <h1>경복궁에서 만나는 시간 여행</h1>
+          <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.</p>
+        </div>
+      </div>
+      <div class="swiper-slide slide2"><!-- bnr2 -->
+        <div class="contents">
+          <p class="sub_title">역사의 향기가 머무는곳</p>
+          <h1>경복궁에서 만나는 시간 여행</h1>
+          <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.</p>
+        </div>
+      </div>
+      <div class="swiper-slide slide3"><!-- bnr3 -->
+        <div class="contents">
+          <p class="sub_title">역사의 향기가 머무는곳</p>
+          <h1>경복궁에서 만나는 시간 여행</h1>
+          <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+main {}
+/* ============================================================================== 패스 경로 */
+main .path_container {}
+main .path_container .path {
+  max-width: 1400px; margin: 0 auto; padding: 20px;
+  display: flex; flex-flow: row nowrap;
+}
+main .path_container .path li {
+  margin-left:12px; padding-right: 28px;
+  position: relative;
+}
+main .path_container .path li:first-child {margin: 0;}
+main .path_container .path li::after {
+  display: block; content: ''; width: 16px; height: 16px;
+  position: absolute; right: 0; top: 0;
+  background-image: url(../images/path_arrow.png);
+}
+main .path_container .path li:last-child:after {display: none;}
+main .path_container .path li a {color: #6F6F6F; font-size:0.88rem; letter-spacing:-0.02em; font-weight: 600;}
+/* ============================================================================== 메인 상품 시작 */
+main .product_wrap {width: 1400px; margin: 0 auto; display: flex;}
+/* ============================================================================== 이미지 */
+main .product_wrap .p_img_contents {width: calc(50%);}
+main .product_wrap .p_img_contents .p_img_main {
+  width: 700px; height: 600px; border-radius: 20px; overflow: hidden; margin: 0 0 12px;
+}
+main .product_wrap .p_img_contents .p_img_main img {width: 100%;}
+/* ============================================================================== 섬네일 슬라이더 */
+main .product_wrap .p_img_contents .p_img_slide {
+  width: 700px; height: 80px; overflow: hidden;
+}
+main .product_wrap .p_img_contents .p_img_slide .swiper-wrapper {
+display: flex; flex-flow: row nowrap;
+}
+main .product_wrap .p_img_contents .p_img_slide .swiper-wrapper .swiper-slide {
+  width: 120px; height: 80px; margin-right: 12px; border-radius: 10px; overflow: hidden;
+}
+main .product_wrap .p_img_contents .p_img_slide .swiper-wrapper .swiper-slide:last-child {margin: 0;}
+main .product_wrap .p_img_contents .p_img_slide .swiper-wrapper .swiper-slide a {width: 100%;}
+main .product_wrap .p_img_contents .p_img_slide .swiper-wrapper .swiper-slide a img {width: 100%;}
+/* ============================================================================== 상품 정보 시작 */
+main .product_wrap .p_info_contents {width: 50%; padding: 0 50px;}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .p_tag_contents {display: flex; margin-bottom: 6px;}
+main .product_wrap .p_info_contents .p_tag_contents li {
+  margin-right: 12px; padding: 6px 16px; border: 1px solid #00587C; border-radius: 10px;
+  font-size:0.88rem; letter-spacing:-0.02em; font-weight: 600;
+}
+main .product_wrap .p_info_contents .p_tag_contents li:last-child {margin: 0;}
+main .product_wrap .p_info_contents .p_tag_contents .tag_best {color: #fff; background-color: #00587C;}
+main .product_wrap .p_info_contents .p_tag_contents .tag_haum {color: #00587C; background-color: #fff;}
+/* ============================================================================== 상품명 아이콘 */
+main .product_wrap .p_info_contents .p_name_icon_contents {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;
+}
+main .product_wrap .p_info_contents .p_name_icon_contents .product_name {
+  font-size:1.75rem; font-weight:600; letter-spacing:-0.02em;
+}
+main .product_wrap .p_info_contents .p_name_icon_contents .product_name .p_icon {}
+main .product_wrap .p_info_contents .p_name_icon_contents .p_icon a {display: inline-block; width: 48px; margin-right: 24px;}
+main .product_wrap .p_info_contents .p_name_icon_contents .p_icon a:last-child {margin-right: 0;}
+main .product_wrap .p_info_contents .p_name_icon_contents .p_icon a img {width: 100%;}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .p_review {width: 100%; margin-bottom: 36px;}
+main .product_wrap .p_info_contents .p_review a {width: 100%;}
+main .product_wrap .p_info_contents .p_review a .review_star {display: inline-block; width: 16px;}
+main .product_wrap .p_info_contents .p_review a .review_star img {width: 100%;}
+main .product_wrap .p_info_contents .p_review a em {color: #00587C; margin: 0 12px 0 4px; letter-spacing:-0.02em;}
+main .product_wrap .p_info_contents .p_review a span {color: #6F6F6F; letter-spacing:-0.02em;}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .p_price_contents {margin-bottom: 36px;}
+main .product_wrap .p_info_contents .p_price_contents .price_rate_contents {margin-bottom: 12px;}
+main .product_wrap .p_info_contents .p_price_contents .price_rate_contents em {
+  color: #DB9428; font-size:1.25rem; font-weight:600; letter-spacing:-0.02em; margin-right: 24px;
+}
+main .product_wrap .p_info_contents .p_price_contents .price_rate_contents span {
+  color: #6F6F6F; font-size:1.25rem; font-weight:600; letter-spacing:-0.02em; text-decoration: line-through; margin-right: 6px;
+}
+main .product_wrap .p_info_contents .p_price_contents .price_rate_contents a {display: inline-block; width: 16px;}
+main .product_wrap .p_info_contents .p_price_contents .price_rate_contents a img {width: 100%;}
+main .product_wrap .p_info_contents .p_price_contents .price {font-size:2.25rem; font-weight: 600; letter-spacing:-0.02em;}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .p_txt {}
+main .product_wrap .p_info_contents .p_txt dl {display: flex;}
+main .product_wrap .p_info_contents .p_txt dl dt {
+  margin-right: 24px; color: #6F6F6F; letter-spacing:-0.02em;
+}
+main .product_wrap .p_info_contents .p_txt dl dd {
+  display: flex; flex-flow: column nowrap;
+  letter-spacing:-0.02em;
+}
+main .product_wrap .p_info_contents .p_txt dl dd a {letter-spacing:-0.02em; }
+main .product_wrap .p_info_contents .p_txt dl dd a em {}
+main .product_wrap .p_info_contents .p_txt dl dd a span {}
+main .product_wrap .p_info_contents .p_txt dl dd span {}
+main .product_wrap .p_info_contents .p_txt dl dd a span .arrow_right {width: 16px; margin-left: 6px;}
+main .product_wrap .p_info_contents .p_txt dl dd a span .arrow_right img {width: 100%;}
+main .product_wrap .p_info_contents .p_txt dl dd a .p_delivery_date {color: #00587C;}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .order_contents {}
+main .product_wrap .p_info_contents .order_contents .select_contents {padding: 12px 0 36px;}
+main .product_wrap .p_info_contents .order_contents .select_contents select {
+  width: 100%; padding: 10px 30px; margin-bottom: 12px;
+  border: 1px solid #6F6F6F; border-radius: 6px; color: #6F6F6F;
+  background-image: url(../images/arrow_down.png);
+  background-repeat: no-repeat; background-position: right;
+  font-size: 0.88rem; letter-spacing: -0.02em;
+}
+main .product_wrap .p_info_contents .order_contents .select_contents select option {}
+main .product_wrap .p_info_contents .order_contents .select_contents select option {}
+main .product_wrap .p_info_contents .order_contents .select_contents #color {}
+main .product_wrap .p_info_contents .order_contents .select_contents #size {}
+main .product_wrap .p_info_contents .order_contents .select_contents #other {}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .order_contents .oder_num_contents {}
+main .product_wrap .p_info_contents .order_contents .oder_num_contents p {}
+main .product_wrap .p_info_contents .order_contents .oder_num_contents p .oder_num {}
+main .product_wrap .p_info_contents .order_contents .oder_num_contents p .oder_num span {}
+main .product_wrap .p_info_contents .order_contents .oder_price_contents {}
+main .product_wrap .p_info_contents .order_contents .oder_price_contents p {}
+main .product_wrap .p_info_contents .order_contents .oder_price_contents p .oder_price {}
+main .product_wrap .p_info_contents .order_contents .oder_price_contents p .oder_price span {}
+/* ==============================================================================  */
+main .product_wrap .p_info_contents .order_contents .order_btn {}
+main .product_wrap .p_info_contents .order_contents .order_btn button {}
+main .product_wrap .p_info_contents .order_contents .order_btn #cart_btn {}
+main .product_wrap .p_info_contents .order_contents .order_btn #buy_btn {}

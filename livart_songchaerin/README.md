@@ -15,6 +15,12 @@ font-size:1.25rem; letter-spacing:-0.02em;
 ### 메인 소제목 20 강조
 font-size:1.25rem; font-weight:600; letter-spacing:-0.02em;
 ### 메인 내용 14 취소선
-font-size:0.88rem;; letter-spacing:-0.02em;
+font-size:0.88rem; letter-spacing:-0.02em;
+### 서브 대제목 36
+font-size:2.25rem; font-weight: 600; letter-spacing:-0.02em;
+### 서브 내용 16
+letter-spacing:-0.02em;
 ### footer 14
+font-size:0.88rem; letter-spacing:-0.02em;
 ### footer 14 semibold
+font-size:0.88rem; letter-spacing:-0.02em; font-weight: 600;
