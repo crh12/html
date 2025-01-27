@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper 옵션4. 슬라이드방향과 효과</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <script src="./script/swiper_op4.js" defer></script>
+  <style>
+    .new_swiper_wrap {
+      max-width: 1200px; height: 500px; margin: 100px auto;
+      background-color: lightcoral;
+    }
+    .new_swiper_wrap .swiper-wrapper {}
+    .new_swiper_wrap .swiper-wrapper .swiper-slide {
+      font-size: 4rem; font-weight: 700;
+      text-align: center; line-height: 400px; color: #fff;
+      text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      background-position: center; background-size: cover;
+    }
+    .new_swiper_wrap .swiper-wrapper .slide1 {
+      background-image: url(./images/bnr1.jpg);
+    }
+    .new_swiper_wrap .swiper-wrapper .slide2 {
+      background-image: url(./images/bnr2.jpg);
+    }
+    .new_swiper_wrap .swiper-wrapper .slide3 {
+      background-image: url(./images/bnr3.jpg);
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper new_swiper_wrap">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">Slide 1</div>
+      <div class="swiper-slide slide2">Slide 2</div>
+      <div class="swiper-slide slide3">Slide 3</div>
+      <div class="swiper-slide slide1">Slide 4</div>
+      <div class="swiper-slide slide2">Slide 5</div>
+      <div class="swiper-slide slide3">Slide 6</div>
+    </div>
+  </div>
+</body>
+</html>
