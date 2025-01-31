@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper스크롤</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <script src="./script/swiper-scroll1.js" defer></script>
+  <style>
+    main {
+      background-color: lightgrey;
+      position: relative; padding: 100px;
+    }
+    .event-swiper {width: 1000px; height: 400px; margin: 0 auto;}
+    .event-swiper .swiper-slide {font-size: 4rem; line-height: 400px; text-align: center;}
+    .event-swiper .event1 {background-color: lightblue;}
+    .event-swiper .event2 {background-color: lightgreen;}
+    .event-swiper .event3 {background-color: lightyellow;}
+    .event-swiper .event4 {background-color: lightcoral;}
+    /* 진행스크롤 디자인 */
+    main .event-scrollbar {
+      width: 800px; height: 5px; background: #eee;
+      position: relative; margin: 0 auto;
+    }
+    main .event-scrollbar .active-scrollbar {
+      width: 0%; height: 5px;
+      background: #222; position: absolute; left: 0; top: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="swiper event-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide event1">Slide 1</div>
+        <div class="swiper-slide event2">Slide 2</div>
+        <div class="swiper-slide event3">Slide 3</div>
+        <div class="swiper-slide event4">Slide 4</div>
+      </div>
+    </div>
+    <!-- 진행 스크롤 -->
+    <div class="event-scrollbar">
+      <div class="active-scrollbar"></div>
+    </div>
+  </main>
+</body>
+</html>
