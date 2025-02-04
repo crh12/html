@@ -1,0 +1,54 @@
+/* ------------------------------------------------------ 헤더(브랜드) */
+.hd_brands {
+  width: 100%; height: 32px; background-color: #1A1A1A;
+  display: flex; justify-content: center; align-items: center;
+}
+.hd_brands li {height: 100%;}
+.hd_brands li:nth-child(2) {margin: 0 40px;}
+.hd_brands li a {display: inline-block; width: 100%; height: 100%;}
+.hd_brands li a img {}
+/* ------------------------------------------------------ 헤더 */
+header {position: sticky; left: 0; top: 0; z-index: 999;}
+header .hd_bg {
+  width: 100%; height: 80px; padding: 0 80px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+header .hd_bg h1 {}
+header .hd_bg h1 a {}
+header .hd_bg h1 a img {}
+/* ------------------------------------------------------ 중앙 gnb */
+header .hd_bg nav {}
+header .hd_bg nav .gnb {
+  display: flex;
+}
+header .hd_bg nav .gnb li {margin-right: 38px;}
+header .hd_bg nav .gnb li:last-child {margin: 0;}
+header .hd_bg nav .gnb li a {}
+header .hd_bg nav .gnb li a span {color: #AA1721;}
+header .hd_bg nav .gnb li .lnb {display: none;}
+header .hd_bg nav .gnb li .lnb li {}
+header .hd_bg nav .gnb li .lnb li a {}
+header .hd_bg nav .gnb li .lnb li a:first-child {}
+/* ------------------------------------------------------ 유저 메뉴 */
+header .hd_bg .user_nav {
+  display: flex;
+}
+header .hd_bg .user_nav li {}
+header .hd_bg .user_nav li:nth-child(2) {margin: 0 20px;}
+header .hd_bg .user_nav li a {}
+header .hd_bg .user_nav li a img {}
+/* ------------------------------------------------------ 메인 */
+main {}
+/* ------------------------------------------------------ 슬라이더 (공통) */
+main .main_swiper {width: 100%; height: 100vh; position: relative; top: -80px;}
+main .main_swiper .swiper-wrapper {}
+main .main_swiper .swiper-wrapper .swiper-slide {}
+main .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
+/* ------------------------------------------------------ 슬라이더 (개별) */
+main .main_swiper .swiper-wrapper .slide1 {
+  background-image: url(../images/slide_001.jpg);
+  background-size: cover; background-position: center;
+}
+main .main_swiper .swiper-wrapper .slide1 .bnr_txt {}
+main .main_swiper .swiper-wrapper .slide2 {}
+main .main_swiper .swiper-wrapper .slide3 {}
