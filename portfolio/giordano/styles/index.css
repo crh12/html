@@ -1,0 +1,41 @@
+/* ------------------------------------------------------ 메인 */
+main {}
+main .main_bnr {position: relative; width: 100%; transform:translateY(-80px);}
+/* ------------------------------------------------------ 슬라이더 (공통) */
+main .main_bnr .main_swiper {width: 100%; height: 100vh; margin: 0 auto;}
+main .main_bnr .main_swiper .swiper-wrapper {}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {padding: 80px;}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
+/* ------------------------------------------------------ 슬라이더 (개별) */
+main .main_bnr .main_swiper .swiper-wrapper .slide1 {
+  background-image: url(../images/slide_001.jpg);
+  background-size: cover; background-position: top;
+}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt {color: #fff; position: absolute; top:45%; left: 15%;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt h1 {font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt h1:nth-of-type(2) {margin: 18px 0 35px;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt p {font-size: 1.25rem; letter-spacing: -0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .slide2 {
+  background-color: lightblue;
+}
+main .main_bnr .main_swiper .swiper-wrapper .slide3 {
+  background-color: lightcoral;
+}
+/* ------------------------------------------------------ 진행바, 버튼 */
+main .main_bnr .swiper_progress {
+  width: 1600px; height: max-content; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px; z-index: 10;
+  padding: 0 37px;
+  display: flex; flex-flow: row nowrap; align-items: center;
+}
+main .main_bnr .swiper_progress .progress_bar {width: calc(100% - 90px); height: 2px; background-color: rgba(255, 255, 255, 0.2); margin-right: 36px;}
+main .main_bnr .swiper_progress .progress_bar .active_bar {width: calc(100% / 3); height: 100%; background-color: #fff;}
+main .main_bnr .swiper_progress .progress_btn {display: flex;}
+main .main_bnr .swiper_progress .progress_btn > * {color: #fff;}
+main .main_bnr .swiper_progress .progress_btn button {width: 20px;}
+main .main_bnr .swiper_progress .progress_btn button img {width: 100%;}
+main .main_bnr .swiper_progress .progress_btn .next {}
+main .main_bnr .swiper_progress .progress_btn .prev {}
+main .main_bnr .swiper_progress .progress_btn .swiper-current-page {}
+main .main_bnr .swiper_progress .progress_btn p {}
+main .main_bnr .swiper_progress .progress_btn .swiper-total-page {}
+/* ------------------------------------------------------ BEST */

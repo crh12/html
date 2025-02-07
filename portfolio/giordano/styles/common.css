@@ -1,14 +1,17 @@
 /* ------------------------------------------------------ 헤더(브랜드) */
 .hd_brands {
   width: 100%; height: 32px; background-color: #1A1A1A;
-  display: flex; justify-content: center; align-items: center;
+  display: flex; justify-content: center;
 }
 .hd_brands li {height: 100%;}
 .hd_brands li:nth-child(2) {margin: 0 40px;}
 .hd_brands li a {display: inline-block; width: 100%; height: 100%;}
 .hd_brands li a img {}
+.hd_brands li:nth-child(1) a img {padding-top: 12px;}
+.hd_brands li:nth-child(2) a img {padding-top: 11.5px;}
+.hd_brands li:nth-child(3) a img {padding-top: 9px;}
 /* ------------------------------------------------------ 헤더 */
-header {position: sticky; left: 0; top: 0; z-index: 999;}
+header {position: sticky; left: 0; top: 0; z-index: 999; width: 100%;}
 header .hd_bg {
   width: 100%; height: 80px; padding: 0 80px;
   display: flex; justify-content: space-between; align-items: center;
@@ -37,18 +40,41 @@ header .hd_bg .user_nav li {}
 header .hd_bg .user_nav li:nth-child(2) {margin: 0 20px;}
 header .hd_bg .user_nav li a {}
 header .hd_bg .user_nav li a img {}
-/* ------------------------------------------------------ 메인 */
-main {}
-/* ------------------------------------------------------ 슬라이더 (공통) */
-main .main_swiper {width: 100%; height: 100vh; position: relative; top: -80px;}
-main .main_swiper .swiper-wrapper {}
-main .main_swiper .swiper-wrapper .swiper-slide {}
-main .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
-/* ------------------------------------------------------ 슬라이더 (개별) */
-main .main_swiper .swiper-wrapper .slide1 {
-  background-image: url(../images/slide_001.jpg);
-  background-size: cover; background-position: center;
+/* ------------------------------------------------------ footer */
+footer {background-color: #f5f5f5; padding: 80px;}
+footer .ft_top {
+  display: flex; justify-content: space-between; padding-bottom: 24px; margin-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-main .main_swiper .swiper-wrapper .slide1 .bnr_txt {}
-main .main_swiper .swiper-wrapper .slide2 {}
-main .main_swiper .swiper-wrapper .slide3 {}
+footer .ft_top .ft_logo {width: 191px;}
+footer .ft_top .ft_logo img {width: 100%;}
+footer .ft_top .ft_sns {}
+footer .ft_top .ft_sns a {display: inline-block; width: 24px; margin-right: 20px;}
+footer .ft_top .ft_sns a:last-child {margin: 0;}
+footer .ft_top .ft_sns a img {width: 100%;}
+footer .ft_btm {display: flex; justify-content: space-between;}
+footer .ft_btm .ft_btm_left {}
+footer .ft_btm .ft_btm_left ul {}
+footer .ft_btm .ft_btm_left .ft_menu {margin-bottom: 24px;}
+footer .ft_btm .ft_btm_left .ft_menu li {display: inline-block; margin-right: 24px;}
+footer .ft_btm .ft_btm_left .ft_menu li:last-child {margin: 0;}
+footer .ft_btm .ft_btm_left .ft_menu li a {}
+footer .ft_btm .ft_btm_left .ft_menu li a, footer .ft_btm .ft_btm_right ul li a {
+  font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em;
+}
+footer .ft_btm .ft_btm_left .ft_info {width: 850px;}
+footer .ft_btm .ft_btm_left .ft_info span {
+  display: inline-block; margin: 0 24px 10px 0;
+}
+footer .ft_btm .ft_btm_left .ft_info span, footer .ft_btm .ft_btm_left .ft_info span a {
+  font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em; color: #999;
+}
+footer .ft_btm .ft_btm_left .ft_info span:last-child {margin: 0;}
+footer .ft_btm .ft_btm_left .ft_info span a {}
+footer .ft_btm .ft_btm_left .ft_info span a img {width: 12px; transform: scaleX(-1); position: relative; top: 2px; margin-left: 4px;}
+footer .ft_btm .ft_btm_right {display: flex; flex-flow: row nowrap;}
+footer .ft_btm .ft_btm_right ul {}
+footer .ft_btm .ft_btm_right ul:first-child {margin-right: 48px;}
+footer .ft_btm .ft_btm_right ul li {margin-bottom: 12px; line-height: 13px;}
+footer .ft_btm .ft_btm_right ul li:last-child {margin: 0;}
+footer .ft_btm .ft_btm_right ul li a {}
