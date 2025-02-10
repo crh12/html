@@ -1,12 +1,12 @@
-/* ------------------------------------------------------ 메인 */
+/* -------------------------------------------------------------------------------------------- 메인 */
 main {}
-main .main_bnr {position: relative; width: 100%; transform:translateY(-80px);}
-/* ------------------------------------------------------ 슬라이더 (공통) */
+main .main_bnr {position: relative; width: 100%; transform:translateY(-80px); margin-bottom: 70px;}
+/* -------------------------------------------------------------------------------------------- 슬라이더 (공통) */
 main .main_bnr .main_swiper {width: 100%; height: calc(100vh - 32px);}
 main .main_bnr .main_swiper .swiper-wrapper {}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {padding: 80px;}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
-/* ------------------------------------------------------ 슬라이더 (개별) */
+/* -------------------------------------------------------------------------------------------- 슬라이더 (개별) */
 main .main_bnr .main_swiper .swiper-wrapper .slide1 {
   background-image: url(../images/slide_001.jpg);
   background-size: cover; background-position: center;
@@ -21,7 +21,7 @@ main .main_bnr .main_swiper .swiper-wrapper .slide2 {
 main .main_bnr .main_swiper .swiper-wrapper .slide3 {
   background-color: lightcoral;
 }
-/* ------------------------------------------------------ 진행바, 버튼 */
+/* -------------------------------------------------------------------------------------------- 진행바, 버튼 */
 main .main_bnr .swiper_progress {
   max-width: 1920px; width: 100%; height: max-content; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px; z-index: 10;
   padding: 0 197px;
@@ -38,7 +38,7 @@ main .main_bnr .swiper_progress .progress_btn .prev {margin-right: 10px;}
 main .main_bnr .swiper_progress .progress_btn span {letter-spacing: -0.02em; margin-top: 1px;}
 main .main_bnr .swiper_progress .progress_btn .slide_current {}
 main .main_bnr .swiper_progress .progress_btn .slide_total {}
-/* ------------------------------------------------------ BEST NEW 공통 */
+/* -------------------------------------------------------------------------------------------- container 공통 */
 main .container {width: 1600px; margin: 0 auto 120px;}
 main .container .title {font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 30px;}
 main .container .category {width: 100%; margin-bottom: 30px;}
@@ -48,6 +48,7 @@ main .container .category li a.active {font-size: 1.06rem; font-weight: 500; let
 main .container .category li.more {margin: 0; float: right;}
 main .container .category li.more a {width: 24px; padding: 0;}
 main .container .category li.more a img {width: 100%;}
+/* -------------------------------------------------------------------------------------------- container 슬라이더 공통 */
 main .container .item_wrap {position: relative;}
 main .container .item_wrap .best_new_swiper {width: 100%;}
 main .container .item_wrap .best_new_swiper .swiper-wrapper {}
@@ -68,19 +69,22 @@ main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_
 main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .sale_rate {color: #AA1721;}
 main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .like {width: 16px; float: right;}
 main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .like img {width: 100%;}
+/* -------------------------------------------------------------------------------------------- container 슬라이더 버튼 */
 main .container .item_wrap .item_slide_btn {position: absolute; left: 0; top: 172px; z-index: 10; width: 100%;}
 main .container .item_wrap .item_slide_btn button {}
-main .container .item_wrap .item_slide_btn button.prev {}
-main .container .item_wrap .item_slide_btn button.next {position: absolute; right: 0; transform: scaleX(-1);}
-/* ------------------------------------------------------ BEST */
-/* ------------------------------------------------------ NEW */
-/* ------------------------------------------------------ EVENT */
+main .container .item_wrap .item_slide_btn .prev {}
+main .container .item_wrap .item_slide_btn .next {position: absolute; right: 0; transform: scaleX(-1);}
+/* -------------------------------------------------------------------------------------------- BEST */
+/* -------------------------------------------------------------------------------------------- NEW */
+/* -------------------------------------------------------------------------------------------- EVENT */
 main .event_container {width: 100%; max-width: 1600px; display: flex; flex-flow: row nowrap;}
-main .event_container img {width: 100%;}
-/* ------------------------------------------------------ MD's PICK */
+main .event_container a {width: 100%;}
+main .event_container a img {width: 100%;}
+/* -------------------------------------------------------------------------------------------- MD's PICK */
 main .md_container {}
 main .md_container .title {}
 main .md_container .md_contents_wrap {display: flex; justify-content: space-between;}
+/* -------------------------------------------------------------------------------------------- MD (왼) 슬라이더 */
 main .md_container .md_contents_wrap .md_swiper {width: 980px; height: 690px; margin-right: 10px;}
 main .md_container .md_contents_wrap .md_swiper .swiper-wrapper {}
 main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .swiper-slide {width: 100%;}
@@ -96,8 +100,9 @@ main .md_container .md_contents_wrap .md_swiper .md_progress span {}
 main .md_container .md_contents_wrap .md_swiper .md_progress .slide_current {}
 main .md_container .md_contents_wrap .md_swiper .md_slide_btn {}
 main .md_container .md_contents_wrap .md_swiper .md_slide_btn button {}
-main .md_container .md_contents_wrap .md_swiper .md_slide_btn button.prev {}
-main .md_container .md_contents_wrap .md_swiper .md_slide_btn button.next {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn .prev {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn .next {}
+/* -------------------------------------------------------------------------------------------- MD (오) 상품리스트 */
 main .md_container .md_contents_wrap .md_item_list {width: 610px; display: flex; flex-flow: row wrap; justify-content: space-between;}
 main .md_container .md_contents_wrap .md_item_list li {width: 300px; height: 340px;}
 main .md_container .md_contents_wrap .md_item_list li:first-child {margin-bottom: 10px;}
@@ -122,4 +127,86 @@ main .md_container .md_contents_wrap .md_item_list li a .item_info span {color: 
 main .md_container .md_contents_wrap .md_item_list li a .item_info .sale_rate {color: #CA9155;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info button.like {width: 16px; float: right;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info button.like img {width: 100%;}
-/* ------------------------------------------------------ G-MOTION */
+/* -------------------------------------------------------------------------------------------- G-MOTION */
+main .gmotion_container {}
+main .gmotion_container .title {}
+main .gmotion_container .cartegory {}
+main .gmotion_container .cartegory li {}
+main .gmotion_container .cartegory li a {}
+main .gmotion_container .cartegory li a.active {}
+main .gmotion_container .cartegory li.more {}
+main .gmotion_container .cartegory li.more a {}
+main .gmotion_container .cartegory li.more a img {}
+/* -------------------------------------------------------------------------------------------- G 슬라이더 */
+main .gmotion_container .g_swiper {width: 100%; margin-bottom: 30px;}
+main .gmotion_container .g_swiper .swiper-wrapper {}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide {}
+main .gmotion_container .g_swiper .swiper-wrapper .g_slide1 {}
+main .gmotion_container .g_swiper .swiper-wrapper .g_slide2 {}
+main .gmotion_container .g_swiper .swiper-wrapper .g_slide3 {}
+main .gmotion_container .g_swiper .swiper-wrapper .g_slide4 {}
+main .gmotion_container .g_swiper .swiper-wrapper .g_slide5 {}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide p.main_img {width: 360px; height: 450px; margin-bottom: 12px;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide p.main_img img {width: 100%;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list {}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li {
+  margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between;
+}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li:last-child {margin: 0;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item {display: flex; align-items: center;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item p {}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_img {width: 80px; height: 80px; margin-right: 20px;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_img img {width: 100%;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_info {}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_info > * {display: block; font-size: 0.88rem; letter-spacing: -0.02em;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_info span {margin-bottom: 12px;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_info em {font-weight: 500;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li button.like {width: 16px;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li button.like img {width: 100%;}
+/* -------------------------------------------------------------------------------------------- G 슬라이더 프로그레스바 */
+main .gmotion_container .swiper_progress {width: 100%; display: flex; justify-content: space-between; align-items: center;}
+main .gmotion_container .swiper_progress .progress_bar {width: 1500px; height: 2px; background-color: #ddd;}
+main .gmotion_container .swiper_progress .progress_bar .active_bar {width: calc(100% / 2); height: 100%; background-color: #000;}
+main .gmotion_container .swiper_progress .progress_btn {}
+main .gmotion_container .swiper_progress .progress_btn button {width: 20px;}
+main .gmotion_container .swiper_progress .progress_btn button img {width: 100%;}
+main .gmotion_container .swiper_progress .progress_btn .prev {}
+main .gmotion_container .swiper_progress .progress_btn .next {transform: scaleX(-1);}
+main .gmotion_container .swiper_progress .progress_btn .slide_current {}
+/* -------------------------------------------------------------------------------------------- MAGAZINE */
+main .magazine_container {}
+main .magazine_container .title {}
+main .magazine_container .swiper_btn_wrap {position: relative;}
+/* -------------------------------------------------------------------------------------------- MAGAZINE 슬라이더 */
+main .magazine_container .swiper_btn_wrap .mgz_swiper {width: 1200px; height: 500px; overflow: unset; margin: 0 auto;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper {}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide {
+  background-size: cover; background-position: center;
+}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .mgz_slide1 {
+  background-image: url(../images/mgz_001.jpg);
+}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .mgz_slide2 {
+  background-image: url(../images/mgz_002.jpg);
+}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .mgz_slide3 {
+  background-image: url(../images/mgz_003.jpg);
+}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt {position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt > * {color: #fff; text-align: center;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt h3 {margin-bottom: 20px; font-size: 2rem; font-weight: 500; letter-spacing: -0.02em;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt p {font-size: 1.06rem; letter-spacing: -0.02em;}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn {width: 100%; max-width: 1600px; position: absolute; left: 50%; transform: translate(-50%); top: 50%; z-index: 10;}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn button {}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn .prev {}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn .next {float: right; transform: scaleX(-1);}
+/* -------------------------------------------------------------------------------------------- INSTAGRAM */
+main .instragram_container {width: 100%; margin-bottom: 150px;}
+main .instragram_container .title {text-align: center; margin-bottom: 10px;}
+main .instragram_container .insta_id {text-align: center; margin-bottom: 40px;}
+main .instragram_container .insta_id a {color: #999; font-weight: 500; letter-spacing: -0.02em;}
+main .instragram_container .insta_list {display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .instragram_container .insta_list li {width: calc((100% - 40px) / 5);}
+main .instragram_container .insta_list li:first-child {margin-bottom: 10px;}
+main .instragram_container .insta_list li a {display: inline-block; width: 100%;}
+main .instragram_container .insta_list li a img {width: 100%;}

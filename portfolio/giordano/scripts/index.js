@@ -1,6 +1,7 @@
-const mainSlide = document.querySelectorAll('.main_swiper .swiper-slide');
-const mainSlideTotal = document.querySelector('.slide_total');
-const mainSlideCurrent = document.querySelector('.slide_current');
+const mainSlide = document.querySelectorAll('.main_bnr .swiper-slide');
+const mainSlideTotal = document.querySelector('.main_bnr .slide_total');
+const mainSlideCurrent = document.querySelector('.main_bnr .slide_current');
+const gSlideCurrent = document.querySelector('.gmotion_container .slide_current');
 
 mainSlideTotal.textContent = mainSlide.length;
 
@@ -8,8 +9,8 @@ const mainSwiper = new Swiper('.main_swiper',{
   // autoplay:{delay:2500,},
   loop:true,
   navigation:{
-    nextEl:'.progress_btn .next',
-    prevEl:'.progress_btn .prev',
+    nextEl:'.main_bnr .next',
+    prevEl:'.main_bnr .prev',
   },
   on:{
     slideChange:function(){
@@ -44,4 +45,24 @@ const mdSwiper = new Swiper('.md_swiper',{
     nextEl:'.md_slide_btn .next',
     prevEl:'.md_slide_btn .prev',
   }
+});
+
+const gSwiper = new Swiper('.g_swiper',{
+  loop:true,
+  navigation:{
+    nextEl:'.gmotion_container .next',
+    prevEl:'.gmotion_container .prev',
+  },
+  slidesPerView:4,
+  slidesPerGroup:4,
+  spaceBetween:(160 / 3),
+});
+
+const mgzSwiper = new Swiper('.mgz_swiper',{
+  loop:true,
+  // centeredSlides:true,
+  navigation:{
+    nextEl:'.mgz_slide_btn .next',
+    prevEl:'.mgz_slide_btn .prev',
+  },
 });
