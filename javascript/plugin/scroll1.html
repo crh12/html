@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스크롤트리거 -1</title>
+  <!-- 스크롤 트리거 필수 플러그인 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!-- 기본 디자인 연결 -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <style>
+    /* 내부 스타일 위치 */
+    .bg {height: 100vh; background: lightblue;}
+    .target {
+      padding: 50px 0;
+      opacity: 0;
+      transform: translateY(100px);
+      background: yellow;
+    }
+    .target h1 {font-size: 3rem; text-align: center;}
+  </style>
+</head>
+<body>
+  <div class="bg">1</div>
+  <!-- 스크롤 트리거 적용 대상 -->
+  <div class="target">
+    <h1>스크롤 트리거</h1>
+  </div>
+  <div class="bg">3</div>
+  <script>
+    //내부 자바스크립틑 작성 위치 (body태그 마지막 자식 위치)
+    gsap.registerPlugin(ScrollTrigger); //필수연결
+
+    gsap.to('.target',{ //to 트리거 대상
+      scrollTrigger:{
+        trigger:'.target', //애니메이션 트리거 대상
+        markers:true,
+        start:"top 80%",
+        end:"top 10%",
+        toggleActions:"play none restart none",
+        scrub:true,
+      },
+      /* 애니메이션 속성 작성위치 */
+      opacity:1,
+      y:0,
+      backgroundColor:'coral',
+      // duration:2,
+    })
+
+  </script>
+</body>
+</html>

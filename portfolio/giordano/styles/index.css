@@ -2,14 +2,14 @@
 main {}
 main .main_bnr {position: relative; width: 100%; transform:translateY(-80px);}
 /* ------------------------------------------------------ 슬라이더 (공통) */
-main .main_bnr .main_swiper {width: 100%; height: 100vh; margin: 0 auto;}
+main .main_bnr .main_swiper {width: 100%; height: calc(100vh - 32px);}
 main .main_bnr .main_swiper .swiper-wrapper {}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {padding: 80px;}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
 /* ------------------------------------------------------ 슬라이더 (개별) */
 main .main_bnr .main_swiper .swiper-wrapper .slide1 {
   background-image: url(../images/slide_001.jpg);
-  background-size: cover; background-position: top;
+  background-size: cover; background-position: center;
 }
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt {color: #fff; position: absolute; top:45%; left: 15%;}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .bnr_txt h1 {font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em;}
@@ -23,19 +23,103 @@ main .main_bnr .main_swiper .swiper-wrapper .slide3 {
 }
 /* ------------------------------------------------------ 진행바, 버튼 */
 main .main_bnr .swiper_progress {
-  width: 1600px; height: max-content; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px; z-index: 10;
-  padding: 0 37px;
-  display: flex; flex-flow: row nowrap; align-items: center;
+  max-width: 1920px; width: 100%; height: max-content; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px; z-index: 10;
+  padding: 0 197px;
+  display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
 }
-main .main_bnr .swiper_progress .progress_bar {width: calc(100% - 90px); height: 2px; background-color: rgba(255, 255, 255, 0.2); margin-right: 36px;}
+main .main_bnr .swiper_progress .progress_bar {width: calc(100% - 126px); height: 2px; background-color: rgba(255, 255, 255, 0.2);}
 main .main_bnr .swiper_progress .progress_bar .active_bar {width: calc(100% / 3); height: 100%; background-color: #fff;}
-main .main_bnr .swiper_progress .progress_btn {display: flex;}
+main .main_bnr .swiper_progress .progress_btn {width: 90px; display: flex; justify-content: space-between;}
 main .main_bnr .swiper_progress .progress_btn > * {color: #fff;}
-main .main_bnr .swiper_progress .progress_btn button {width: 20px;}
+main .main_bnr .swiper_progress .progress_btn button {width: 20px; height: 20px;}
 main .main_bnr .swiper_progress .progress_btn button img {width: 100%;}
-main .main_bnr .swiper_progress .progress_btn .next {}
-main .main_bnr .swiper_progress .progress_btn .prev {}
-main .main_bnr .swiper_progress .progress_btn .swiper-current-page {}
-main .main_bnr .swiper_progress .progress_btn p {}
-main .main_bnr .swiper_progress .progress_btn .swiper-total-page {}
+main .main_bnr .swiper_progress .progress_btn .next {margin-left: 10px; transform: scaleX(-1);}
+main .main_bnr .swiper_progress .progress_btn .prev {margin-right: 10px;}
+main .main_bnr .swiper_progress .progress_btn span {letter-spacing: -0.02em; margin-top: 1px;}
+main .main_bnr .swiper_progress .progress_btn .slide_current {}
+main .main_bnr .swiper_progress .progress_btn .slide_total {}
+/* ------------------------------------------------------ BEST NEW 공통 */
+main .container {width: 1600px; margin: 0 auto 120px;}
+main .container .title {font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 30px;}
+main .container .category {width: 100%; margin-bottom: 30px;}
+main .container .category li {margin-right: 20px; display: inline-block;}
+main .container .category li a {padding: 0 6px 5px 6px; display: block; font-size: 1.06rem; letter-spacing: -0.02em;}
+main .container .category li a.active {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em; border-bottom: 2.5px solid #000;}
+main .container .category li.more {margin: 0; float: right;}
+main .container .category li.more a {width: 24px; padding: 0;}
+main .container .category li.more a img {width: 100%;}
+main .container .item_wrap {position: relative;}
+main .container .item_wrap .best_new_swiper {width: 100%;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper {}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide {position: relative;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide p {}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .best_num {
+  padding: 3px 5px 5px; position: absolute; left: 0; top: 0;
+  background-color: #1A1A1A; color: #fff; font-weight: 500; letter-spacing: -0.02em;
+}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_slide_img {width: 100%; height: 400px; margin-bottom: 12px;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_slide_img a {width: 100%; display: block;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_slide_img a img {width: 100%;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_name {margin-bottom: 12px;}
+main .container .item_wrap .swibest_new_swiperper .swiper-wrapper .swiper-slide .item_name a {letter-spacing: -0.02em;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like {width: 100%; overflow: hidden;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like em {font-weight: 500; letter-spacing: -0.02em; margin-right: 12px;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like span {color: #999; text-decoration: line-through; letter-spacing: -0.02em; margin-right: 12px;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .sale_rate {color: #AA1721;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .like {width: 16px; float: right;}
+main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like .like img {width: 100%;}
+main .container .item_wrap .item_slide_btn {position: absolute; left: 0; top: 172px; z-index: 10; width: 100%;}
+main .container .item_wrap .item_slide_btn button {}
+main .container .item_wrap .item_slide_btn button.prev {}
+main .container .item_wrap .item_slide_btn button.next {position: absolute; right: 0; transform: scaleX(-1);}
 /* ------------------------------------------------------ BEST */
+/* ------------------------------------------------------ NEW */
+/* ------------------------------------------------------ EVENT */
+main .event_container {width: 100%; max-width: 1600px; display: flex; flex-flow: row nowrap;}
+main .event_container img {width: 100%;}
+/* ------------------------------------------------------ MD's PICK */
+main .md_container {}
+main .md_container .title {}
+main .md_container .md_contents_wrap {display: flex; justify-content: space-between;}
+main .md_container .md_contents_wrap .md_swiper {width: 980px; height: 690px; margin-right: 10px;}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper {}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .swiper-slide {width: 100%;}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .swiper-slide h3 {color: #fff;}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .md_slide1 {
+  background-image: url(../images/md_slide_001.jpg);
+}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .md_slide1 {}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .md_slide2 {}
+main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .md_slide3 {}
+main .md_container .md_contents_wrap .md_swiper .md_progress {}
+main .md_container .md_contents_wrap .md_swiper .md_progress span {}
+main .md_container .md_contents_wrap .md_swiper .md_progress .slide_current {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn button {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn button.prev {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn button.next {}
+main .md_container .md_contents_wrap .md_item_list {width: 610px; display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .md_container .md_contents_wrap .md_item_list li {width: 300px; height: 340px;}
+main .md_container .md_contents_wrap .md_item_list li:first-child {margin-bottom: 10px;}
+main .md_container .md_contents_wrap .md_item_list li a {display: block; width: 100%; height: 100%; position: relative;}
+main .md_container .md_contents_wrap .md_item_list li:nth-child(1) a {
+  background-image: url(../images/md_item_001.jpg);
+  background-size: cover; background-position: top;
+}
+main .md_container .md_contents_wrap .md_item_list li:nth-child(2) a {
+  background-image: url(../images/md_item_002.jpg);
+}
+main .md_container .md_contents_wrap .md_item_list li:nth-child(3) a {
+  background-image: url(../images/md_item_003.jpg);
+}
+main .md_container .md_contents_wrap .md_item_list li:nth-child(4) a {
+  background-image: url(../images/md_item_004.jpg);
+}
+main .md_container .md_contents_wrap .md_item_list li a .item_info {width: 100%; padding: 0 30px 30px; position: absolute; left: 0; bottom: 0;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info .item_name {color: #fff; margin-bottom: 10px;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info em {color: #fff;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info span {color: #999; text-decoration: line-through;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info .sale_rate {color: #CA9155;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info button.like {width: 16px; float: right;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info button.like img {width: 100%;}
+/* ------------------------------------------------------ G-MOTION */
