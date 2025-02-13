@@ -15,9 +15,9 @@ const nav = document.querySelector('nav');
 //     hdBg.style.backgroundColor = '#fff';
 // });
 
-for(let i of gnb){
-    console.log(gnb[])
+// for(let i of gnb){
+//     console.log(gnb[])
     // i.addEventListener('mouseover',()=>{
     //     lnb[].style.display = 'flex';
     // });
-};
+// };

@@ -6,8 +6,10 @@ font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em;
 font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em;
 ### 배너 중제목 32
 font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.4;
-### 상세 제목 28 강조
+### 상세 제목 30 강조
+font-size: 1.88rem; font-weight: 500; letter-spacing: -0.02em;
 ### 상세 제목 28
+font-size: 1.75rem; letter-spacing: -0.02em;
 ### 배너 내용 20
 font-size: 1.25rem; letter-spacing: -0.02em;
 ### 메인 중제목 17
@@ -21,6 +23,7 @@ font-weight: 500; letter-spacing: -0.02em;
 ### 메인 내용 16
 letter-spacing: -0.02em;
 ### 상세 내용 15
+font-size: 0.94rem; letter-spacing: -0.02em;
 ### 상세 내용 14 강조
 font-size: 0.88rem; font-weight: 500; letter-spacing: -0.02em;
 ### 상세 내용 14
