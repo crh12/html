@@ -55,11 +55,11 @@ colorReset();
 sizeReset();
 
 // ------------------------------------------------------------ 이벤트 실행
-
 like.addEventListener('click',(e)=>{
   e.preventDefault();
-  if (like.src = `./images/like_red_24.png`){console.log('참')/* like.src = './images/like_on_red_24.png' */}
-  else {console.log('거짓')/* like.src = './images/like_red_24.png' */};
+  like.classList.toggle('like_active');
+  if (like.classList = 'like_active') {console.log('참')
+  } else (console.log('거짓'));
 });
 
 share.addEventListener('mouseover',()=>{

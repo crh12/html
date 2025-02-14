@@ -27,7 +27,7 @@ main .p_info_container {
 main .p_info_container .name_share_contents {display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;}
 main .p_info_container .name_share_contents .p_name {font-size: 1.75rem; letter-spacing: -0.02em;}
 /* -------------------------------------------------------------------------------------------- 위시공유 */
-main .p_info_container .name_share_contents .like_share_wrap {background-color: coral; position: relative; display: flex;}
+main .p_info_container .name_share_contents .like_share_wrap {position: relative; display: flex;}
 main .p_info_container .name_share_contents .like_share_wrap > a {width: 24px; height: 24px;}
 main .p_info_container .name_share_contents .like_share_wrap > a img {width: 100%;}
 main .p_info_container .name_share_contents .like_share_wrap .like {margin-right: 12px;}
@@ -35,7 +35,7 @@ main .p_info_container .name_share_contents .like_share_wrap .like img {}
 main .p_info_container .name_share_contents .like_share_wrap .like_on img {}
 main .p_info_container .name_share_contents .like_share_wrap .share {}
 main .p_info_container .name_share_contents .like_share_wrap .share img {}
-main .p_info_container .name_share_contents .like_share_wrap .share_open {display: flex; flex-flow: column nowrap; position: absolute; right: 0; top: 0; background-color: blue;}
+main .p_info_container .name_share_contents .like_share_wrap .share_open {display: flex; flex-flow: column nowrap; position: absolute; right: 0; top: 0; background-color: #fff;}
 main .p_info_container .name_share_contents .like_share_wrap .share_open a {width: 24px; margin-bottom: 12px;}
 main .p_info_container .name_share_contents .like_share_wrap .share_open a:last-child {margin: 0;}
 main .p_info_container .name_share_contents .like_share_wrap .share_open a img {width: 100%;}

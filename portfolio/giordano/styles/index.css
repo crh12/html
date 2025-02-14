@@ -3,12 +3,12 @@ header .hd_bg:hover {background-color: #fff;}
 /* -------------------------------------------------------------------------------------------- 메인 */
 main {}
 main .main_bnr {position: relative; width: 100%; transform:translateY(-80px); margin-bottom: 70px;}
-/* -------------------------------------------------------------------------------------------- 슬라이더 (공통) */
+/* -------------------------------------------------------------------------------------------- 메인 슬라이더 (공통) */
 main .main_bnr .main_swiper {width: 100%; height: calc(100vh - 32px);}
 main .main_bnr .main_swiper .swiper-wrapper {}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {padding: 80px;}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .bnr_txt {}
-/* -------------------------------------------------------------------------------------------- 슬라이더 (개별) */
+/* -------------------------------------------------------------------------------------------- 메인 슬라이더 (개별) */
 main .main_bnr .main_swiper .swiper-wrapper .slide1 {
   background-image: url(../images/slide_001.jpg);
   background-size: cover; background-position: center;
@@ -29,25 +29,29 @@ main .main_bnr .swiper_progress {
   padding: 0 197px;
   display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
 }
-main .main_bnr .swiper_progress .progress_bar {width: calc(100% - 126px); height: 2px; background-color: rgba(255, 255, 255, 0.2);}
-main .main_bnr .swiper_progress .progress_bar .active_bar {width: calc(100% / 3); height: 100%; background-color: #fff;}
+main .main_bnr .swiper_progress .progress_bar {position: relative; height: 2px; width: 100%; background-color: rgba(255, 255, 255, 0.2); margin-right: 36px;}
+main .main_bnr .swiper_progress .progress_bar .swiper-pagination-progressbar-fill {background-color: #fff;}
 main .main_bnr .swiper_progress .progress_btn {width: 90px; display: flex; justify-content: space-between;}
 main .main_bnr .swiper_progress .progress_btn > * {color: #fff;}
 main .main_bnr .swiper_progress .progress_btn button {width: 20px; height: 20px;}
 main .main_bnr .swiper_progress .progress_btn button img {width: 100%;}
 main .main_bnr .swiper_progress .progress_btn .next {margin-left: 10px; transform: scaleX(-1);}
 main .main_bnr .swiper_progress .progress_btn .prev {margin-right: 10px;}
-main .main_bnr .swiper_progress .progress_btn span {letter-spacing: -0.02em; margin-top: 1px;}
-main .main_bnr .swiper_progress .progress_btn .slide_current {}
-main .main_bnr .swiper_progress .progress_btn .slide_total {}
+main .main_bnr .swiper_progress .progress_btn span {letter-spacing: -0.02em; margin-top: 1.5px;}
+main .main_bnr .swiper_progress .progress_btn .slide_current {margin-right: 4px;}
+main .main_bnr .swiper_progress .progress_btn .slide_total {margin-left: 3px;}
 /* -------------------------------------------------------------------------------------------- container 공통 */
 main .container {width: 1600px; margin: 0 auto 120px;}
 main .container .title {font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 30px;}
-main .container .category {width: 100%; margin-bottom: 30px;}
-main .container .category li {margin-right: 20px; display: inline-block;}
-main .container .category li a {padding: 0 6px 5px 6px; display: block; font-size: 1.06rem; letter-spacing: -0.02em;}
-main .container .category li a.active {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em; border-bottom: 2.5px solid #000;}
-main .container .category li.more {margin: 0; float: right;}
+main .container .category {width: 100%; margin-bottom: 30px; display: flex; position: relative;}
+main .container .category li {margin-right: 20px;}
+main .container .category li a {
+  padding: 0 6px 5px 6px; display: block; font-size: 1.06rem; letter-spacing: -0.02em; color: #999;
+}
+main .container .category li a.active {
+  font-size: 1.06rem; border-bottom: 2.5px solid #000; color: #1A1A1A;
+}
+main .container .category li.more {margin: 0; position: absolute; top: 0; right: 0;}
 main .container .category li.more a {width: 24px; padding: 0;}
 main .container .category li.more a img {width: 100%;}
 /* -------------------------------------------------------------------------------------------- container 슬라이더 공통 */
@@ -78,7 +82,11 @@ main .container .item_wrap .item_slide_btn .prev {}
 main .container .item_wrap .item_slide_btn .next {transform: scaleX(-1); left: auto; right: 0;}
 main .container .item_wrap .item_slide_btn button img {width: 100%;}
 /* -------------------------------------------------------------------------------------------- BEST */
+main .best_container .item_wrap .best_slide_btn {opacity: 0;}
+main .best_container .item_wrap:hover .best_slide_btn {opacity: 1;}
 /* -------------------------------------------------------------------------------------------- NEW */
+main .new_container .item_wrap .new_slide_btn {opacity: 0;}
+main .new_container .item_wrap:hover .new_slide_btn {opacity: 1;}
 /* -------------------------------------------------------------------------------------------- EVENT */
 main .event_container {width: 100%; max-width: 1600px; display: flex; flex-flow: row nowrap;}
 main .event_container a {width: 100%;}
@@ -106,7 +114,8 @@ main .md_container .md_contents_wrap .md_swiper .swiper-wrapper .md_slide3 {
 main .md_container .md_contents_wrap .md_swiper .swiper-pagination {bottom: 50px;}
 main .md_container .md_contents_wrap .md_swiper .swiper-pagination-bullet {width: 6px; height: 6px; background-color: #fff; opacity: 1; margin: 0 6px;}
 main .md_container .md_contents_wrap .md_swiper .swiper-pagination-bullet-active {background-color: #CA9155;}
-main .md_container .md_contents_wrap .md_swiper .md_slide_btn {}
+main .md_container .md_contents_wrap .md_swiper .md_slide_btn {opacity: 0;}
+main .md_container .md_contents_wrap .md_swiper:hover .md_slide_btn {opacity: 1;}
 main .md_container .md_contents_wrap .md_swiper .md_slide_btn button {position: absolute; left: 0; top: 315px; z-index: 10; width: 40px;}
 main .md_container .md_contents_wrap .md_swiper .md_slide_btn .prev {}
 main .md_container .md_contents_wrap .md_swiper .md_slide_btn .next {transform: scaleX(-1); left: auto; right: 0;}
@@ -116,6 +125,11 @@ main .md_container .md_contents_wrap .md_item_list {width: 610px; display: flex;
 main .md_container .md_contents_wrap .md_item_list li {width: 300px; height: 340px;}
 main .md_container .md_contents_wrap .md_item_list li:first-child {margin-bottom: 10px;}
 main .md_container .md_contents_wrap .md_item_list li a {display: block; width: 100%; height: 100%; position: relative;}
+main .md_container .md_contents_wrap .md_item_list li a:hover::before,
+main .md_container .md_contents_wrap .md_item_list li a:hover .item_info {display: block;}
+main .md_container .md_contents_wrap .md_item_list li a::before {
+  display: none; content: ''; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);
+}
 main .md_container .md_contents_wrap .md_item_list li:nth-child(1) a {
   background-image: url(../images/md_item_001.jpg);
   background-size: cover; background-position: top;
@@ -129,10 +143,10 @@ main .md_container .md_contents_wrap .md_item_list li:nth-child(3) a {
 main .md_container .md_contents_wrap .md_item_list li:nth-child(4) a {
   background-image: url(../images/md_item_004.jpg);
 }
-main .md_container .md_contents_wrap .md_item_list li a .item_info {width: 100%; padding: 0 30px 30px; position: absolute; left: 0; bottom: 0;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info {display: none; width: 100%; padding: 0 30px 30px; position: absolute; left: 0; bottom: 0;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info .item_name {color: #fff; margin-bottom: 10px;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info em {color: #fff;}
-main .md_container .md_contents_wrap .md_item_list li a .item_info span {color: #999; text-decoration: line-through;}
+main .md_container .md_contents_wrap .md_item_list li a .item_info span {color: #999; text-decoration: line-through; margin: 0 10px;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info .sale_rate {color: #CA9155;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info button.like {width: 16px; float: right;}
 main .md_container .md_contents_wrap .md_item_list li a .item_info button.like img {width: 100%;}
@@ -173,9 +187,9 @@ main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li 
 main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li button.like {width: 16px;}
 main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li button.like img {width: 100%;}
 /* -------------------------------------------------------------------------------------------- G 슬라이더 프로그레스바 */
-main .gmotion_container .swiper_progress {width: 100%; display: flex; justify-content: space-between; align-items: center;}
-main .gmotion_container .swiper_progress .progress_bar {width: 1500px; height: 2px; background-color: #ddd;}
-main .gmotion_container .swiper_progress .progress_bar .active_bar {width: calc(100% / 2); height: 100%; background-color: #000;}
+main .gmotion_container .swiper_progress {max-width: 1600px; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+main .gmotion_container .swiper_progress .progress_bar {max-width: 1500px; height: 2px; background-color: #ddd; position: relative;}
+main .gmotion_container .swiper_progress .progress_bar .swiper-pagination-progressbar-fill {background-color: #1A1A1A;}
 main .gmotion_container .swiper_progress .progress_btn {}
 main .gmotion_container .swiper_progress .progress_btn button {width: 20px;}
 main .gmotion_container .swiper_progress .progress_btn button img {width: 100%;}
@@ -206,7 +220,8 @@ main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-sl
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt h3 {margin-bottom: 20px; font-size: 2rem; font-weight: 500; letter-spacing: -0.02em;}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt p {font-size: 1.06rem; letter-spacing: -0.02em;}
 main .magazine_container .swiper_btn_wrap .mgz_slide_btn {width: 100%; max-width: 1600px; position: absolute; left: 50%; transform: translate(-50%); top: 50%; z-index: 10;}
-main .magazine_container .swiper_btn_wrap .mgz_slide_btn button {}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn button {opacity: 0;}
+main .magazine_container .swiper_btn_wrap:hover .mgz_slide_btn button {opacity: 1;}
 main .magazine_container .swiper_btn_wrap .mgz_slide_btn .prev {}
 main .magazine_container .swiper_btn_wrap .mgz_slide_btn .next {float: right; transform: scaleX(-1);}
 /* -------------------------------------------------------------------------------------------- INSTAGRAM */
