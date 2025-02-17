@@ -49,6 +49,11 @@ function sizeReset(){
   for(let i of size) i.classList.remove('size_active');
 };
 
+function likeOn(){
+  if (like.classList = 'like_active') {console.log('참')
+  } else (console.log('거짓'));
+}
+
 // ------------------------------------------------------------ 초기세팅
 shareOpen.style.display = 'none';
 colorReset();
@@ -56,11 +61,11 @@ sizeReset();
 
 // ------------------------------------------------------------ 이벤트 실행
 like.addEventListener('click',(e)=>{
-  e.preventDefault();
   like.classList.toggle('like_active');
-  if (like.classList = 'like_active') {console.log('참')
-  } else (console.log('거짓'));
+  e.preventDefault();
+  console.log(like,like.src, like.classList)
 });
+
 
 share.addEventListener('mouseover',()=>{
   shareOpen.style.display = 'flex';
@@ -100,4 +105,25 @@ numPlus.addEventListener('click',()=>{
   productNum.value = number;
   orderPrice = price * number;
   totalPrice.textContent = `${orderPrice.toLocaleString('ko-kr')}`
+});
+
+// ------------------------------------------------------------ 스와이퍼
+const purSwiper = new Swiper('.pur_swiper', {
+  loop:true,
+  slidesPerView:4,
+  spaceBetween:(40 / 3),
+  navigation:{
+    nextEl:'.pur_swiper .next',
+    prevEl:'.pur_swiper .prev',
+  },
+});
+
+const simSwiper = new Swiper('.sim_swiper', {
+  loop:true,
+  slidesPerView:4,
+  spaceBetween:(40 / 3),
+  navigation:{
+    nextEl:'.sim_swiper .next',
+    prevEl:'.sim_swiper .prev',
+  },
 });

@@ -39,9 +39,8 @@ header .hd_bg nav .gnb > li > a::after {
 }
 header .hd_bg nav .gnb > li > a:hover::after {transform: scaleX(1);}
 header .hd_bg nav .gnb > li > .lnb {
-  display: none;
-  width: 100vw; height: 260px; padding: 30px 0; background-color: #fff;
-  position: absolute; left: 0; top: 100%;
+  display: none;  position: absolute; left: 0; top: 100%;
+  width: 100vw; height: 260px; padding: 30px 0; background-color: #fff; 
   /* display: flex; */ justify-content: center; border: 0.5px solid #000; border-left: 0; border-right: 0;
 }
 header .hd_bg nav .gnb > li > .lnb li {margin-right: 80px;}

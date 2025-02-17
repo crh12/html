@@ -33,3 +33,4 @@ font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em;
 ### footer 12
 font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;
 ### 상세 리뷰 12
+font-size: 0.75rem; letter-spacing: -0.02em;

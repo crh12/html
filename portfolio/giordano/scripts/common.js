@@ -1,23 +1,24 @@
+// ------------------------------------------------------------ 변수
 const gnb = document.querySelectorAll('.gnb > li > a');
-const gnbAfter = document.querySelectorAll('.gnb > li a::after');
 const lnb = document.querySelectorAll('.gnb > li > .lnb');
 
-/* for(let i of gnb){
-    i.addEventListener('mouseover',()=>{
-        gnbAfter[i].style.transform = 'scaleX(1)'
+// ------------------------------------------------------------ 함수
+
+function lnbReset(){
+    for(let i of lnb) i.style.display = 'none';
+    // for(let i of lnb) i.fadeOut(300);
+};
+
+// ------------------------------------------------------------ 헤더
+gnb.forEach((target, index)=>{
+    target.addEventListener('mouseover',()=>{
+        lnbReset();
+        lnb[index].style.display = 'flex';
     });
-} */
+});
 
-const hdBg = document.querySelector('.hd_bg');
-const nav = document.querySelector('nav');
-
-// hdBg.addEventListener('mouseover',()=>{
-//     hdBg.style.backgroundColor = '#fff';
-// });
-
-// for(let i of gnb){
-//     console.log(gnb[])
-    // i.addEventListener('mouseover',()=>{
-    //     lnb[].style.display = 'flex';
-    // });
-// };
+for(let i of lnb){
+    i.addEventListener('mouseleave',()=>{
+        lnbReset();
+    });
+};

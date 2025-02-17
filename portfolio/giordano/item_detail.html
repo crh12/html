@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
   <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
+  <!-- 슬라이더 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/common.css">
@@ -147,7 +150,7 @@
     </div>
     <div class="product">
       <!-- 상품 이미지 (왼쪽) -->
-      <div class="p_slide_container">
+      <div class="slide_container">
         <div class="thum_wrap">
           <a href="#"><img src="./images/thumnail_001.jpg" alt=""></a>
           <a href="#"><img src="./images/thumnail_002.jpg" alt=""></a>
@@ -159,7 +162,7 @@
         <div class="p_img"><img src="./images/productImg_001.jpg" alt=""></div>
       </div>
       <!-- 상품 정보 (오른쪽) -->
-      <div class="p_info_container">
+      <div class="info_container">
         <div class="name_share_contents">
           <h1 class="p_name">울캐시 더블 코트</h1>
           <div class="like_share_wrap">
@@ -179,7 +182,7 @@
         </div>
         <div class="review_contents">
           <a href="#">
-            <span class="star_icon"><img src="./images/review_16.png" alt=""></span>
+            <span class="star_icon"><img src="./images/star_16.png" alt=""></span>
             <span>(4.5)</span>
             <span>리뷰 65건</span>
           </a>
@@ -259,6 +262,543 @@
         <div class="order_btn">
           <button type="button" id="cart_btn">장바구니</button>
           <button type="button" id="buy_btn">바로구매</button>
+        </div>
+      </div>
+      <!-- 상품 정보 (하단) -->
+      <div class="codi_container container">
+        <h3>코디 상품</h3>
+        <ul class="codi_list">
+          <li class="item1">
+            <p class="item_img"><a href="#"><img src="./images/codi_001.jpg" alt=""></a></p>
+            <p class="item_name"><a href="#">메리노울 라운드 니트</a></p>
+            <div class="item_price_like">
+              <em>53,100원</em>
+              <span>89,800원</span>
+              <em class="sale_rate">40%</em>
+              <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+            </div>
+          </li>
+          <li class="item2">
+            <p class="item_img"><a href="#"><img src="./images/codi_002.jpg" alt=""></a></p>
+            <p class="item_name"><a href="#">메리노울 라운드 니트</a></p>
+            <div class="item_price_like">
+              <em>53,100원</em>
+              <span>89,800원</span>
+              <em class="sale_rate">40%</em>
+              <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+            </div>
+          </li>
+          <li class="item3">
+            <p class="item_img"><a href="#"><img src="./images/codi_003.jpg" alt=""></a></p>
+            <p class="item_name"><a href="#">메리노울 라운드 니트</a></p>
+            <div class="item_price_like">
+              <em>53,100원</em>
+              <span>89,800원</span>
+              <em class="sale_rate">40%</em>
+              <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="d_title">
+        <li class="active"><a href="#">상세정보</a></li>
+        <li><a href="#">상품정보고시</a></li>
+        <li><a href="#">리뷰 (65)</a></li>
+        <li><a href="#">추천상품</a></li>
+      </ul>
+      <div class="detail_container container">
+        <ul class="d_content">
+          <li><img src="./images/detail_001.jpg" alt=""><img src="./images/detail_002.jpg" alt=""><img src="./images/detail_003.jpg" alt=""></li>
+          <li><!-- 백그라운드 이미지 --></li>
+        </ul>
+        <button type="button" id="d_more">펼쳐보기<img src="./images/arrowDown_15.png" alt=""></button>
+      </div>
+      <div class="review_container container">
+        <h3>상품 리뷰 <span>65</span></h3>
+        <div class="score_graph_contents">
+          <div class="score_btn">
+            <span><img src="./images/star_28.png" alt="">5.0</span>
+            <a href="#">상품 리뷰 작성하기</a>
+          </div>
+          <ul class="graph">
+            <li class="g_5pt"><p class="num">5.0</p><p class="bar"><span></span></p></li>
+            <li class="g_4pt"><p class="num">4.0</p><p class="bar"><span></span></p></li>
+            <li class="g_3pt"><p class="num">3.0</p><p class="bar"><span></span></p></li>
+            <li class="g_2pt"><p class="num">2.0</p><p class="bar"><span></span></p></li>
+            <li class="g_1pt"><p class="num">1.0</p><p class="bar"><span></span></p></li>
+          </ul>
+        </div>
+        <div class="photo_contents">
+          <div class="title_more">
+            <h4>사진 & 동영상</h4>
+            <a href="#">전체보기<img src="./images/arrow_grey_14.png" alt=""></a>
+          </div>
+          <ul class="review_photo">
+            <li><a href="#"><img src="./images/review_001.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/review_002.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/review_003.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/review_004.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/review_005.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/review_006.jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="user_contents">
+          <div class="r_menu">
+            <div class="align">
+              <a href="#" class="active">추천순</a>
+              <a href="#">최신순</a>
+              <a href="#">별점순</a>
+            </div>
+            <p></p>
+            <ul class="filter">
+              <li><a href="#">별점<img src="./images/arrowDown_grey_12.png" alt=""></a>
+                <div class="f_score">
+                  <label>
+                    <span><img src="./images/score_5.png" alt=""> 아주 좋아요</span>
+                    <input type="checkbox" name="f_score" value="score5">
+                  </label>
+                  <label>
+                    <span><img src="./images/score_4.png" alt=""> 맘에 들어요</span>
+                    <input type="checkbox" name="f_score" value="score4">
+                  </label>
+                  <label>
+                    <span><img src="./images/score_3.png" alt=""> 보통이에요</span>
+                    <input type="checkbox" name="f_score" value="score3">
+                  </label>
+                  <label>
+                    <span><img src="./images/score_2.png" alt=""> 그냥 그래요</span>
+                    <input type="checkbox" name="f_score" value="score2">
+                  </label>
+                  <label>
+                    <span><img src="./images/score_1.png" alt=""> 별로예요</span>
+                    <input type="checkbox" name="f_score" value="score1">
+                  </label>
+                </div>
+              </li>
+              <li><a href="#">키<img src="./images/arrowDown_grey_12.png" alt=""></a>
+                <div class="f_height">
+                  <label>
+                    <span>149 cm 이하</span>
+                    <input type="checkbox" name="f_height" value="h149">
+                  </label>
+                  <label>
+                    <span>150 - 159 cm</span>
+                    <input type="checkbox" name="f_height" value="h150">
+                  </label>
+                  <label>
+                    <span>160 - 169 cm</span>
+                    <input type="checkbox" name="f_height" value="h160">
+                  </label>
+                  <label>
+                    <span>170 - 179 cm</span>
+                    <input type="checkbox" name="f_height" value="h170">
+                  </label>
+                  <label>
+                    <span>180 - 189 cm</span>
+                    <input type="checkbox" name="f_height" value="h180">
+                  </label>
+                  <label>
+                    <span>190 cm 이상</span>
+                    <input type="checkbox" name="f_height" value="h190">
+                  </label>
+                </div>
+              </li>
+              <li><a href="#">몸무게<img src="./images/arrowDown_grey_12.png" alt=""></a>
+                <div class="f_weight">
+                  <label>
+                    <span>49 kg 이하</span>
+                    <input type="checkbox" name="f_weight" value="w49">
+                  </label>
+                  <label>
+                    <span>50 - 59 kg</span>
+                    <input type="checkbox" name="f_weight" value="w50">
+                  </label>
+                  <label>
+                    <span>60 - 59 kg</span>
+                    <input type="checkbox" name="f_weight" value="w60">
+                  </label>
+                  <label>
+                    <span>70 - 59 kg</span>
+                    <input type="checkbox" name="f_weight" value="w70">
+                  </label>
+                  <label>
+                    <span>80 - 59 kg</span>
+                    <input type="checkbox" name="f_weight" value="w80">
+                  </label>
+                  <label>
+                    <span>90 kg 이상</span>
+                    <input type="checkbox" name="f_weight" value="w90">
+                  </label>
+                </div>
+              </li>
+              <li><a href="#">평소 사이즈<img src="./images/arrowDown_grey_12.png" alt=""></a>
+                <div class="f_size">
+                  <label>
+                    <span>XS</span>
+                    <input type="checkbox" name="f_size" value="xs">
+                  </label>
+                  <label>
+                    <span>S</span>
+                    <input type="checkbox" name="f_size" value="s">
+                  </label>
+                  <label>
+                    <span>M</span>
+                    <input type="checkbox" name="f_size" value="m">
+                  </label>
+                  <label>
+                    <span>L</span>
+                    <input type="checkbox" name="f_size" value="l">
+                  </label>
+                  <label>
+                    <span>XL</span>
+                    <input type="checkbox" name="f_size" value="xl">
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <p></p>
+            <div class="r_search">
+              <img src="./images/search_grey_12.png" alt="">
+              <input type="text" id="r_search_input" placeholder="리뷰 키워드 검색">
+            </div>
+          </div>
+          <ul class="r_write_wrap">
+            <li>
+              <div class="user_info">
+                <div class="u_i_left">
+                  <p class="u_img"><img src="./images/user_male.png" alt=""></p>
+                  <div class="u_id_score">
+                    <p class="u_id">gio*****</p>
+                    <p class="u_score">
+                      <img src="./images/score_5.png" alt="">
+                      <span>아주 좋아요!</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="date">2025.02.02</p>
+              </div>
+              <div class="user_write">
+                <div class="contents">
+                  <p class="photo"><img src="./images/review_001.jpg" alt=""></p>
+                  <p>배송도 빠르고 제품도 좋아요 :></p>
+                </div>
+                <div class="buy_info">
+                  <p><span>색상</span> 02 블랙화이트 헤링본</p>
+                  <p><span>구매 사이즈</span> L</p>
+                  <p><span>키</span> 177cm</p>
+                  <p><span>몸무게</span> 69 ~ 71 kg</p>
+                  <p><span>평소 사이즈</span> L</p>
+                </div>
+              </div>
+              <div class="comment">
+                <button type="button" id="helpful">도움돼요 <img src="./images/helpful.png" alt=""></button>
+                <a href="#">댓글 0 <img src="./images/arrowDown_grey_12.png" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="user_info">
+                <div class="u_i_left">
+                  <p class="u_img"><img src="./images/user_female.png" alt=""></p>
+                  <div class="u_id_score">
+                    <p class="u_id">gio*****</p>
+                    <p class="u_score">
+                      <img src="./images/score_5.png" alt="">
+                      <span>아주 좋아요!</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="date">2025.02.02</p>
+              </div>
+              <div class="user_write">
+                <div class="contents">
+                  <p class="photo"><img src="./images/review_002.jpg" alt=""></p>
+                  <p>배송도 빠르고 제품도 좋아요 :></p>
+                </div>
+                <div class="buy_info">
+                  <p><span>색상</span> 02 블랙화이트 헤링본</p>
+                  <p><span>구매 사이즈</span> L</p>
+                  <p><span>키</span> 177cm</p>
+                  <p><span>몸무게</span> 69 ~ 71 kg</p>
+                  <p><span>평소 사이즈</span> L</p>
+                </div>
+              </div>
+              <div class="comment">
+                <button type="button" id="helpful">도움돼요 <img src="./images/helpful.png" alt=""></button>
+                <a href="#">댓글 0 <img src="./images/arrowDown_grey_12.png" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="user_info">
+                <div class="u_i_left">
+                  <p class="u_img"><img src="./images/user_male.png" alt=""></p>
+                  <div class="u_id_score">
+                    <p class="u_id">gio*****</p>
+                    <p class="u_score">
+                      <img src="./images/score_5.png" alt="">
+                      <span>아주 좋아요!</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="date">2025.02.02</p>
+              </div>
+              <div class="user_write">
+                <div class="contents">
+                  <p class="photo"></p>
+                  <p>배송도 빠르고 제품도 좋아요 :></p>
+                </div>
+                <div class="buy_info">
+                  <p><span>색상</span> 02 블랙화이트 헤링본</p>
+                  <p><span>구매 사이즈</span> L</p>
+                  <p><span>키</span> 177cm</p>
+                  <p><span>몸무게</span> 69 ~ 71 kg</p>
+                  <p><span>평소 사이즈</span> L</p>
+                </div>
+              </div>
+              <div class="comment">
+                <button type="button" id="helpful">도움돼요 <img src="./images/helpful.png" alt=""></button>
+                <a href="#">댓글 0 <img src="./images/arrowDown_grey_12.png" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="user_info">
+                <div class="u_i_left">
+                  <p class="u_img"><img src="./images/user_female.png" alt=""></p>
+                  <div class="u_id_score">
+                    <p class="u_id">gio*****</p>
+                    <p class="u_score">
+                      <img src="./images/score_5.png" alt="">
+                      <span>아주 좋아요!</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="date">2025.02.02</p>
+              </div>
+              <div class="user_write">
+                <div class="contents">
+                  <p class="photo"></p>
+                  <p>배송도 빠르고 제품도 좋아요 :></p>
+                </div>
+                <div class="buy_info">
+                  <p><span>색상</span> 02 블랙화이트 헤링본</p>
+                  <p><span>구매 사이즈</span> L</p>
+                  <p><span>키</span> 177cm</p>
+                  <p><span>몸무게</span> 69 ~ 71 kg</p>
+                  <p><span>평소 사이즈</span> L</p>
+                </div>
+              </div>
+              <div class="comment">
+                <button type="button" id="helpful">도움돼요 <img src="./images/helpful.png" alt=""></button>
+                <a href="#">댓글 0 <img src="./images/arrowDown_grey_12.png" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="user_info">
+                <div class="u_i_left">
+                  <p class="u_img"><img src="./images/user_male.png" alt=""></p>
+                  <div class="u_id_score">
+                    <p class="u_id">gio*****</p>
+                    <p class="u_score">
+                      <img src="./images/score_5.png" alt="">
+                      <span>아주 좋아요!</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="date">2025.02.02</p>
+              </div>
+              <div class="user_write">
+                <div class="contents">
+                  <p class="photo"><img src="./images/review_003.jpg" alt=""></p>
+                  <p>배송도 빠르고 제품도 좋아요 :></p>
+                </div>
+                <div class="buy_info">
+                  <p><span>색상</span> 02 블랙화이트 헤링본</p>
+                  <p><span>구매 사이즈</span> L</p>
+                  <p><span>키</span> 177cm</p>
+                  <p><span>몸무게</span> 69 ~ 71 kg</p>
+                  <p><span>평소 사이즈</span> L</p>
+                </div>
+              </div>
+              <div class="comment">
+                <button type="button" id="helpful">도움돼요 <img src="./images/helpful.png" alt=""></button>
+                <a href="#">댓글 0 <img src="./images/arrowDown_grey_12.png" alt=""></a>
+              </div>
+            </li>
+          </ul>
+          <div class="r_page">
+            <a href="#" class="page_prev"><img src="./images/arrow_grey_14.png" alt="이전 페이지"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#" class="page_next"><img src="./images/arrow_grey_14.png" alt="다음 페이지"></a>
+          </div>
+        </div>
+      </div>
+      <div class="purchased_container container">
+        <h3>이 상품을 본 고객이 구매한 상품</h3>
+        <div class="swiper pur_swiper s_p_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pur_slide1">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_001.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">테이퍼드 울트라스트레치 히든밴딩 치노 팬츠</a></p>
+              <div class="item_price_like">
+                <em>53,820원</em>
+                <span>59,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide2">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_002.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">[공용] 프린트 맨투맨</a></p>
+              <div class="item_price_like">
+                <em>26,820원</em>
+                <span>29,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide3">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_003.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">긴팔 티셔츠 (퍼펙트티)</a></p>
+              <div class="item_price_like">
+                <em>11,520원</em>
+                <span>12,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide4">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_004.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">꽤배기 스웨터 7GG</a></p>
+              <div class="item_price_like">
+                <em>34,100원</em>
+                <span>69,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide5">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_001.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">테이퍼드 울트라스트레치 히든밴딩 치노 팬츠</a></p>
+              <div class="item_price_like">
+                <em>53,820원</em>
+                <span>59,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide6">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_002.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">[공용] 프린트 맨투맨</a></p>
+              <div class="item_price_like">
+                <em>26,820원</em>
+                <span>29,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide pur_slide7">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/pur_003.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">긴팔 티셔츠 (퍼펙트티)</a></p>
+              <div class="item_price_like">
+                <em>11,520원</em>
+                <span>12,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+          </div>
+          <div class="slide_btn">
+            <button type="button" class="prev"><img src="./images/item_btn.png" alt="이전 상품 보기"></button>
+            <button type="button" class="next"><img src="./images/item_btn.png" alt="다음 상품 보기"></button>
+          </div>
+        </div>
+      </div>
+      <div class="similar_container container">
+        <h3>이 상품과 비슷한 상품</h3>
+        <div class="swiper sim_swiper s_p_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide sim_slide1">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_001.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">테이퍼드 울트라스트레치 히든밴딩 치노 팬츠</a></p>
+              <div class="item_price_like">
+                <em>53,820원</em>
+                <span>59,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide2">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_002.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">[공용] 프린트 맨투맨</a></p>
+              <div class="item_price_like">
+                <em>26,820원</em>
+                <span>29,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide3">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_003.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">긴팔 티셔츠 (퍼펙트티)</a></p>
+              <div class="item_price_like">
+                <em>11,520원</em>
+                <span>12,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide4">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_004.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">꽤배기 스웨터 7GG</a></p>
+              <div class="item_price_like">
+                <em>34,100원</em>
+                <span>69,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide5">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_001.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">테이퍼드 울트라스트레치 히든밴딩 치노 팬츠</a></p>
+              <div class="item_price_like">
+                <em>53,820원</em>
+                <span>59,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide6">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_002.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">[공용] 프린트 맨투맨</a></p>
+              <div class="item_price_like">
+                <em>26,820원</em>
+                <span>29,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+            <div class="swiper-slide sim_slide7">
+              <p class="item_slide_img"><a href="./item_detail.html"><img src="./images/sim_003.jpg" alt=""></a></p>
+              <p class="item_name"><a href="./item_detail.html">긴팔 티셔츠 (퍼펙트티)</a></p>
+              <div class="item_price_like">
+                <em>11,520원</em>
+                <span>12,800원</span>
+                <em class="sale_rate">10%</em>
+                <button type="button" class="like"><img src="./images/like.png" alt="위시리스트"></button>
+              </div>
+            </div>
+          </div>
+          <div class="slide_btn">
+            <button type="button" class="prev"><img src="./images/item_btn.png" alt="이전 상품 보기"></button>
+            <button type="button" class="next"><img src="./images/item_btn.png" alt="다음 상품 보기"></button>
+          </div>
         </div>
       </div>
     </div>
