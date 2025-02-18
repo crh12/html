@@ -34,13 +34,24 @@ const productNum = document.querySelector('#product_num');
 const numMinus = document.querySelector('#minus');
 const numPlus = document.querySelector('#plus');
 const totalPrice = document.querySelector('.total_contents .total_price');
+const dTitle = document.querySelectorAll('.d_title li');
+const dMore = document.querySelector('#d_more');
+const dContent = document.querySelector('.d_content');
+console.log(dContent.nextElementSibling)
 
 let price = 89100; // 주문금액
 let number = 0; // 주문수량
 let orderPrice = 0; // 총 가격 저장 변수
 
+let boolean = false;
 
+console.log(boolean)
 // ------------------------------------------------------------ 함수
+function likeOn(){
+  if (like.classList = 'like_active') {console.log('참')
+  } else (console.log('거짓'));
+};
+
 function colorReset(){
   for(let i of color) i.classList.remove('color_active');
 };
@@ -49,23 +60,24 @@ function sizeReset(){
   for(let i of size) i.classList.remove('size_active');
 };
 
-function likeOn(){
-  if (like.classList = 'like_active') {console.log('참')
-  } else (console.log('거짓'));
-}
+function dTitleReset(){
+  for(let i of dTitle) i.classList.remove('active');
+};
 
 // ------------------------------------------------------------ 초기세팅
 shareOpen.style.display = 'none';
 colorReset();
 sizeReset();
+productNum.value = 0;
 
 // ------------------------------------------------------------ 이벤트 실행
+// ------------------------------------------------------------ 주문 (오른쪽)
 like.addEventListener('click',(e)=>{
-  like.classList.toggle('like_active');
   e.preventDefault();
-  console.log(like,like.src, like.classList)
+  boolean = !boolean;
+  if(boolean) like.src = './images/like_on_red_24.png';
+  else like.src = './images/like_red_24.png';
 });
-
 
 share.addEventListener('mouseover',()=>{
   shareOpen.style.display = 'flex';
@@ -107,7 +119,24 @@ numPlus.addEventListener('click',()=>{
   totalPrice.textContent = `${orderPrice.toLocaleString('ko-kr')}`
 });
 
-// ------------------------------------------------------------ 스와이퍼
+// ------------------------------------------------------------ 탭메뉴
+for (let i of dTitle){
+  i.addEventListener('click',(e)=>{
+    e.preventDefault();
+    dTitleReset();
+    i.classList.toggle('active');
+    
+  })
+};
+
+// ------------------------------------------------------------ 펼쳐보기
+dMore.addEventListener('click',()=>{
+  boolean = !boolean;
+  if(boolean) dContent.style.height = 'max-content';
+  else dContent.style.height = '1000px';
+});
+
+// ------------------------------------------------------------ 추천상품 (2행)
 const purSwiper = new Swiper('.pur_swiper', {
   loop:true,
   slidesPerView:4,

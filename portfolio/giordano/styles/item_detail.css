@@ -4,7 +4,7 @@ header .hd_bg nav .gnb > li > .lnb {border-top: 0;}
 /* ----------------------------------------------------------------------------- 메인시작 */
 main {max-width: 1600px; margin: 0 auto;}
 /* ----------------------------------------------------------------------------- path */
-main .path {display: flex; align-items: center; width: 100%; padding: 20px 0;}
+main .path {display: flex; align-items: center; width: 100%; padding: 20px 80px;}
 main .path a {color: #999; font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;}
 main .path span {width: 12px; margin: 0 10px;}
 main .path span img {width: 100%;}
@@ -161,6 +161,7 @@ main .info_container .order_btn #cart_btn {margin-right: 10px; color: #1A1A1A;}
 main .info_container .order_btn #buy_btn {color: #fff; background-color: #1A1A1A;}
 /* ----------------------------------------------------------------------------- 하단 공통 */
 main .container {width: 820px; margin-bottom: 100px;}
+main .container:last-child {margin-bottom: 150px;}
 main .container h3 {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em; padding-bottom: 20px;}
 /* ----------------------------------------------------------------------------- 코디 상품 */
 main .product .codi_container {}
@@ -183,7 +184,7 @@ main .product .codi_container .codi_list .item2 {}
 main .product .codi_container .codi_list .item3 {}
 /* ----------------------------------------------------------------------------- 하단 탭 */
 main .product .d_title {
-  width: 100%; display: flex; justify-content: center; position: sticky; top: 80px;
+  width: 820px; display: flex; justify-content: center; position: sticky; top: 79px; z-index: 10;
   background-color: #fff; border-top: 1px solid #000; border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 main .product .d_title li {}
@@ -191,7 +192,7 @@ main .product .d_title li a {
   display: inline-block; width: 200px; padding: 20px 0;
   text-align: center; color: #999; font-size: 0.94rem; letter-spacing: -0.02em;
 }
-main .product .d_title li.active a {color: #000;}
+main .product .d_title li.active a {color: #000; font-weight: 500;}
 /* ----------------------------------------------------------------------------- 상세정보 */
 main .product .detail_container .d_content {width: 100%; height: 1000px; padding: 20px 0; overflow: hidden;}
 main .product .detail_container .d_content li {width: 700px; margin: 0 auto;}
