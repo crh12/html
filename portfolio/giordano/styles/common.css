@@ -25,7 +25,7 @@ header .hd_bg nav .gnb {
   width: max-content; display: flex;  align-items: center;
 }
 header .hd_bg nav .gnb a { /* 공통 a */ display: block; width: 100%;}
-header .hd_bg nav .gnb > li { /* hd대표메뉴 */ margin-right: 38px; }
+header .hd_bg nav .gnb > li { /* hd대표메뉴 */ margin-right: 38px;}
 header .hd_bg nav .gnb > li:last-child {margin: 0;}
 header .hd_bg nav .gnb > li > a,
 header .hd_bg nav .gnb > li > a span,
@@ -35,19 +35,20 @@ header .hd_bg nav .gnb > li > a {line-height: 80px; position: relative;}
 header .hd_bg nav .gnb > li > a span {color: #AA1721;}
 header .hd_bg nav .gnb > li > a::after {
   content: ''; display: block; width: 100%; height: 3px; background-color: #000;
-  position: absolute; bottom: 0; transform: scaleX(0); transition: all 0.3s;
+  position: absolute; bottom: 0; transform: scaleX(0); transition: transform 0.3s;
 }
 header .hd_bg nav .gnb > li > a:hover::after {transform: scaleX(1);}
+/* ------------------------------------------------------ 서브 lnb */
 header .hd_bg nav .gnb > li > .lnb {
-  display: none;  position: absolute; left: 0; top: 100%;
-  width: 100vw; height: 260px; padding: 30px 0; background-color: #fff; 
-  /* display: flex; */ justify-content: center; border: 0.5px solid #000; border-left: 0; border-right: 0;
+  display: none;  position: absolute; left: 0; top: 100%; opacity: 0; transition: opacity 0.3s;
+  width: 100%; height: 260px; padding: 30px 0; background-color: #fff; 
+  justify-content: center; border: 0.5px solid #000; border-left: 0; border-right: 0;
 }
 header .hd_bg nav .gnb > li > .lnb li {margin-right: 80px;}
 header .hd_bg nav .gnb > li > .lnb li:last-child {margin: 0;}
 header .hd_bg nav .gnb > li > .lnb li a {margin-bottom: 16px; letter-spacing: -0.02em;}
 header .hd_bg nav .gnb > li > .lnb li a:first-child {margin-bottom: 20px;}
-/* ------------------------------------------------------ Lnb 메뉴 개별 */
+/* ------------------------------------------------------ lnb 메뉴 개별 */
 header .hd_bg nav .gnb > li:last-child > .lnb {/* magazine */flex-flow: column nowrap; align-items: center;}
 header .hd_bg nav .gnb > li:last-child > .lnb li {margin: 0;}
 /* ------------------------------------------------------ 유저 메뉴 */

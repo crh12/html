@@ -33,13 +33,19 @@ main .info_container .name_share_contents .p_name {font-size: 1.75rem; letter-sp
 main .info_container .name_share_contents .like_share_wrap {position: relative; display: flex;}
 main .info_container .name_share_contents .like_share_wrap > a {width: 24px; height: 24px;}
 main .info_container .name_share_contents .like_share_wrap > a img {width: 100%;}
-main .info_container .name_share_contents .like_share_wrap .like {margin-right: 12px;}
-main .info_container .name_share_contents .like_share_wrap .like img {}
-main .info_container .name_share_contents .like_share_wrap .like_on img {}
+main .info_container .name_share_contents .like_share_wrap .like24 {margin-right: 12px;}
+main .info_container .name_share_contents .like_share_wrap .like24 img {}
 main .info_container .name_share_contents .like_share_wrap .share {}
 main .info_container .name_share_contents .like_share_wrap .share img {}
 main .info_container .name_share_contents .like_share_wrap .share_open {display: flex; flex-flow: column nowrap; position: absolute; right: 0; top: 0; background-color: #fff;}
-main .info_container .name_share_contents .like_share_wrap .share_open a {width: 24px; margin-bottom: 12px;}
+main .info_container .name_share_contents .like_share_wrap .share_open a {
+  width: 24px; height: 24px; margin-bottom: 12px;
+  background-size: cover; background-position: center;
+}
+main .info_container .name_share_contents .like_share_wrap .share_open .share_kakao {background-image: url(../images/share_kakao.png);}
+main .info_container .name_share_contents .like_share_wrap .share_open .share_kakao:hover {background-image: url(../images/share_kakao_on.png);}
+main .info_container .name_share_contents .like_share_wrap .share_open .share_url {background-image: url(../images/share_url.png);}
+main .info_container .name_share_contents .like_share_wrap .share_open .share_url:hover {background-image: url(../images/share_url_on.png);}
 main .info_container .name_share_contents .like_share_wrap .share_open a:last-child {margin: 0;}
 main .info_container .name_share_contents .like_share_wrap .share_open a img {width: 100%;}
 /* ----------------------------------------------------------------------------- 가격 */
@@ -202,7 +208,8 @@ main .product .detail_container .d_content li:nth-child(2) {
   background-image: url(../images/detail_info.jpg);
   background-size: cover; background-position: center;
 }
-main .product .detail_container #d_more {width: 100%; font-size: 0.94rem; letter-spacing: -0.02em; padding: 16px 0; border: 1px solid #000; display: flex; justify-content: center;}
+main .product .detail_container #d_more {width: 100%; padding: 16px 0; border: 1px solid #000; display: flex; justify-content: center;}
+main .product .detail_container #d_more span {font-size: 0.94rem; letter-spacing: -0.02em;}
 main .product .detail_container #d_more img {margin-left: 4px; width: 15px; height: 15px;}
 /* ----------------------------------------------------------------------------- 상품 리뷰 */
 main .product .review_container {}

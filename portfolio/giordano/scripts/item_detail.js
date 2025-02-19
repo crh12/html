@@ -1,31 +1,15 @@
 const thumnail = document.querySelectorAll('.thum_wrap a img');
 const bigImg = document.querySelector('.p_img img');
 
-function bigSrc(num){
-  return bigImg.src = `./images/productImg_00${num}.jpg`;
-};
-
-thumnail[0].addEventListener('mouseover', function(){
-  bigSrc(1);
-})
-thumnail[1].addEventListener('mouseover', function(){
-  bigSrc(2);
-})
-thumnail[2].addEventListener('mouseover', function(){
-  bigSrc(3);
-})
-thumnail[3].addEventListener('mouseover', function(){
-  bigSrc(4);
-})
-thumnail[4].addEventListener('mouseover', function(){
-  bigSrc(5);
-})
-thumnail[5].addEventListener('mouseover', function(){
-  bigSrc(6);
-})
+thumnail.forEach((target, index)=>{
+  target.addEventListener('mouseover', ()=>{
+    bigImg.src = `./images/productImg_00${index + 1}.jpg`;
+  });
+});
 
 // ------------------------------------------------------------ 변수
-const like = document.querySelector('.like img');
+const container = document.querySelectorAll('.container');
+const like24 = document.querySelector('.like24 img');
 const share = document.querySelector('.share');
 const shareOpen = document.querySelector('.share_open');
 const color = document.querySelectorAll('.color dd a');
@@ -34,24 +18,17 @@ const productNum = document.querySelector('#product_num');
 const numMinus = document.querySelector('#minus');
 const numPlus = document.querySelector('#plus');
 const totalPrice = document.querySelector('.total_contents .total_price');
-const dTitle = document.querySelectorAll('.d_title li');
+const like = document.querySelectorAll('main .like img')
+const dMenu = document.querySelectorAll('.d_title li');
 const dMore = document.querySelector('#d_more');
 const dContent = document.querySelector('.d_content');
-console.log(dContent.nextElementSibling)
 
 let price = 89100; // 주문금액
 let number = 0; // 주문수량
 let orderPrice = 0; // 총 가격 저장 변수
 
 let boolean = false;
-
-console.log(boolean)
 // ------------------------------------------------------------ 함수
-function likeOn(){
-  if (like.classList = 'like_active') {console.log('참')
-  } else (console.log('거짓'));
-};
-
 function colorReset(){
   for(let i of color) i.classList.remove('color_active');
 };
@@ -60,8 +37,21 @@ function sizeReset(){
   for(let i of size) i.classList.remove('size_active');
 };
 
-function dTitleReset(){
-  for(let i of dTitle) i.classList.remove('active');
+function dMenuReset(){
+  for(let i of dMenu) i.classList.remove('active');
+};
+
+function dMoreEvent(){
+  boolean = !boolean;
+  if(boolean) {
+    dContent.style.height = 'max-content';
+    dMore.firstElementChild.textContent = '접어두기';
+    dMore.lastElementChild.style.transform = 'scaleY(-1)';
+  } else {
+    dContent.style.height = '1000px';
+    dMore.firstElementChild.textContent = '펼쳐보기';
+    dMore.lastElementChild.style.transform = '';
+  }
 };
 
 // ------------------------------------------------------------ 초기세팅
@@ -72,11 +62,11 @@ productNum.value = 0;
 
 // ------------------------------------------------------------ 이벤트 실행
 // ------------------------------------------------------------ 주문 (오른쪽)
-like.addEventListener('click',(e)=>{
+like24.addEventListener('click',(e)=>{
   e.preventDefault();
   boolean = !boolean;
-  if(boolean) like.src = './images/like_on_red_24.png';
-  else like.src = './images/like_red_24.png';
+  if(boolean) like24.src = './images/like_on_24.png';
+  else like24.src = './images/like_red_24.png';
 });
 
 share.addEventListener('mouseover',()=>{
@@ -120,20 +110,34 @@ numPlus.addEventListener('click',()=>{
 });
 
 // ------------------------------------------------------------ 탭메뉴
-for (let i of dTitle){
-  i.addEventListener('click',(e)=>{
+dMenu.forEach((target, index)=>{
+  target.addEventListener('click',(e)=>{
     e.preventDefault();
-    dTitleReset();
-    i.classList.toggle('active');
-    
+    dMenuReset();
+    target.classList.toggle('active');
+    if (index === 0){
+      window.scrollTo({
+        top: dContent.children[index].offsetTop - 135,
+        behavior: 'smooth'
+      });
+    } else if (index === 1) {
+      dMoreEvent();
+      window.scrollTo({
+        top: dContent.lastElementChild.offsetTop - 135,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: container[index].offsetTop - 135,
+        behavior: 'smooth'
+      });
+    };
   })
-};
+});
 
 // ------------------------------------------------------------ 펼쳐보기
 dMore.addEventListener('click',()=>{
-  boolean = !boolean;
-  if(boolean) dContent.style.height = 'max-content';
-  else dContent.style.height = '1000px';
+  dMoreEvent();
 });
 
 // ------------------------------------------------------------ 추천상품 (2행)

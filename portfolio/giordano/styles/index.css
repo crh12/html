@@ -197,11 +197,11 @@ main .gmotion_container .swiper_progress .progress_btn .prev {}
 main .gmotion_container .swiper_progress .progress_btn .next {transform: scaleX(-1);}
 main .gmotion_container .swiper_progress .progress_btn .slide_current {}
 /* -------------------------------------------------------------------------------------------- MAGAZINE */
-main .magazine_container {}
-main .magazine_container .title {}
+main .magazine_container {width: 100%}
+main .magazine_container .title {width: 100%; max-width: 1600px; margin: 0 auto 30px;}
 main .magazine_container .swiper_btn_wrap {position: relative;}
 /* -------------------------------------------------------------------------------------------- MAGAZINE 슬라이더 */
-main .magazine_container .swiper_btn_wrap .mgz_swiper {width: 1200px; height: 500px; overflow: unset; margin: 0 auto;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper {width: 100%; height: 500px; margin: 0 auto;}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper {}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide {
   background-size: cover; background-position: center;
@@ -219,11 +219,11 @@ main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-sl
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt > * {color: #fff; text-align: center;}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt h3 {margin-bottom: 20px; font-size: 2rem; font-weight: 500; letter-spacing: -0.02em;}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt p {font-size: 1.06rem; letter-spacing: -0.02em;}
-main .magazine_container .swiper_btn_wrap .mgz_slide_btn {width: 100%; max-width: 1600px; position: absolute; left: 50%; transform: translate(-50%); top: 50%; z-index: 10;}
-main .magazine_container .swiper_btn_wrap .mgz_slide_btn button {opacity: 0;}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn {}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn button {opacity: 0; position: absolute; left: 0; top: 210px; z-index: 10;}
 main .magazine_container .swiper_btn_wrap:hover .mgz_slide_btn button {opacity: 1;}
 main .magazine_container .swiper_btn_wrap .mgz_slide_btn .prev {}
-main .magazine_container .swiper_btn_wrap .mgz_slide_btn .next {float: right; transform: scaleX(-1);}
+main .magazine_container .swiper_btn_wrap .mgz_slide_btn .next {transform: scaleX(-1); left: auto; right: 0;}
 /* -------------------------------------------------------------------------------------------- INSTAGRAM */
 main .instragram_container {width: 100%; margin-bottom: 150px;}
 main .instragram_container .title {text-align: center; margin-bottom: 10px;}

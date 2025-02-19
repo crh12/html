@@ -1,12 +1,17 @@
 // ------------------------------------------------------------ 변수
+const hdBg = document.querySelector('.hd_bg');
 const mainSlide = document.querySelectorAll('.main_bnr .swiper-slide');
 const mainSlideTotal = document.querySelector('.main_bnr .slide_total');
 const mainSlideCurrent = document.querySelector('.main_bnr .slide_current');
 const mainBar = document.querySelector('.main_bnr .progress_bar');
-const gSlideCurrent = document.querySelector('.gmotion_container .slide_current');
+const container = document.querySelectorAll('.container');
+const like = document.querySelectorAll('main .like img')
 const bestCate = document.querySelectorAll('.best_container .category li a');
 const newCate = document.querySelectorAll('.new_container .category li a');
 const gCate = document.querySelectorAll('.gmotion_container .category li a');
+const gSlideCurrent = document.querySelector('.gmotion_container .slide_current');
+
+let boolean = false;
 
 mainSlideTotal.textContent = mainSlide.length;
 
@@ -22,6 +27,25 @@ function newReset(){
 function gReset(){
   for(let i of gCate) i.classList.remove('active');
 };
+
+// ------------------------------------------------------------ 전체 공통
+// ------------------------------------------------------------ 오류 ★★★
+for(let i of like){
+  i.addEventListener('click',(e)=>{
+    e.preventDefault();
+    boolean = !boolean;
+    if(boolean) i.src = './images/like_on_16.png';
+    else i.src = './images/like_16.png';
+  });
+};
+
+// ------------------------------------------------------------ 헤더
+console.log(container)
+window.addEventListener('scroll', function(){
+  if(this.window.scrollY > container[0].offsetTop-200) {
+    hdBg.style.backgroundColor = '#fff'
+  } else hdBg.style.backgroundColor = 'transparent';
+});
 
 // ------------------------------------------------------------ main bnr
 const mainSwiper = new Swiper('.main_swiper',{
@@ -122,7 +146,8 @@ for(let i of gCate){
 // ------------------------------------------------------------ magazine
 const mgzSwiper = new Swiper('.mgz_swiper',{
   loop:true,
-  // centeredSlides:true,
+  centeredSlides:true,
+  slidesPerView:1.5,
   navigation:{
     nextEl:'.mgz_slide_btn .next',
     prevEl:'.mgz_slide_btn .prev',
