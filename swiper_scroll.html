@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- design -->
+    <link rel="stylesheet" href="./styles/reset603.css">
+    <style>
+        header {border: 2px solid #000; position: fixed; left: 0; top: 0; width: 100%; height: 50px; z-index: 999;}
+        #main {height: 100vh;}
+        #main .box1 {background-color: lightblue;}
+        #main .box2 {background-color: lightcoral;}
+        #main .box3 {background-color: lightgoldenrodyellow;}
+        #main .box4 {background-color: lightgreen;}
+        #main .swiper-slide {text-align: center; padding-top: 200px;}
+        #main .swiper-slide h1 {font-size: 4rem; font-weight: 700;}
+
+        /* animation */
+        #main .box1 h1 {animation: mainTitle 2s both}
+        #main .box2 h1 {opacity: 0;}
+        #main .box3 h1 {opacity: 0;}
+        #main .box4 h1 {opacity: 0;}
+
+        /* @keyframes */
+        @keyframes mainTitle {
+            0% {opacity: 0; transform: scale(1.5);}
+            100% {opacity: 1; transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <!-- 페이지 전체를 스와이퍼로 구성하기 -->
+    <div class="swiper" id="main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box1"><h1>MAIN TITLE</h1></div>
+            <div class="swiper-slide box2"><h1>SUB TITLE-1</h1></div>
+            <div class="swiper-slide box3"><h1>SUB TITLE-2</h1></div>
+            <div class="swiper-slide box4"><h1>SUB TITLE-3</h1></div>
+        </div>
+    </div>
+    <script>
+
+        const mainSwiper = new Swiper ('#main',{
+            mousewheel:true,
+            direction:'vertical',
+            on:{
+                slideChangeTransitionEnd:function(){
+                    setTimeout(()=> ScrollTrigger.refresh() ,0)
+                }
+            },
+        });
+
+        /* 스크롤트리거 */
+        /* 스크롤트리거는 파일 내용이 길어지는 경우가 많기 때문에 따로 전용 JS 파일을 만들어 관리하는 것을 권장한다 */
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to('.box2 h1',{
+            scrollTrigger:{
+                trigger:'.box2 h1',
+                start:'top 80%',
+                end:'top 20%',
+                markers:true,
+                toggleActions:'play reverse restart reverse', /* 스크롤해서 다시 해당 슬라이드로 진입해도 다시 애니메이션을 재생하게 하는 명령어 */
+            },
+            opacity:1,
+        });
+
+        gsap.to('.box3 h1',{
+            scrollTrigger:{
+                trigger:'.box3 h1',
+                start:'top 80%',
+                end:'top 20%',
+                markers:true,
+                toggleActions:'play reverse restart reverse', /* 스크롤해서 다시 해당 슬라이드로 진입해도 다시 애니메이션을 재생하게 하는 명령어 */
+            },
+            opacity:1,
+        });
+
+        gsap.to('.box4 h1',{
+            scrollTrigger:{
+                trigger:'.box4 h1',
+                start:'top 80%',
+                end:'top 20%',
+                markers:true,
+                toggleActions:'play reverse restart reverse', /* 스크롤해서 다시 해당 슬라이드로 진입해도 다시 애니메이션을 재생하게 하는 명령어 */
+            },
+            opacity:1,
+        });
+
+    </script>
+</body>
+</html>
