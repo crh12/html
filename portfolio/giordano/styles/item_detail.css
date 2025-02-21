@@ -169,6 +169,7 @@ main .info_container .order_btn #buy_btn {color: #fff; background-color: #1A1A1A
 main .container {width: 820px; margin-bottom: 100px;}
 main .container:last-child {margin-bottom: 150px;}
 main .container h3 {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em; padding-bottom: 20px;}
+main .container .swiper .item_name a {white-space : nowrap; overflow : hidden; text-overflow : ellipsis; width: 100%;}
 /* ----------------------------------------------------------------------------- 코디 상품 */
 main .product .codi_container {}
 main .product .codi_container h3 {}
