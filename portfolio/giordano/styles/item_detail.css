@@ -6,7 +6,7 @@ main {max-width: 1600px; margin: 0 auto;}
 /* ----------------------------------------------------------------------------- path */
 main .path {display: flex; align-items: center; width: 100%; padding: 20px 80px;}
 main .path a {color: #999; font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;}
-main .path span {width: 12px; margin: 0 10px;}
+main .path span {width: 12px; height: 12px; margin: 0 10px;}
 main .path span img {width: 100%;}
 /* ----------------------------------------------------------------------------- 상품 시작 */
 main .product {display: flex; justify-content: space-between; flex-flow: row wrap;}
