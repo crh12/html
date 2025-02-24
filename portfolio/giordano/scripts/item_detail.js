@@ -22,6 +22,8 @@ const like = document.querySelectorAll('main .like img')
 const dMenu = document.querySelectorAll('.d_title li');
 const dMore = document.querySelector('#d_more');
 const dContent = document.querySelector('.d_content');
+const reviewAlign = document.querySelectorAll('.review_container .align a');
+const filterPop = document.querySelectorAll('.filter li div');
 
 let price = 89100; // 주문금액
 let number = 0; // 주문수량
@@ -29,16 +31,12 @@ let orderPrice = 0; // 총 가격 저장 변수
 
 let boolean = false;
 // ------------------------------------------------------------ 함수
-function colorReset(){
-  for(let i of color) i.classList.remove('color_active');
+function activeReset(name){
+  for(let i of name) i.classList.remove('active');
 };
 
-function sizeReset(){
-  for(let i of size) i.classList.remove('size_active');
-};
-
-function dMenuReset(){
-  for(let i of dMenu) i.classList.remove('active');
+function displayNone(name){
+  for(let i of name) i.style.display = 'none';
 };
 
 function dMoreEvent(){
@@ -54,11 +52,14 @@ function dMoreEvent(){
   }
 };
 
+
 // ------------------------------------------------------------ 초기세팅
 shareOpen.style.display = 'none';
-colorReset();
-sizeReset();
+activeReset(color);
+activeReset(size);
+totalPrice.textContent = 0;
 productNum.value = 0;
+displayNone(filterPop);
 
 // ------------------------------------------------------------ 이벤트 실행
 // ------------------------------------------------------------ 주문 (오른쪽)
@@ -82,16 +83,16 @@ shareOpen.addEventListener('mouseout',()=>{
 for(let i of color){
   i.addEventListener('click',(e)=>{
     e.preventDefault();
-    colorReset();
-    i.classList.toggle('color_active')
+    activeReset(color);
+    i.classList.toggle('active')
   })
 };
 
 for(let i of size){
   i.addEventListener('click',(e)=>{
     e.preventDefault();
-    sizeReset();
-    i.classList.toggle('size_active')
+    activeReset(size);
+    i.classList.toggle('active')
   })
 };
 
@@ -106,14 +107,14 @@ numPlus.addEventListener('click',()=>{
   number++;
   productNum.value = number;
   orderPrice = price * number;
-  totalPrice.textContent = `${orderPrice.toLocaleString('ko-kr')}`
+  totalPrice.textContent = `${orderPrice.toLocaleString('ko-kr')}`;
 });
 
 // ------------------------------------------------------------ 탭메뉴
 dMenu.forEach((target, index)=>{
   target.addEventListener('click',(e)=>{
     e.preventDefault();
-    dMenuReset();
+    activeReset(dMenu);
     target.classList.toggle('active');
     if (index === 0){
       window.scrollTo({
@@ -139,6 +140,26 @@ dMenu.forEach((target, index)=>{
 dMore.addEventListener('click',()=>{
   dMoreEvent();
 });
+
+// ------------------------------------------------------------ 리뷰
+for (let i of reviewAlign){
+  i.addEventListener('click', (e)=>{
+    e.preventDefault();
+    activeReset(reviewAlign);
+    i.classList.toggle('active');
+  })
+};
+
+for (let i of filterPop){
+  i.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (i.style.display == 'none') {
+      displayNone(filterPop);
+      i.style.display = 'flex';
+    }
+    else i.style.display = 'none';
+  });
+};
 
 // ------------------------------------------------------------ 추천상품 (2행)
 const purSwiper = new Swiper('.pur_swiper', {

@@ -1,0 +1,64 @@
+/* ----------------------------------------------------------------------------- 헤더 */
+header .hd_bg {border-bottom: 1px solid #1A1A1A;}
+header .hd_bg nav .gnb > li > .lnb {border-top: 0;}
+/* ----------------------------------------------------------------------------- 메인시작 */
+main {max-width: 1600px; margin: 0 auto;}
+/* ----------------------------------------------------------------------------- path */
+main .path {display: flex; align-items: center; width: 100%; padding: 20px 80px;}
+main .path a {color: #999; font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;}
+main .path span {width: 12px; margin: 0 10px;}
+main .path span img {width: 100%;}
+/* ----------------------------------------------------------------------------- container 공통 */
+main .container {}
+/* ----------------------------------------------------------------------------- 제목+메뉴 */
+main .title_menu_container {
+    background-color: coral;
+    width: 210px; display: inline-block;
+}
+main .title_menu_container .cate_title {width: 210px; font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em;}
+/* ----------------------------------------------------------------------------- 메뉴 */
+main .title_menu_container .menu {
+    background-color: lightblue;
+    width: 210px; position: sticky; left: 0; top: 80px;
+}
+main .title_menu_container .menu > li {}
+main .title_menu_container .menu > li > a {}
+main .title_menu_container .menu > li .sub_menu {}
+main .title_menu_container .menu > li .sub_menu li {}
+main .title_menu_container .menu > li .sub_menu li a {}
+/* ----------------------------------------------------------------------------- 정렬+상품리스트 */
+main .align_item_container {
+    background-color: lightgreen;
+    width: 1290px; display: inline-block;}
+/* ----------------------------------------------------------------------------- 정렬 */
+main .align_item_container .total_align_wrap {padding: 16px 0 40px; display: flex; align-items: center;}
+main .align_item_container .total_align_wrap .item_num {}
+main .align_item_container .total_align_wrap .item_num span {}
+main .align_item_container .total_align_wrap .align_contents {display: flex; align-items: center;}
+main .align_item_container .total_align_wrap .align_contents .align_list {}
+main .align_item_container .total_align_wrap .align_contents .align_list a {}
+main .align_item_container .total_align_wrap .align_contents .layout {}
+main .align_item_container .total_align_wrap .align_contents .layout a {}
+main .align_item_container .total_align_wrap .align_contents .layout a img {}
+/* ----------------------------------------------------------------------------- 상품리스트 */
+main .align_item_container .item_list {}
+main .align_item_container .item_list li {}
+main .align_item_container .item_list li p {}
+main .align_item_container .item_list li .item_img {}
+main .align_item_container .item_list li .item_img a {}
+main .align_item_container .item_list li .item_img a img {}
+main .align_item_container .item_list li .item_img a .item_color {}
+main .align_item_container .item_list li .item_img a .item_color img {}
+main .align_item_container .item_list li .item_name {}
+main .align_item_container .item_list li .item_name a {}
+main .align_item_container .item_list li .item_price_like {}
+main .align_item_container .item_list li .item_price_like em {}
+main .align_item_container .item_list li .item_price_like span {}
+main .align_item_container .item_list li .item_price_like .sale_rate {}
+main .align_item_container .item_list li .item_price_like .like {}
+/* ----------------------------------------------------------------------------- 페이지 버튼 */
+main .align_item_container .page_container {}
+main .align_item_container .page_container a {}
+main .align_item_container .page_container a img {}
+main .align_item_container .page_container .page_prev {}
+main .align_item_container .page_container .page_next {}
