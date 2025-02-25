@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포폴테스트</title>
+    <!-- 슬라이더 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        /* 슬라이드 */
+        .bnr {width: 1200px; margin: 0 auto;}
+        .bnr .swiper-wrapper {transition-timing-function:linear;} /* 가속도 설정 */
+        .bnr .d {cursor: pointer;}
+        .bnr .d img{width: 100%;}
+        .sns {width: 1200px; margin: 0 auto;}
+        .sns .swiper-wrapper {transition-timing-function:linear;}
+        .sns .s {cursor: pointer;}
+        .sns .s img {width: 100%;}
+        /* 팝업 */
+        .popup_bg {
+            position: fixed; left: 0; top: 0;
+            width: 100%; height: 100vh; z-index: 999;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .popup_bg .scroll_wrap {
+            width: 700px; height: 80vh; overflow: auto;
+            margin: 100px auto;
+        }
+        .popup_bg .scroll_wrap img {width: 100%;}
+    </style>
+</head>
+<body>
+    <h1>design</h1>
+    <div class="swiper bnr">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide d"><img src="./project/design/banner1.jpg" alt=""></div>
+            <div class="swiper-slide d"><img src="./project/design/banner2.jpg" alt=""></div>
+            <div class="swiper-slide d"><img src="./project/design/banner3.jpg" alt=""></div>
+            <div class="swiper-slide d"><img src="./project/design/banner4.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="swiper sns">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide s"><img src="./project/design/sns1.jpg" alt=""></div>
+            <div class="swiper-slide s"><img src="./project/design/sns2.jpg" alt=""></div>
+            <div class="swiper-slide s"><img src="./project/design/sns3.jpg" alt=""></div>
+            <div class="swiper-slide s"><img src="./project/design/sns4.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <!-- 디자인 팝업 -->
+    <div class="popup_bg">
+        <div class="scroll_wrap">
+            <img src="./project/design/detail1.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        //배너디자인
+        const bnrSlide = new Swiper('.bnr', {
+            autoplay:{delay:0,},
+            loop:true,
+            speed:4000,
+            slidesPerView:3,
+        });
+
+        const snsSlide = new Swiper('.sns', {
+            autoplay:{delay:0,},
+            loop:true,
+            speed:6000,
+            slidesPerView:3,
+        });
+
+        // 팝업 출력과 숨기기
+        const popup_bg = document.querySelector('.popup_bg');
+        const bnr = document.querySelectorAll('.bnr img')
+        const sns = document.querySelectorAll('.sns img')
+
+        popup_bg.style.display = 'none'; //팝업 숨기기
+
+        for(let i of bnr){
+            i.addEventListener('click',()=>{
+                popup_bg.style.display = 'block'
+                popup_bg.children[0].children[0].src = i.src;
+                popup_bg.children[0].style.width = '900px';
+                popup_bg.children[0].style.marginTop = '300px';
+                // console.log(i.src)
+                // console.log(popup_bg.children[0].children[0])
+            })
+        };
+
+        for(let i of sns){
+            i.addEventListener('click',()=>{
+                popup_bg.style.display = 'block'
+                popup_bg.children[0].children[0].src = i.src;
+                popup_bg.children[0].style.width = '700px';
+                popup_bg.children[0].style.marginTop = '100px';
+                // console.log(i.src)
+                // console.log(popup_bg.children[0].children[0])
+            })
+        };
+
+        popup_bg.addEventListener('click', ()=>{
+            popup_bg.style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>
