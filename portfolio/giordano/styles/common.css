@@ -33,32 +33,55 @@ header .hd_bg nav .gnb > li > .lnb li a:first-child
 {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em;}
 header .hd_bg nav .gnb > li > a {line-height: 80px; position: relative;}
 header .hd_bg nav .gnb > li > a span {color: #AA1721;}
-header .hd_bg nav .gnb > li > a::after {
+header .hd_bg nav .gnb > li > a::after { /* gnb 아래 선 hover 효과 */
   content: ''; display: block; width: 100%; height: 3px; background-color: #000;
   position: absolute; bottom: 0; transform: scaleX(0); transition: transform 0.3s;
 }
-header .hd_bg nav .gnb > li > a:hover::after {transform: scaleX(1);}
+header .hd_bg nav .gnb > li > a:hover::after {transform: scaleX(1);} /* gnb 아래 선 hover 결과 */
 /* ------------------------------------------------------ 서브 lnb */
 header .hd_bg nav .gnb > li > .lnb {
-  display: none;  position: absolute; left: 0; top: 100%; opacity: 0; transition: opacity 0.3s;
-  width: 100%; height: 260px; padding: 30px 0; background-color: #fff; 
+  display: flex;  position: absolute; left: -2000px; top: 100%;
+  width: 100%; height: 0; height: 260px; padding: 30px 0; background-color: #fff; 
   justify-content: center; border: 0.5px solid #000; border-left: 0; border-right: 0;
 }
 header .hd_bg nav .gnb > li > .lnb li {margin-right: 80px;}
 header .hd_bg nav .gnb > li > .lnb li:last-child {margin: 0;}
-header .hd_bg nav .gnb > li > .lnb li a {margin-bottom: 16px; letter-spacing: -0.02em;}
+header .hd_bg nav .gnb > li > .lnb li a {margin-bottom: 16px; letter-spacing: -0.02em; position: relative;}
+header .hd_bg nav .gnb > li > .lnb li a::after {content: ''; display: block; width: 100%; height: 1.5px; background-color: #000;
+  position: absolute; left: 0; top: calc(100% + 2px); opacity: 0;}
+header .hd_bg nav .gnb > li > .lnb li a:hover::after {opacity: 1;}
 header .hd_bg nav .gnb > li > .lnb li a:first-child {margin-bottom: 20px;}
 /* ------------------------------------------------------ lnb 메뉴 개별 */
 header .hd_bg nav .gnb > li:last-child > .lnb {/* magazine */flex-flow: column nowrap; align-items: center;}
 header .hd_bg nav .gnb > li:last-child > .lnb li {margin: 0;}
 /* ------------------------------------------------------ 유저 메뉴 */
-header .hd_bg .user_nav {
-  display: flex;
-}
+header .hd_bg .user_nav {display: flex; z-index: 10;}
 header .hd_bg .user_nav li {}
+header .hd_bg .user_nav li.m_menu {}
 header .hd_bg .user_nav li:nth-child(2) {margin: 0 20px;}
-header .hd_bg .user_nav li a {}
-header .hd_bg .user_nav li a img {}
+header .hd_bg .user_nav li.m_menu {display: none; margin-left: 20px;}
+header .hd_bg .user_nav li.m_close {display: none; position: absolute; right: 80px; background-color: #fff;}
+header .hd_bg .user_nav li.m_close img {transform: rotate(45deg)}
+header .hd_bg .user_nav li a {width: 22px; height: 22px; display: inline-block;}
+header .hd_bg .user_nav li a img {width: 100%;}
+/* ------------------------------------------------------ 모바일 팝업 메뉴 */
+header .hd_bg .m_gnb {
+  display: none; position: absolute; right: 0; top: 0; width: 300px; height: 100vh;
+  padding: 80px 80px 20px 30px; background-color: #fff;
+}
+header .hd_bg .m_gnb a { /* 공통 a */ display: block; width: 100%;}
+header .hd_bg .m_gnb > li { /* hd대표메뉴 */ border-bottom: 1px solid #000;}
+header .hd_bg .m_gnb > li:last-child {margin: 0;}
+header .hd_bg .m_gnb > li > a,
+header .hd_bg .m_gnb > li > a span {font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em;}
+header .hd_bg .m_gnb > li > a {text-align: right; padding: 20px 10px;}
+header .hd_bg .m_gnb > li > a span {color: #AA1721;}
+/* ------------------------------------------------------ 모바일 팝업 서브 lnb */
+header .hd_bg .m_gnb > li > .lnb {
+  height: 0; overflow: hidden;
+}
+header .hd_bg .m_gnb > li > .lnb li {text-align: right;}
+header .hd_bg .m_gnb > li > .lnb li a {padding: 0 12px 20px; font-weight: 500; font-size: 0.94rem; color: #999;}
 /* ------------------------------------------------------ footer */
 footer {background-color: #f5f5f5; padding: 80px;}
 footer .ft_top {
@@ -72,16 +95,16 @@ footer .ft_top .ft_sns a {display: inline-block; width: 24px; margin-right: 20px
 footer .ft_top .ft_sns a:last-child {margin: 0;}
 footer .ft_top .ft_sns a img {width: 100%;}
 footer .ft_btm {display: flex; justify-content: space-between;}
-footer .ft_btm .ft_btm_left {}
+footer .ft_btm .ft_btm_left {width: max-content;}
 footer .ft_btm .ft_btm_left ul {}
 footer .ft_btm .ft_btm_left .ft_menu {margin-bottom: 24px;}
 footer .ft_btm .ft_btm_left .ft_menu li {display: inline-block; margin-right: 24px;}
 footer .ft_btm .ft_btm_left .ft_menu li:last-child {margin: 0;}
 footer .ft_btm .ft_btm_left .ft_menu li a {}
 footer .ft_btm .ft_btm_left .ft_menu li a, footer .ft_btm .ft_btm_right ul li a {
-  font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em;
+  font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em; text-wrap: nowrap;
 }
-footer .ft_btm .ft_btm_left .ft_info {width: 850px;}
+footer .ft_btm .ft_btm_left .ft_info {width: 100%;}
 footer .ft_btm .ft_btm_left .ft_info span {
   display: inline-block; margin: 0 24px 10px 0;
 }

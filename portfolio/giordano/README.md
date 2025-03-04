@@ -34,3 +34,9 @@ font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em;
 font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;
 ### 상세 리뷰 12
 font-size: 0.75rem; letter-spacing: -0.02em;
+### T 메인 제목 28
+font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em;
+### M 카테제목 24
+font-size: 1.50rem; font-weight: 700; letter-spacing: -0.02em;
+### M 내용 13
+font-size: 0.81rem; letter-spacing: -0.02em;

@@ -1,0 +1,15 @@
+/* 1600px ~ 1201px */
+@media screen and (max-width: 1600px) {
+}
+/* 1200px ~ 1001px Tablet 시작*/
+@media screen and (max-width: 1200px) {
+}
+/* 1000px ~ 769px */
+@media screen and (max-width: 1000px) {
+}
+/* 768px ~ 601px Mobile 시작 */
+@media screen and (max-width: 768px) {
+}
+/* 600px ~ 0px */
+@media screen and (max-width: 600px) {
+}
