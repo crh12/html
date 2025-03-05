@@ -44,7 +44,8 @@ main .main_bnr .swiper_progress .progress_btn .slide_total {margin-left: 3px;}
 /* -------------------------------------------------------------------------------------------- container 공통 */
 main .container {max-width: 1760px; width: 100%; margin: 0 auto 120px; padding: 0 80px;}
 main .container .title {font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 30px;}
-main .container .category {width: 100%; margin-bottom: 30px; display: flex; position: relative;}
+main .container .car_more_container {position: relative;}
+main .container .category {width: 100%; margin-bottom: 30px; display: flex;}
 main .container .category li {margin-right: 20px;}
 main .container .category li a {
   padding: 0 6px 5px 6px; display: block; font-size: 1.06rem; letter-spacing: -0.02em; color: #999;
@@ -52,9 +53,8 @@ main .container .category li a {
 main .container .category li a.active {
   font-size: 1.06rem; border-bottom: 2.5px solid #000; color: #1A1A1A;
 }
-main .container .category li.more {margin: 0; position: absolute; top: 0; right: 0;}
-main .container .category li.more a {width: 24px; padding: 0;}
-main .container .category li.more a img {width: 100%;}
+main .container .car_more_container .more {width: 24px; padding: 0; margin: 0; position: absolute; top: 0; right: 0;}
+main .container .car_more_container .more img {width: 100%;}
 /* -------------------------------------------------------------------------------------------- container 슬라이더 공통 */
 main .container .item_wrap {position: relative;}
 main .container .item_wrap .best_new_swiper {width: 100%;}
@@ -177,7 +177,7 @@ main .gmotion_container .g_swiper .swiper-wrapper .g_slide2 {}
 main .gmotion_container .g_swiper .swiper-wrapper .g_slide3 {}
 main .gmotion_container .g_swiper .swiper-wrapper .g_slide4 {}
 main .gmotion_container .g_swiper .swiper-wrapper .g_slide5 {}
-main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide p.main_img {width: 100%; height: max-content; margin-bottom: 12px;}
+main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide p.main_img {width: 100%; height: max-content; margin-bottom: 12px; position: relative;}
 main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide p.main_img img {width: 100%;}
 main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list {}
 main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li {
@@ -205,11 +205,11 @@ main .gmotion_container .swiper_progress .progress_btn .prev {}
 main .gmotion_container .swiper_progress .progress_btn .next {transform: scaleX(-1);}
 main .gmotion_container .swiper_progress .progress_btn .slide_current {}
 /* -------------------------------------------------------------------------------------------- MAGAZINE */
-main .magazine_container {width: 100%}
-main .magazine_container .title {width: 100%; max-width: 1760px; margin: 0 auto 30px;}
-main .magazine_container .swiper_btn_wrap {position: relative;}
+main .magazine_container {width: 100%; padding: 0;}
+main .magazine_container .title {width: 100%; padding: 0 80px; max-width: 1760px; margin: 0 auto 30px;}
+main .magazine_container .swiper_btn_wrap {position: relative; overflow: hidden;}
 /* -------------------------------------------------------------------------------------------- MAGAZINE 슬라이더 */
-main .magazine_container .swiper_btn_wrap .mgz_swiper {width: 100%; height: 500px; margin: 0 auto;}
+main .magazine_container .swiper_btn_wrap .mgz_swiper {width: 100%; height: 500px; margin: 0 auto; overflow: visible;}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper {}
 main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide {
   background-size: cover; background-position: center;

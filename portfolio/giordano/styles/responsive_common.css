@@ -4,8 +4,10 @@
 }
 /* 1200px ~ 1001px */
 @media screen and (max-width: 1200px) {
+    header .hd_bg h1 a img {width: 80%;}
     header .hd_bg nav .gnb {display: none;}
     header .hd_bg .user_nav li.m_menu {display: block;}
+    footer .ft_top .ft_logo img {width: 80%;}
     footer .ft_btm .ft_btm_left .ft_info {width: 64%;}
 }
 /* 1000px ~ 769px */
@@ -14,11 +16,13 @@
 }
 /* 768px ~ px */
 @media screen and (max-width: 768px) {
+    header .hd_bg h1 a img {width: 70%;}
     header .hd_bg:hover {background-color:initial;}
     header .hd_bg {padding: 0 15px;}
     header .hd_bg .user_nav li.m_close {right: 15px;}
     header .hd_bg .m_gnb {width: 260px; padding: 80px 15px 20px 30px;}
     footer {padding: 30px 15px;}
+    footer .ft_top .ft_logo img {width: 70%;}
     footer .ft_btm {display: block; position: relative;}
     footer .ft_btm .ft_btm_left {width: 100%;}
     footer .ft_btm .ft_btm_left .ft_menu li {display: block; margin: 0 0 12px;}

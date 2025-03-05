@@ -22,9 +22,9 @@
     main .container {margin: 0 auto 100px;}
     main .container .title {font-size: 1.75rem; margin-bottom: 20px;}
     main .container .category {margin-bottom: 20px;}
-    main .container .category li.more a {width: 16px;}
     main .container .category li a {font-size: 1rem;}
     main .container .category li a.active {font-size: 1rem;}
+    main .container .car_more_container .more {width: 16px;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .best_num {font-size: 0.94rem;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_name a {font-size: 0.94rem;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like em {font-size: 0.94rem;}
@@ -64,9 +64,9 @@
     main .container {padding: 0 15px; margin: 0 auto 80px;}
     main .container .title {margin-bottom: 16px; font-size: 1.50rem;}
     main .container .category {margin-bottom: 16px;}
-    main .container .category li.more a {width: 14px;}
     main .container .category li a {font-size: 0.88rem;}
     main .container .category li a.active {font-size: 0.88rem;}
+    main .container .car_more_container .more {width: 14px;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .best_num {font-size: 0.81rem;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_name a {font-size: 0.81rem;}
     main .container .item_wrap .best_new_swiper .swiper-wrapper .swiper-slide .item_price_like em {font-size: 0.81rem;}
@@ -80,6 +80,7 @@
     main .md_container .md_contents_wrap .md_item_list li a::before,
     main .md_container .md_contents_wrap .md_item_list li a .item_info {display: flex;}
     main .md_container .md_contents_wrap .md_item_list li a .item_info {padding: 0 12px 20px;}
+    main .magazine_container .title {padding: 0;}
     main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt h3 {font-size: 1.50rem;}
     main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt p {font-size: 0.81rem;}
     main .instragram_container .insta_id {margin-bottom: 20px;}

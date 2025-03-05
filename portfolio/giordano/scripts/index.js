@@ -220,7 +220,7 @@ const mgzSwiper = new Swiper('.mgz_swiper',{
   },
   breakpoints:{ /* 반응형 */
     1200:{/* 1200 이상 */
-      slidesPerView:1.5,
+      slidesPerView:1.2,
       centeredSlides:true,
     }, 
     0:{slidesPerView:1,}, /* 0 ~ 1199 사이 */

@@ -9,7 +9,7 @@ main .path a {color: #999; font-size: 0.75rem; font-weight: 500; letter-spacing:
 main .path span {width: 12px; height: 12px; margin: 0 10px;}
 main .path span img {width: 100%;}
 /* ----------------------------------------------------------------------------- section */
-main section {width: 100%; max-width: 1760px; margin: 0 auto; padding: 0 80px; display: flex; justify-content: space-between; margin-bottom: 120px; background-color: lightblue;}
+main section {width: 100%; max-width: 1760px; margin: 0 auto; padding: 0 80px; display: flex; justify-content: space-between; margin-bottom: 120px; position: relative;}
 /* ----------------------------------------------------------------------------- container 공통 */
 main section .container {}
 /* ----------------------------------------------------------------------------- 제목+메뉴 */
@@ -53,6 +53,10 @@ main .align_item_container .total_align_wrap .align_contents .align_list a {
     margin-right: 20px; font-size: 0.88rem; letter-spacing: -0.02em; color: #999;
 }
 main .align_item_container .total_align_wrap .align_contents .align_list a.active {font-weight: 500; color: #000;}
+main .align_item_container .total_align_wrap .align_contents .filter {
+    width: 15px; height: 15px; display: none; margin-right: 6px;
+    background-image: url(../images/filter_15.png); background-size: cover; background-position: left top;
+}
 main .align_item_container .total_align_wrap .align_contents .layout {display: flex;}
 main .align_item_container .total_align_wrap .align_contents .layout a {width: 16px; height: 16px;}
 main .align_item_container .total_align_wrap .align_contents .layout a {background-repeat: no-repeat; background-size: cover; background-position: left top;}
@@ -73,9 +77,8 @@ main .align_item_container .item_list li .item_img a {display: inline-block; wid
 main .align_item_container .item_list li .item_img a img {width: 100%;}
 main .align_item_container .item_list li .item_img a .item_color {display: flex; flex-flow: column; position: absolute; top: 0; right: 0;}
 main .align_item_container .item_list li .item_img a .item_color img {width: 16px; height: 24px;}
-main .align_item_container .item_list li .item_name {}
-main .align_item_container .item_list li .item_name {letter-spacing: -0.02em; margin: 12px 0;}
-main .align_item_container .item_list li .item_price_like {display: flex; position: relative;}
+main .align_item_container .item_list li .item_name {letter-spacing: -0.02em; margin: 12px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+main .align_item_container .item_list li .item_price_like {display: flex; position: relative; }
 main .align_item_container .item_list li .item_price_like em {font-weight: 500; letter-spacing: -0.02em;}
 main .align_item_container .item_list li .item_price_like span {margin: 0 12px; letter-spacing: -0.02em; text-decoration: line-through; color: #999;}
 main .align_item_container .item_list li .item_price_like .sale_rate {font-weight: 500; letter-spacing: -0.02em; color: #AA1721;}
@@ -86,7 +89,7 @@ main .align_item_container .page_container {display: flex; align-items: center; 
 main .align_item_container .page_container a {margin-right: 6px;}
 main .align_item_container .page_container a:last-child {margin: 0;}
 main .align_item_container .page_container a img {width: 100%;}
-main .align_item_container .page_container .page_num {padding: 6px 10px 8px;}
+main .align_item_container .page_container .page_num {padding: 6px 10px 8px; font-weight: 500; letter-spacing: -0.02em;}
 main .align_item_container .page_container .page_num.active {background-color: #1A1A1A; color: #fff; border-radius: 6px;}
 main .align_item_container .page_container .page_prev {width: 16px; transform: scaleX(-1);}
 main .align_item_container .page_container .page_next {width: 16px;}

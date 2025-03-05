@@ -53,7 +53,8 @@ mClose.addEventListener('click', (e)=>{
 });
 
 for(let i of mLnb){
-    i.parentElement.addEventListener('click', ()=>{
+    i.parentElement.addEventListener('click', (e)=>{
+        e.preventDefault();
         mLnbReset();
         i.style.height = 'max-content';
     });
