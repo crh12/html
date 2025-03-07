@@ -198,12 +198,12 @@ main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li 
 main .gmotion_container .swiper_progress {max-width: 1760px; width: 100%; display: flex; justify-content: space-between; align-items: center;}
 main .gmotion_container .swiper_progress .progress_bar {width: 100%; height: 2px; background-color: #ddd; position: relative;}
 main .gmotion_container .swiper_progress .progress_bar .swiper-pagination-progressbar-fill {background-color: #1A1A1A;}
-main .gmotion_container .swiper_progress .progress_btn {display: none;}
-main .gmotion_container .swiper_progress .progress_btn button {width: 20px;}
+main .gmotion_container .swiper_progress .progress_btn {display: flex; align-items: center; margin-left: 30px;}
+main .gmotion_container .swiper_progress .progress_btn button {width: 20px; height: 20px;}
 main .gmotion_container .swiper_progress .progress_btn button img {width: 100%;}
 main .gmotion_container .swiper_progress .progress_btn .prev {}
-main .gmotion_container .swiper_progress .progress_btn .next {transform: scaleX(-1);}
-main .gmotion_container .swiper_progress .progress_btn .slide_current {}
+main .gmotion_container .swiper_progress .progress_btn .next {transform: scaleX(-1) translateX(2px);}
+main .gmotion_container .swiper_progress .progress_btn .slide_current {margin: 0 10px; transform: translateY(-1.5px);}
 /* -------------------------------------------------------------------------------------------- MAGAZINE */
 main .magazine_container {width: 100%; padding: 0;}
 main .magazine_container .title {width: 100%; padding: 0 80px; max-width: 1760px; margin: 0 auto 30px;}

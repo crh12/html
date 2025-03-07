@@ -2,14 +2,14 @@
 header .hd_bg {border-bottom: 1px solid #1A1A1A;}
 header .hd_bg nav .gnb > li > .lnb {border-top: 0;}
 /* ----------------------------------------------------------------------------- 메인시작 */
-main {width: 100%; margin: 0 auto; position: relative;}
+main {width: 100%; max-width: 1760px; margin: 0 auto; position: relative; padding: 0 80px;}
 /* ----------------------------------------------------------------------------- path */
-main .path {display: flex; align-items: center; width: 100%; max-width: 1760px; padding: 20px 80px; margin: 0 auto;}
+main .path {display: flex; align-items: center; width: 100%; padding: 20px 0; margin: 0 auto;}
 main .path a {color: #999; font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;}
 main .path span {width: 12px; height: 12px; margin: 0 10px;}
 main .path span img {width: 100%;}
 /* ----------------------------------------------------------------------------- section */
-main section {width: 100%; max-width: 1760px; margin: 0 auto; padding: 0 80px; display: flex; justify-content: space-between; margin-bottom: 120px; position: relative;}
+main section {width: 100%; margin: 0 auto; display: flex; justify-content: space-between; margin-bottom: 120px; position: relative;}
 /* ----------------------------------------------------------------------------- container 공통 */
 main section .container {}
 /* ----------------------------------------------------------------------------- 제목+메뉴 */
@@ -68,6 +68,24 @@ main .align_item_container .total_align_wrap .align_contents .layout a:nth-of-ty
     background: url(../images/layout_02_on.png);
 }
 main .align_item_container .total_align_wrap .align_contents .layout a.active {}
+/* ----------------------------------------------------------------------------- 모바일메뉴 */
+main .align_item_container .m_menu {display: none; position: relative; padding: 6px 0;}
+main .align_item_container .m_menu > li {margin-right: 12px; height: max-content;}
+main .align_item_container .m_menu > li:last-child {margin: 0;}
+main .align_item_container .m_menu > li > a {/* 대분류 메뉴 */
+    display: inline-block; padding: 0 4px 6px; 
+    font-size: 1rem; font-weight: 500; letter-spacing: -0.02em; color: #999;
+}
+main .align_item_container .m_menu > li > a.active {color: #000; text-decoration: underline 2px; text-underline-offset: 4px;}
+main .align_item_container .m_menu > li > .sub_menu {
+    position: absolute; left: 0; top: 100%; display: flex; padding: 6px 4px;
+}
+main .align_item_container .m_menu > li > .sub_menu li {margin-right: 12px;}
+main .align_item_container .m_menu > li > .sub_menu li:last-child {margin: 0;}
+main .align_item_container .m_menu > li > .sub_menu li a {/* 소분류 메뉴 */
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02em; color: #999;
+}
+main .align_item_container .m_menu > li > .sub_menu li a.active {color: #000;}
 /* ----------------------------------------------------------------------------- 상품리스트 */
 main .align_item_container .item_list {display: flex; flex-flow: row wrap; justify-content: space-between; margin-bottom: 40px; width: 100% ;/* li 하단margin80 + 40 = 120 */}
 main .align_item_container .item_list li {width: calc((100% - 90px) / 4); display: flex; flex-flow: column; margin-bottom: 80px;}

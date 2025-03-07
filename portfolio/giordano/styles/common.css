@@ -12,7 +12,7 @@ body {min-width: 430px;}
 .hd_brands li:nth-child(2) a img {padding-top: 11.5px;}
 .hd_brands li:nth-child(3) a img {padding-top: 9px;}
 /* ------------------------------------------------------ 헤더 */
-header {position: sticky; left: 0; top: 0; z-index: 999; width: 100%;}
+header {position: sticky; left: 0; top: 0; z-index: 998; width: 100%;}
 header .hd_bg {
   width: 100%; height: 80px; padding: 0 80px; background-color: #fff;
   display: flex; justify-content: space-between; align-items: center; transition: background-color 0.3s;
@@ -48,9 +48,7 @@ header .hd_bg nav .gnb > li > .lnb {
 header .hd_bg nav .gnb > li > .lnb li {margin-right: 80px;}
 header .hd_bg nav .gnb > li > .lnb li:last-child {margin: 0;}
 header .hd_bg nav .gnb > li > .lnb li a {margin-bottom: 16px; letter-spacing: -0.02em; position: relative;}
-header .hd_bg nav .gnb > li > .lnb li a::after {content: ''; display: block; width: 100%; height: 1.5px; background-color: #000;
-  position: absolute; left: 0; top: calc(100% + 2px); opacity: 0;}
-header .hd_bg nav .gnb > li > .lnb li a:hover::after {opacity: 1;}
+header .hd_bg nav .gnb > li > .lnb li a:hover {text-decoration: underline; text-underline-offset: 4px;}
 header .hd_bg nav .gnb > li > .lnb li a:first-child {margin-bottom: 20px;}
 /* ------------------------------------------------------ lnb 메뉴 개별 */
 header .hd_bg nav .gnb > li:last-child > .lnb {/* magazine */flex-flow: column nowrap; align-items: center;}

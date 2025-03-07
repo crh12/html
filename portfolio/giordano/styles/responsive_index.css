@@ -7,7 +7,6 @@
     main .md_container .md_contents_wrap .md_item_list li a .item_info span {font-size: 0.94rem;}
     main .md_container .md_contents_wrap .md_item_list li button.like {width: 15px; height: 15px; right: 20px;}
     main .gmotion_container .g_swiper {margin-bottom: 20px;}
-    main .gmotion_container .swiper_progress .progress_btn {display: none;}
     main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li .g_item .item_img {width: 70px; height: 70px; 
         margin-right: 16px;}
     main .gmotion_container .g_swiper .swiper-wrapper .swiper-slide .g_item_list li button.like {width: 15px;}
@@ -59,6 +58,7 @@
 }
 /* 768px ~ px */
 @media screen and (max-width: 768px) {
+    header .hd_bg:hover {background-color:initial;}
     main .main_bnr {margin-bottom: 20px;}
     main .main_bnr .swiper_progress {padding: 0 15px;}
     main .container {padding: 0 15px; margin: 0 auto 80px;}
@@ -80,6 +80,7 @@
     main .md_container .md_contents_wrap .md_item_list li a::before,
     main .md_container .md_contents_wrap .md_item_list li a .item_info {display: flex;}
     main .md_container .md_contents_wrap .md_item_list li a .item_info {padding: 0 12px 20px;}
+    main .gmotion_container .swiper_progress .progress_btn {display: none;}
     main .magazine_container .title {padding: 0;}
     main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt h3 {font-size: 1.50rem;}
     main .magazine_container .swiper_btn_wrap .mgz_swiper .swiper-wrapper .swiper-slide .txt p {font-size: 0.81rem;}

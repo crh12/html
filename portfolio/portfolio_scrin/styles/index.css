@@ -1,4 +1,4 @@
-body {background-color: #F5F1E9; width: 1920px;}/* 반응형 제작 시 width 삭제 */
+body {min-width: 1600px; margin: 0 auto;}/* 반응형 제작 시 width 삭제 */
 /* ======================================================= 헤더 */
 header {padding: 0 80px;}
 header .hd_bg {
@@ -23,10 +23,7 @@ header .hd_bg p {
 aside {}
 aside .round_txt_wrap {
   width: 265px; height: 260px;
-  /* position: fixed; right: -300px; top: -130px; z-index: 10;
-  transition: right 0.4s; */
   position: fixed; right: -117px; top: calc(100% - 130px); z-index: 10;
-  /* transition: right 0.4s ease-in-out; */
   transition: top 0.4s ease-in-out;
 }
 aside .round_txt_wrap img {width: 100%;}
@@ -55,7 +52,7 @@ main .m_swiper .swiper-wrapper #profile {}
 main .m_swiper .swiper-wrapper #profile .slide_container {display: flex; flex-flow: column nowrap; justify-content: space-between;}
 main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents {padding: 0 0 50px 100px; display: flex; align-items: center; margin-top: 82px;}
 main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .photo {width: 140px; height: 140px; margin-right: 40px; border-radius: 12px; overflow: hidden;}
-main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .photo img {width: 100%;}
+main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .photo img {width: 110%; transform: translateX(-6px) translateY(-13px);}
 main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .name {margin-right: 104px;}
 main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .name p {font-weight: 500;}
 main .m_swiper .swiper-wrapper #profile .slide_container .profile_contents .name .kr_name {font-size: 3.13rem; margin-bottom: 10px; font-family: SCoreDream;}
@@ -129,7 +126,7 @@ main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents dl dd:last-
 /* ======================================================= uiux / info_top / ul 개별 */
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .title_wrap {margin-bottom: 50px;}
-main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .title_wrap dt {margin-bottom: 24px;}
+main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .title_wrap dt {margin-bottom: 20px;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .title_wrap dd {font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .title_wrap dd:nth-of-type(1) {margin-bottom: 12px;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .concept_wrap {}
@@ -139,14 +136,15 @@ main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .tool_wrap {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .tool_wrap dt {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .tool_wrap dd {}
-main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap {/* 기간, 기여도 공통 */}
+main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap {/* 기간, 기여도 공통 */ margin-bottom: 12px;}
+main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap dd:last-child {margin-bottom: 50px;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap > * {display: inline-block; margin: 0;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap dt {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .pe_con_wrap dd {}
-main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .period_wrap {margin-bottom: 12px;}
+main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .period_wrap {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .period_wrap dt {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .period_wrap dd {}
-main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .contribution_wrap {margin-bottom: 50px;}
+main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .contribution_wrap {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .contribution_wrap dt {}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_top .contribution_wrap dd {}
 /* ======================================================= uiux / info_top / 버튼 */
@@ -178,13 +176,13 @@ main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_botto
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_bottom .btm_right .color_wrap dd .color_dot {width: 20px; height: 20px; border-radius: 50%; margin-right: 10px; background-color: rgba(0, 0, 0, 0.5);}
 main .m_swiper .swiper-wrapper .uiux .slide_container .info_contents .info_bottom .btm_right .color_wrap dd .color_name {line-height: 20px;}
 /* ======================================================= uiux / mockup 공통 */
-main .m_swiper .swiper-wrapper .uiux .slide_container .mockup_contents {width: 67.5%; height: 100%; position: relative;}
+main .m_swiper .swiper-wrapper .uiux .slide_container .mockup_contents {width: 67.5%; height: 100%; position: relative; right: -20px;}
 main .m_swiper .swiper-wrapper .uiux .slide_container .mockup_contents::after {
   content: ''; display: block; position: absolute; left: 0; top: 0; z-index: -10;
-  width: calc(100% + 80px); height: 100%;
+  width: calc(100% + 80px); height: 100%; opacity: 0.5;
   background-color: rgba(0, 0, 0, 0.5); border-radius: 20px;
 }
-main .m_swiper .swiper-wrapper .uiux .mockup_contents img {height: 100%; transform: translateX(60px);}
+main .m_swiper .swiper-wrapper .uiux .mockup_contents img {height: 100%; transform: scale(0.95);}
 /* ======================================================= uiux 개별 시작 */
 /* ======================================================= uiux 01 */
 main .m_swiper .swiper-wrapper #uiux_01 {}

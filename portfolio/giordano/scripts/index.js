@@ -178,6 +178,11 @@ const gSwiper = new Swiper('.g_swiper',{
     el: '.gmotion_container .progress_bar',
     type: 'progressbar',
   },
+  on:{
+    slideChange:function(){
+      gSlideCurrent.textContent = this.realIndex+1;
+    }
+  },
   breakpoints:{ /* 반응형 */
     1600:{/* 1600 이상 사이 너비 50px */
       spaceBetween:50,

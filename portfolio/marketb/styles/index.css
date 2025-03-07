@@ -1,0 +1,214 @@
+/* ==================================================================== 메인 시작 */
+main {}
+/* ==================================================================== 메인 배너 */
+main .main_bnr {}
+/* ==================================================================== 메인 배너 스와이퍼 + 공통 */
+main .main_bnr .main_swiper {width: 100%; height: 700px;}
+main .main_bnr .main_swiper .swiper-wrapper {}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .contents {}
+/* ==================================================================== 메인 배너 스와이퍼 + 개별 */
+main .main_bnr .main_swiper .swiper-wrapper .slide1 {}
+main .main_bnr .main_swiper .swiper-wrapper .slide2 {}
+main .main_bnr .main_swiper .swiper-wrapper .slide3 {}
+main .main_bnr .main_swiper .swiper-wrapper .slide4 {}
+/* ==================================================================== 메인 배너 제어 */
+main .main_bnr .progress_btn {}
+main .main_bnr .progress_btn .swiper_current {}
+main .main_bnr .progress_btn .swiper-pagination {}
+main .main_bnr .progress_btn .swiper_total {}
+main .main_bnr .progress_btn button {}
+main .main_bnr .progress_btn .prev {}
+main .main_bnr .progress_btn .next {}
+/* ==================================================================== container 공통 */
+main .container {}
+main .container h1 {}
+/* ==================================================================== RANK100 시작 */
+/* ==================================================================== RANK100 (왼) + 공통 */
+main .rank100_ctnr {}
+main .rank100_ctnr .rank_contents {}
+main .rank100_ctnr .rank_contents h1 {}
+main .rank100_ctnr .rank_contents .rank100 {}
+main .rank100_ctnr .rank_contents .rank100 a {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l em {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l span {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r span {}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r img {}
+main .rank100_ctnr .rank_contents .rank100 a .img_wrap {}
+main .rank100_ctnr .rank_contents .rank100 a .img_wrap img {}
+/* ==================================================================== RANK100 (왼) 개별 */
+main .rank100_ctnr .rank_contents .rank100 a.rank1 {}
+main .rank100_ctnr .rank_contents .rank100 a.rank2 {}
+main .rank100_ctnr .rank_contents .rank100 a.rank3 {}
+main .rank100_ctnr .rank_contents .rank100 a.rank4 {}
+main .rank100_ctnr .rank_contents .rank100 a.rank5 {}
+/* ==================================================================== RANK100 (오) */
+/* ==================================================================== 대표상품 */
+main .rank100_ctnr .itm_contents {}
+main .rank100_ctnr .itm_contents .itm_l {}
+main .rank100_ctnr .itm_contents .itm_l .like {}
+main .rank100_ctnr .itm_contents .itm_l .like img {}
+main .rank100_ctnr .itm_contents .itm_l .item_name {}
+main .rank100_ctnr .itm_contents .itm_l .price_wrap {}
+main .rank100_ctnr .itm_contents .itm_l .price_wrap em {}
+main .rank100_ctnr .itm_contents .itm_l .price_wrap strong {}
+main .rank100_ctnr .itm_contents .itm_l .price_wrap span {}
+/* ==================================================================== 보조상품 + 공통 */
+main .rank100_ctnr .itm_contents .itm_r {}
+main .rank100_ctnr .itm_contents .itm_r li {}
+main .rank100_ctnr .itm_contents .itm_r li .like {}
+main .rank100_ctnr .itm_contents .itm_r li .like img {}
+main .rank100_ctnr .itm_contents .itm_r li .itm_name {}
+main .rank100_ctnr .itm_contents .itm_r li .price_wrap {}
+main .rank100_ctnr .itm_contents .itm_r li .price_wrap em {}
+main .rank100_ctnr .itm_contents .itm_r li .price_wrap strong {}
+main .rank100_ctnr .itm_contents .itm_r li .price_wrap span {}
+/* ==================================================================== 보조상품 개별 */
+main .rank100_ctnr .itm_contents .itm_r li:nth-of-type(1) {}
+main .rank100_ctnr .itm_contents .itm_r li:nth-of-type(2) {}
+main .rank100_ctnr .itm_contents .itm_r li:nth-of-type(3) {}
+main .rank100_ctnr .itm_contents .itm_r li:nth-of-type(4) {}
+main .rank100_ctnr .itm_contents .itm_r li:nth-of-type(5) {}
+/* ==================================================================== 보조상품 버튼박스 */
+main .rank100_ctnr .itm_contents .itm_r li.btn_box {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a .txt {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a .txt p {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a .txt span {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a > p {}
+main .rank100_ctnr .itm_contents .itm_r li.btn_box a > p img {}
+/* ==================================================================== 이벤트 */
+main .event1_ctnr {}
+main .event1_ctnr .event1_swiper {}
+main .event1_ctnr .event1_swiper .swiper-wrapper {}
+main .event1_ctnr .event1_swiper .swiper-wrapper .swiper-slide {}
+main .event1_ctnr .event1_swiper .swiper-wrapper .swiper-slide img {}
+main .event1_ctnr .event1_swiper .swiper-wrapper .slide1 {}
+main .event1_ctnr .event1_swiper .swiper-wrapper .slide2 {}
+main .event1_ctnr .event1_swiper .swiper-wrapper .slide3 {}
+main .event1_ctnr .swiper_btn .prev {}
+main .event1_ctnr .swiper_btn .next {}
+/* ==================================================================== MD */
+main .md_ctnr {}
+main .md_ctnr h1 {}
+main .md_ctnr .cate_more {}
+main .md_ctnr .cate_more .category {}
+main .md_ctnr .cate_more .category a {}
+main .md_ctnr .cate_more .category a.active {}
+main .md_ctnr .cate_more .view_more {}
+main .md_ctnr .cate_more .view_more img {}
+main .md_ctnr .itm_bnr_contents {}
+main .md_ctnr .itm_bnr_contents .itm_wrap {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li  a {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li a .itm_img {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li a .itm_img img {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li a .color_wrap {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li a .color_wrap span {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap .tags {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap .tags .delivery {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap .tags .best {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap .tags .present {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .tag_like_wrap .like {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info p {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .price_wrap {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .price_wrap em {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .price_wrap strong {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .price_wrap span {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .more_info {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .more_info .more_info {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .more_info .selling_num {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .more_info .selling_num img {}
+main .md_ctnr .itm_bnr_contents .itm_wrap li .itm_info .more_info .selling_num span {}
+main .md_ctnr .itm_bnr_contents .md_bnr_wrap {}
+main .md_ctnr .itm_bnr_contents .md_bnr_wrap p {}
+main .md_ctnr .itm_bnr_contents .md_bnr_wrap p em {}
+/* ==================================================================== NEW */
+main .new_ctnr {}
+main .new_ctnr .title_more {}
+main .new_ctnr .title_more h1 {}
+main .new_ctnr .title_more .view_more {}
+main .new_ctnr .title_more .view_more img {}
+main .new_ctnr .itm_wrap {}
+main .new_ctnr .itm_wrap li {}
+main .new_ctnr .itm_wrap li a {}
+main .new_ctnr .itm_wrap li a .itm_img {}
+main .new_ctnr .itm_wrap li a .itm_img img {}
+main .new_ctnr .itm_wrap li a .color_wrap {}
+main .new_ctnr .itm_wrap li a .color_wrap span {}
+main .new_ctnr .itm_wrap li .itm_info {}
+main .new_ctnr .itm_wrap li .itm_info .tag_like_wrap {}
+main .new_ctnr .itm_wrap li .itm_info .tag_like_wrap .tags {}
+main .new_ctnr .itm_wrap li .itm_info .tag_like_wrap .tags .delivery {}
+main .new_ctnr .itm_wrap li .itm_info .tag_like_wrap .tags .best {}
+main .new_ctnr .itm_wrap li .itm_info .like {}
+main .new_ctnr .itm_wrap li .itm_info p {}
+main .new_ctnr .itm_wrap li .itm_info .price_wrap {}
+main .new_ctnr .itm_wrap li .itm_info .price_wrap strong {}
+main .new_ctnr .itm_wrap li .itm_info .price_wrap span {}
+main .new_ctnr .itm_wrap li .itm_info .more_info {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .selling_num {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .selling_num img {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .selling_num span {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .review_num {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .review_num img {}
+main .new_ctnr .itm_wrap li .itm_info .more_info .review_num span {}
+/* ==================================================================== EVENT2 */
+main .event2_ctnr {}
+main .event2_ctnr img {}
+/* ==================================================================== ROOM */
+main .room_ctnr {}
+main .room_ctnr .title_more {}
+main .room_ctnr .title_more h1 {}
+main .room_ctnr .title_more .view_more {}
+main .room_ctnr .title_more .view_more img {}
+main .room_ctnr .room_swiper {}
+main .room_ctnr .room_swiper .swiper-wrapper {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .room_more_btn {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .room_more_btn img {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt dl {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt dd {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt dt {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt .hashtag {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_txt .hashtag li {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .like {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .like img {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .itm_name {}
+main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .itm_price {}
+main .room_ctnr .room_swiper .swiper-wrapper .slide1 {}
+main .room_ctnr .room_swiper .swiper-wrapper .slide2 {}
+main .room_ctnr .room_swiper .swiper-wrapper .slide3 {}
+/* ==================================================================== OURB */
+main .ourb_ctnr {}
+main .ourb_ctnr h1 {}
+main .ourb_ctnr .subtitle_more {}
+main .ourb_ctnr .subtitle_more p {}
+main .ourb_ctnr .subtitle_more .view_more {}
+main .ourb_ctnr .our_contents {}
+main .ourb_ctnr .our_contents li {}
+main .ourb_ctnr .our_contents li .li_top {}
+main .ourb_ctnr .our_contents li .li_top .user_img {}
+main .ourb_ctnr .our_contents li .li_top .user_img img {}
+main .ourb_ctnr .our_contents li .li_top .user_txt {}
+main .ourb_ctnr .our_contents li .li_top .user_txt img {}
+main .ourb_ctnr .our_contents li .li_top .user_txt em {}
+main .ourb_ctnr .our_contents li .li_top .user_txt span {}
+main .ourb_ctnr .our_contents li .li_btm {}
+main .ourb_ctnr .our_contents li .li_btm a {}
+main .ourb_ctnr .our_contents li .li_btm a .itm_img {}
+main .ourb_ctnr .our_contents li .li_btm a .itm_img img {}
+main .ourb_ctnr .our_contents li .li_btm a .itm_info {}
+main .ourb_ctnr .our_contents li .li_btm a .itm_info .itm_name {}
+main .ourb_ctnr .our_contents li .li_btm a .itm_info .itm_price {}
+main .ourb_ctnr .our_contents li .li_btm .like {}
+main .ourb_ctnr .our_contents li .li_btm .like img {}

@@ -11,12 +11,11 @@
     main .align_item_container .item_list li .item_price_like .sale_rate {font-size: 0.88rem;}
     main .align_item_container .item_list li .item_price_like .like {width: 14px; height: 14px;}
     main .align_item_container .page_container .page_num {font-size: 0.94rem;}
-    
 }
 /* 1200px ~ 1001px Tablet 시작*/
 @media screen and (max-width: 1200px) {
     main section {margin-bottom: 100px;}
-    main .path {padding: 16px 80px;}
+    main .path {padding: 16px 0;}
     main .title_menu_container {width: 18%;}
     main .align_item_container {width: 77%;}
     main .title_menu_container .cate_title {font-size: 1.75rem;}
@@ -29,21 +28,34 @@
 }
 /* 1000px ~ 769px */
 @media screen and (max-width: 1000px) {
-    main .title_menu_container {position: absolute; left: 80px; top: 0;}
+    main .path {display: none;}
+    main .title_menu_container {position: absolute; left: 0; top: 0;}
     main .align_item_container {width: 100%;}
     main .title_menu_container .menu {display: none;}
+    main .title_menu_container .cate_title {padding-left: 0;}
     main .align_item_container .total_align_wrap {justify-content: right;}
     main .align_item_container .total_align_wrap .item_num {margin-right: 20px;}
     main .align_item_container .total_align_wrap .align_contents .align_list {display: none;}
     main .align_item_container .total_align_wrap .align_contents .filter {display: inline-block;}
+    main .align_item_container .m_menu {display: flex;}
+    main .align_item_container .item_list {margin-top: 64px;}
     main .align_item_container .item_list li {width: calc((100% - 20px) / 3);}
 }
 /* 768px ~ 601px Mobile 시작 */
 @media screen and (max-width: 768px) {
+    main {padding: 0 15px;}
+    main .title_menu_container .cate_title {font-size: 1.50rem; padding: 20px 0 0;}
+    main .align_item_container .total_align_wrap {padding: 24.5px 0;}
+    main .align_item_container .total_align_wrap .item_num {font-size: 0.88rem;}
+    main .align_item_container .m_menu {padding: 6px 0 4px;}
+    main .align_item_container .m_menu > li > a {font-size: 0.88rem;}
+    main .align_item_container .m_menu > li > .sub_menu li a {font-size: 0.75rem;}
+    main .align_item_container .item_list li {width: calc((100% - 10px) / 2); margin-bottom: 40px;}
     main .align_item_container .item_list li .item_name {font-size: 0.81rem;}
     main .align_item_container .item_list li .item_price_like em {font-size: 0.81rem;}
     main .align_item_container .item_list li .item_price_like span {font-size: 0.81rem;}
     main .align_item_container .item_list li .item_price_like .sale_rate {font-size: 0.81rem;}
+    main .align_item_container .item_list li .item_price_like .like img {transform: translateY(-1px);}
 }
 /* 600px ~ 0px */
 @media screen and (max-width: 600px) {
