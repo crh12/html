@@ -20,11 +20,808 @@
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
+    <!-- ==================================================================== 헤더 -->
     <div class="hd_bg">
         <header>
-            <div class="hd_top"></div>
-            <div class="hd_btm"></div>
+            <div class="hd_top">
+                <p>I LOVE J X NAON 요즘 핫한 제주 감성작가와의 콜라보 아이템을 만나보세요 !</p>
+            </div>
+            <div class="hd_mid">
+                <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="ILoveJ"></a></h1>
+                <div class="user_menu">
+                    <div class="search_wrap">
+                        <input type="text" name="search" id="search">
+                        <a href="#"><img src="./images/search.png" alt="검색하기"></a>
+                    </div>
+                    <a href="#"><img src="./images/wish.png" alt="위시리스트"></a>
+                    <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
+                    <a href="#"><img src="./images/login.png" alt="로그인"></a>
+                </div>
+            </div>
+            <nav>
+                <ul class="gnb_l">
+                    <li><a href="#">봄신상</a><!-- LNB 추가필요 -->
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">입학식 추천</a><!-- LNB 추가필요 -->
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BEST</a><!-- LNB 추가필요 -->
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SALE</a><!-- LNB 추가필요 -->
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ILOVExNAON</a><!-- LNB 추가필요 -->
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="gnb_m">
+                    <li><a href="#">베이직</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">상의</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">하의</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">원피스&세트</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">홈웨어</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">스윔웨어</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">신발</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세서리</a>
+                        <ul class="lnb">
+                            <li><a href="#">추천상품</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="gnb_r">
+                    <li><a href="#">룩북</a></li>
+                    <li><a href="#">토들러</a></li>
+                    <li><a href="#">주니어</a></li>
+                    <li><a href="#">BOY</a></li>
+                    <li><a href="#">BRAND</a></li>
+                </ul>
+            </nav>
         </header>
     </div>
+    <!-- ==================================================================== 메인 -->
+    <main>
+        <!-- ==================================================================== 메인 배너 -->
+        <div class="main_bnr">
+            <div class="swiper main_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="contents">
+                            <!-- 메인 배너 내부 제목 및 내용 -->
+                            <h1>이순간 BEST</h1>
+                            <p>잘나가는 아이템 한 눈에 보기</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="contents">
+                            <!-- 메인 배너 내부 제목 및 내용 -->
+                            <h1>새학기 추천룩</h1>
+                            <p>새로운 시작, 특별한 순간을 위한</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="contents">
+                            <!-- 메인 배너 내부 제목 및 내용 -->
+                            <h1>간절기 아우터 모음</h1>
+                            <p>편안하고 따스한 봄 아우터</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="contents">
+                            <!-- 메인 배너 내부 제목 및 내용 -->
+                            <h1>더할수록 더 크게</h1>
+                            <p>구매하시는 만큼 커지는 할인</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress_btn">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- ==================================================================== md -->
+        <div class="container md_ctnr">
+            <div class="bnr_contents">
+                <h1>MD's PICK</h1>
+                <p class="sub_title">새로운 시작, 특별한 순간을 위해</p>
+                <p class="sub_title">MD가 추천하는 새학기 트렌디 아이템</p>
+            </div>
+            <ul class="itm_contents">
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_001.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">세런디피티 바시티 자켓</a>
+                        <p class="itm_price">89,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_002.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">캣 크롭 정장 자켓</a>
+                        <p class="itm_price">98,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_003.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">스탠 A라인 트렌치 코트</a>
+                        <p class="itm_price">118,000원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_004.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                            <li class="tag_hot">HOT</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">베이직 기본 가디건</a>
+                        <p class="itm_price">38,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_005.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                            <li class="tag_hot">HOT</li>
+                            <li class="tag_4xl">4XL</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">이스트 세일러 방모 코트</a>
+                        <p class="itm_price">
+                            182,400원
+                            <span class="itm_price_before">228,000원</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_006.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">드림온 스트라이프 골지 티</a>
+                        <p class="itm_price">29,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_007.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                            <li class="tag_hot">HOT</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">베이직 기본 가디건</a>
+                        <p class="itm_price">89,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_008.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                            <li class="tag_4xl">4XL</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">이스트 세일러 방모 코트</a>
+                        <p class="itm_price">
+                            182,400원
+                            <span class="itm_price_before">228,000원</span></p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="itm_img"><img src="./images/md_009.jpg" alt=""></a>
+                    <div class="tags_wish_contents">
+                        <ul class="tags">
+                            <li class="tag_new">25봄신상</li>
+                        </ul>
+                        <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                    <div class="itm_info">
+                        <a href="#" class="itm_name">드림온 스트라이프 골지 티</a>
+                        <p class="itm_price">29,800원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- ==================================================================== new -->
+        <div class="container new_ctnr">
+            <h1>HOT NEW</h1>
+            <p class="sub_title">2월 2주 실시간 핫한 신상품</p>
+            <div class="category">
+                <a href="#" class="active">맨투맨</a>
+                <a href="#">카라티</a>
+                <a href="#">팬츠</a>
+                <a href="#">원피스</a>
+                <a href="#">레깅스</a>
+                <a href="#">운동화</a>
+            </div>
+            <div class="swiper_bnr_contents">
+                <div class="swiper new_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="itm_img"><img src="./images/md_006.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">드림온 스트라이프 골지 티</a>
+                                <p class="itm_price">29,800원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#" class="itm_img"><img src="./images/md_002.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">캣 크롭 정장 자켓</a>
+                                <p class="itm_price">98,800원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#" class="itm_img"><img src="./images/md_005.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                    <li class="tag_4xl">4XL</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">이스트 세일러 방모 코트</a>
+                                <p class="itm_price">
+                                    182,400원
+                                    <span class="itm_price_before">228,000원</span></p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <a href="#" class="itm_img"><img src="./images/md_003.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">스탠 A라인 트렌치 코트</a>
+                                <p class="itm_price">118,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <a href="#" class="itm_img"><img src="./images/md_004.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                    <li class="tag_hot">HOT</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">베이직 기본 가디건</a>
+                                <p class="itm_price">38,800원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="new_bnr">
+                    <a href="#"><img src="./images/new_bnr.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- ==================================================================== best -->
+        <div class="container best_ctnr">
+            <h1>TODAY BEST</h1>
+            <p class="sub_title">지금 가장 사랑받는 ILOVEJ의 베스트</p>
+            <div class="category">
+                <a href="#" class="active">아우터</a>
+                <a href="#">맨투맨</a>
+                <a href="#">원피스</a>
+                <a href="#">세트</a>
+                <a href="#">레깅스</a>
+                <a href="#">팬츠</a>
+            </div>
+            <div class="swiper_bnr_contents">
+                <div class="best_bnr">
+                    <a href="#"><img src="./images/best_bnr.jpg" alt=""></a>
+                </div>
+                <div class="swiper best_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="itm_img"><img src="./images/md_004.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                    <li class="tag_hot">HOT</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">베이직 기본 가디건</a>
+                                <p class="itm_price">38,800원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#" class="itm_img"><img src="./images/md_003.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">스탠 A라인 트렌치 코트</a>
+                                <p class="itm_price">118,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#" class="itm_img"><img src="./images/md_005.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                    <li class="tag_4xl">4XL</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">이스트 세일러 방모 코트</a>
+                                <p class="itm_price">
+                                    182,400원
+                                    <span class="itm_price_before">228,000원</span></p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <a href="#" class="itm_img"><img src="./images/md_002.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">캣 크롭 정장 자켓</a>
+                                <p class="itm_price">98,800원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <a href="#" class="itm_img"><img src="./images/md_006.jpg" alt=""></a>
+                            <div class="tags_wish_contents">
+                                <ul class="tags">
+                                    <li class="tag_new">25봄신상</li>
+                                </ul>
+                                <a href="#"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                            </div>
+                            <div class="itm_info">
+                                <a href="#" class="itm_name">드림온 스트라이프 골지 티</a>
+                                <p class="itm_price">29,800원</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ==================================================================== event -->
+        <div class="event collect_ctnr">
+            <a href="#"><img src="./images/event.jpg" alt="i love j x naon 요즘 핫한 제주 감성작가"></a>
+        </div>
+        <!-- ==================================================================== collection -->
+        <div class="container collect_ctnr">
+            <h1>COLLECTION</h1>
+            <div class="collect_contents">
+                <div class="coll1">
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <p class="coll_title">MELL MELL</p>
+                        <p class="coll_sub">아이러브제이 토들러 라인 ‘멜멜’ <img src="./images/arrow_18.png" alt=""></p>
+                    </a>
+                    <ul class="itm_contents">
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="coll2">
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <p class="coll_title">DDO</p>
+                        <p class="coll_sub">옷 입을 줄 아는 10대 소녀감성 브랜드 <img src="./images/arrow_18.png" alt=""></p>
+                    </a>
+                    <ul class="itm_contents">
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="coll3">
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <p class="coll_title">with BOY</p>
+                        <p class="coll_sub">우리 아들도 이젠 아이러브제이 <img src="./images/arrow_18.png" alt=""></p>
+                    </a>
+                    <ul class="itm_contents">
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- 백그라운드 이미지 -->
+                                <span>애니몰프렌드 카라 셔츠</span>
+                                <em>68,800</em>
+                            </a>
+                            <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ==================================================================== acc -->
+        <div class="container acc_ctnr">
+            <ul class="column column1">
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>모자</span>
+                        <em>29,800</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>필통</span>
+                        <em>10,200</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+            </ul>
+            <ul class="column column2">
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>팔찌</span>
+                        <em>29,800</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>스카프</span>
+                        <em>10,200</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>리본패치 가방</span>
+                        <em>29,800</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+            </ul>
+            <ul class="column column3">
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>체리하트 프릴 크로스백</span>
+                        <em>29,800</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+            </ul>
+            <ul class="column column4">
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>신발</span>
+                        <em>29,800</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- 백그라운드 이미지 -->
+                        <span>머리끈</span>
+                        <em>3,200</em>
+                    </a>
+                    <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- ==================================================================== review -->
+        <div class="container review_ctnr">
+            <h1>REAL REVIEW</h1>
+            <ul class="review_contents">
+                <li>
+                    <div class="li_top">
+                        <p class="user_img"><img src="./images/review_001.jpg" alt=""></p>
+                        <p class="score_name">
+                            <img src="./images/star_5.png" alt="">
+                            <span>김*은님</span>
+                        </p>
+                        <p class="user_txt">컬러감이 마음에 들어요 만족합니다</p>
+                    </div>
+                    <div class="li_btm">
+                        <a href="#" class="user_item">
+                            <p class="itm_img"><img src="./images/review_item_001.jpg" alt=""></p>
+                            <div class="itm_info">
+                                <p class="itm_name">M.프누아 샤 스커트</p>
+                                <p class="itm_price">38,100원</p>
+                            </div>
+                        </a>
+                        <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_top">
+                        <p class="user_img"><img src="./images/review_001.jpg" alt=""></p>
+                        <p class="score_name">
+                            <img src="./images/star_5.png" alt="">
+                            <span>김*은님</span>
+                        </p>
+                        <p class="user_txt">컬러감이 마음에 들어요 만족합니다</p>
+                    </div>
+                    <div class="li_btm">
+                        <a href="#" class="user_item">
+                            <p class="itm_img"><img src="./images/review_item_001.jpg" alt=""></p>
+                            <div class="itm_info">
+                                <p class="itm_name">M.프누아 샤 스커트</p>
+                                <p class="itm_price">38,100원</p>
+                            </div>
+                        </a>
+                        <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_top">
+                        <p class="user_img"><img src="./images/review_001.jpg" alt=""></p>
+                        <p class="score_name">
+                            <img src="./images/star_5.png" alt="">
+                            <span>김*은님</span>
+                        </p>
+                        <p class="user_txt">컬러감이 마음에 들어요 만족합니다</p>
+                    </div>
+                    <div class="li_btm">
+                        <a href="#" class="user_item">
+                            <p class="itm_img"><img src="./images/review_item_001.jpg" alt=""></p>
+                            <div class="itm_info">
+                                <p class="itm_name">M.프누아 샤 스커트</p>
+                                <p class="itm_price">38,100원</p>
+                            </div>
+                        </a>
+                        <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_top">
+                        <p class="user_img"><img src="./images/review_001.jpg" alt=""></p>
+                        <p class="score_name">
+                            <img src="./images/star_5.png" alt="">
+                            <span>김*은님</span>
+                        </p>
+                        <p class="user_txt">컬러감이 마음에 들어요 만족합니다</p>
+                    </div>
+                    <div class="li_btm">
+                        <a href="#" class="user_item">
+                            <p class="itm_img"><img src="./images/review_item_001.jpg" alt=""></p>
+                            <div class="itm_info">
+                                <p class="itm_name">M.프누아 샤 스커트</p>
+                                <p class="itm_price">38,100원</p>
+                            </div>
+                        </a>
+                        <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_top">
+                        <p class="user_img"><img src="./images/review_001.jpg" alt=""></p>
+                        <p class="score_name">
+                            <img src="./images/star_5.png" alt="">
+                            <span>김*은님</span>
+                        </p>
+                        <p class="user_txt">컬러감이 마음에 들어요 만족합니다</p>
+                    </div>
+                    <div class="li_btm">
+                        <a href="#" class="user_item">
+                            <p class="itm_img"><img src="./images/review_item_001.jpg" alt=""></p>
+                            <div class="itm_info">
+                                <p class="itm_name">M.프누아 샤 스커트</p>
+                                <p class="itm_price">38,100원</p>
+                            </div>
+                        </a>
+                        <a href="#" class="like"><img src="./images/wish_16.png" alt="위시리스트"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- ==================================================================== insta -->
+        <div class="container insta_ctnr">
+            <div class="insta_info">
+                <h1>INSTAGRAM</h1>
+                <a href="#"><img src="./images/logo.png" alt=""><span>@ilovej_official</span></a>
+                <p class="sub_title">매일이 새로운 제이를 보여줄게!</p>
+                <p class="sub_title">Every day! 아이러브제이♥</p>
+                <div class="sns_contents">
+                    <a href="#" class="insta"><!-- 백그라운드 이미지 --></a>
+                    <a href="#" class="youtube"><!-- 백그라운드 이미지 --></a>
+                    <a href="#" class="kakao"><!-- 백그라운드 이미지 --></a>
+                </div>
+            </div>
+            <div class="insta_img">
+                <!-- 스와이퍼 슬라이드? -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="fnb">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">배송조회</a>
+                <a href="#">공지사항</a>
+                <a href="#">포토제닉</a>
+                <a href="#">교횐 / 환불 안내</a>
+            </div>
+            <div class="sns_contents">
+                <a href="#" class="insta"><!-- 백그라운드 이미지 --></a>
+                <a href="#" class="youtube"><!-- 백그라운드 이미지 --></a>
+                <a href="#" class="kakao"><!-- 백그라운드 이미지 --></a>
+            </div>
+        </div>
+        <div class="footer_mid">
+            <div class="cs_center">
+                <p class="title">CUSTOMER CENTER .</p>
+                <p class="num">070  8857  9004</p>
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

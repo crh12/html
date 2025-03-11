@@ -1,9 +1,9 @@
 /* ==================================================================== 메인 시작 */
 main {}
 /* ==================================================================== 메인 배너 */
-main .main_bnr {width: 100%; height: 700px; margin: 0 auto 120px; position: relative; overflow: hidden; border: 1px solid red;}
+main .main_bnr {width: 100%; height: 700px; margin: 0 auto 120px; position: relative; overflow: hidden;}
 /* ==================================================================== 메인 배너 스와이퍼 + 공통 */
-main .main_bnr .main_swiper {width: 100%; max-width: 1700px; height: 100%; overflow: visible;}
+main .main_bnr .main_swiper {width: 100%; max-width: 1860px; height: 100%; overflow: visible;}
 main .main_bnr .main_swiper .swiper-wrapper {}
 main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {
     background-size: cover; background-position: center; border-radius: 20px;
@@ -29,7 +29,7 @@ main .main_bnr .progress_btn button img {width: 100%;}
 main .main_bnr .progress_btn .prev {transform: scaleX(-1);}
 main .main_bnr .progress_btn .next {}
 /* ==================================================================== container 공통 */
-main .container {max-width: 1700px; width: 100%; margin: 0 auto 120px;}
+main .container {max-width: 1860px; width: 100%; margin: 0 auto 120px; padding: 0 80px;}
 main .container h1 {font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 30px; text-align: center;}
 main .container .like {display: inline-block; width: 15px; height: 15px;}
 main .container .like img {width: 100%;}
@@ -51,23 +51,22 @@ main .rank100_ctnr .rank_contents .rank100 {}
 main .rank100_ctnr .rank_contents .rank100 a {border-bottom: 1px solid #ccc; display: block;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap {padding: 24px 0; display: flex; justify-content: space-between;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l {}
-main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l em {font-size: 1.13rem; font-weight: 600; letter-spacing: -0.02em;}
-main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l span {font-size: 1.13rem; letter-spacing: -0.02em; margin: 0 20px;}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l em {font-size: 0.94rem; font-weight: 600; letter-spacing: -0.02em;}
+main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_l span {margin: 0 20px; font-size: 0.94rem; letter-spacing: -0.02em;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r {display: flex; align-items: center;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r span {margin-right: 10px; font-size: 0.75rem; letter-spacing: -0.02em;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r span.rank_up {color: #EB3831;}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r span.rank_down {}
 main .rank100_ctnr .rank_contents .rank100 a .txt_wrap .txt_r img {width: 15px;}
-main .rank100_ctnr .rank_contents .rank100 a .img_wrap {padding-bottom: 24px; display: none; /* display: flex; */}
-main .rank100_ctnr .rank_contents .rank100 a:first-child .img_wrap {display: flex;}
-main .rank100_ctnr .rank_contents .rank100 a .img_wrap img {width: 160px; height: 160px;}
+main .rank100_ctnr .rank_contents .rank100 a .img_wrap {padding-bottom: 0; display: flex; height: 0;}
+main .rank100_ctnr .rank_contents .rank100 a .img_wrap img {max-width: 160px; width: calc((100% - 20px) / 3); max-height: 160px;}
 main .rank100_ctnr .rank_contents .rank100 a .img_wrap img:nth-of-type(2) {margin: 0 10px;}
-/* ==================================================================== RANK100 (왼) 개별 */
-main .rank100_ctnr .rank_contents .rank100 a.rank1 {}
-main .rank100_ctnr .rank_contents .rank100 a.rank2 {}
-main .rank100_ctnr .rank_contents .rank100 a.rank3 {}
-main .rank100_ctnr .rank_contents .rank100 a.rank4 {}
-main .rank100_ctnr .rank_contents .rank100 a.rank5 {}
+/* ==================================================================== RANK100 (왼) 활성화 */
+main .rank100_ctnr .rank_contents .rank100 a.active {} /* 활성화active 순위  */
+main .rank100_ctnr .rank_contents .rank100 a.active .txt_wrap .txt_l em {font-size: 1.13rem;} /* 활성화active 순위  */
+main .rank100_ctnr .rank_contents .rank100 a.active .txt_wrap .txt_l span {font-size: 1.13rem;} /* 활성화active 순위  */
+main .rank100_ctnr .rank_contents .rank100 a.active .img_wrap {padding-bottom: 24px; height: 100%;}
+main .rank100_ctnr .rank_contents .rank100 a.active .img_wrap img {}
 /* ==================================================================== RANK100 (오) */
 /* ==================================================================== 대표상품 */
 main .rank100_ctnr .itm_contents {max-width: 1170px; width: 68.8%; display: flex; justify-content: space-between;}
@@ -102,7 +101,7 @@ main .rank100_ctnr .itm_contents .itm_l .itm_info:hover .itm_name,
 main .rank100_ctnr .itm_contents .itm_l .itm_info:hover .price_wrap {opacity: 1;}
 /* ==================================================================== 보조상품 + 공통 */
 main .rank100_ctnr .itm_contents .itm_r {
-    max-width: 800px; width: 100%; display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between;
+    max-width: 800px; width: 68.3%; display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between;
 }
 main .rank100_ctnr .itm_contents .itm_r li {width: calc((100% - 20px) / 3); height: calc((100% - 10px) / 2); position: relative;}
 main .rank100_ctnr .itm_contents .itm_r li .like {
@@ -110,7 +109,7 @@ main .rank100_ctnr .itm_contents .itm_r li .like {
 }
 main .rank100_ctnr .itm_contents .itm_r li .like img {}
 main .rank100_ctnr .itm_contents .itm_r li .itm_info {
-    width: 100%; height: 100%; padding: 0 30px 30px 30px; border: 1px solid red;
+    width: 100%; height: 100%; padding: 0 30px 30px 30px;
     position: relative; display: flex; flex-flow: column; justify-content: end;
     background: no-repeat center; background-size: cover;
 }
@@ -164,8 +163,8 @@ main .container .itm_wrap > li:first-child {margin-bottom: 30px;}
 main .container .itm_wrap > li > a {width: 100%; height: 100%; position: relative; margin-bottom: 12px;}
 main .container .itm_wrap > li > a .itm_img {max-width: 300px; max-height: 300px; margin: 0 auto;}
 main .container .itm_wrap > li > a .itm_img img {width: 100%;}
-main .container .itm_wrap > li > a .color_wrap {display: none; position: absolute; left: 20px; bottom: 20px;}
-main .container .itm_wrap > li > a:hover .color_wrap {display: flex;}
+main .container .itm_wrap > li > a .color_wrap {display: flex; position: absolute; left: 20px; bottom: 20px; opacity: 0; transition: opacity 0.3s;}
+main .container .itm_wrap > li > a:hover .color_wrap {opacity: 1;}
 main .container .itm_wrap > li > a .color_wrap span {width: 15px; height: 15px; display: inline-block; margin-right: 4px;}
 main .container .itm_wrap > li > a .color_wrap span:last-child {margin: 0;}
 main .container .itm_wrap > li .itm_info {display: flex; flex-flow: column;}
@@ -236,7 +235,7 @@ main .md_ctnr .itm_bnr_contents .md_bnr_wrap {
     max-width: 630px; width: 38.8%; padding: 50px 50px 60px; display: flex; flex-flow: column nowrap; justify-content: flex-end;
     background-image: url(../images/md_bnr.jpg); background-size: cover; background-position: center;
 }
-main .md_ctnr .itm_bnr_contents .md_bnr_wrap p {width: max-content; padding: 4px 20px 6px 10px; font-size: 1.50rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; background-color: #284F37;}
+main .md_ctnr .itm_bnr_contents .md_bnr_wrap p {max-width: max-content; padding: 4px 20px 6px 10px; font-size: 1.50rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; background-color: #284F37;}
 main .md_ctnr .itm_bnr_contents .md_bnr_wrap p:first-child {margin-bottom: 10px;}
 main .md_ctnr .itm_bnr_contents .md_bnr_wrap p em {font-size: 2rem; font-weight: 500; letter-spacing: -0.02em;}
 /* ==================================================================== MD 컬러칩 개별 */
@@ -290,7 +289,7 @@ main .new_ctnr .itm_wrap > li > a .color_wrap span:nth-of-type(7) {background-co
 main .new_ctnr .itm_wrap > li > a .color_wrap span:nth-of-type(8) {background-color: #EE693F;}
 main .new_ctnr .itm_wrap > li > a .color_wrap span:nth-of-type(9) {background-color: #8B654F;}
 /* ==================================================================== EVENT2 */
-main .event2_ctnr {padding: 60px 0;}
+main .event2_ctnr {padding: 60px 80px;}
 main .event2_ctnr img {width: 100%;}
 /* ==================================================================== ROOM */
 main .room_ctnr {overflow: hidden;}
@@ -343,34 +342,37 @@ main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_
 main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .itm_info p {color: #fff;}
 main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .itm_info .itm_name {margin-bottom: 10px;}
 main .room_ctnr .room_swiper .swiper-wrapper .swiper-slide .contents .slide_sub_itm li .itm_info .itm_price {font-size: 0.94rem; font-weight: 600; letter-spacing: -0.02em;}
+main .room_ctnr .room_swiper .swiper-button-next {color: #fff; right: -80px;}
+main .room_ctnr .room_swiper .swiper-button-prev {color: #fff; left: -80px;}
 /* ==================================================================== ROOM 개별 */
 main .room_ctnr .room_swiper .swiper-wrapper .slide1 {background-image: url(../images/room_001.jpg);}
 main .room_ctnr .room_swiper .swiper-wrapper .slide2 {background-image: url(../images/room_002.jpg);}
 main .room_ctnr .room_swiper .swiper-wrapper .slide3 {background-image: url(../images/room_003.jpg);}
 main .room_ctnr .room_swiper .swiper-wrapper .slide1 .room_more_btn {left: 60.5%; top: 40%;}
 /* ==================================================================== OURB */
-main .ourb_ctnr {}
+main .ourb_ctnr {margin-bottom: 150px;}
 main .ourb_ctnr h1 {margin-bottom: 12px;}
 main .ourb_ctnr .subtitle_more {position: relative; text-align: center; margin-bottom: 30px;}
 main .ourb_ctnr .subtitle_more p {font-size: 1.06rem; letter-spacing: -0.02em; color: #999;}
 main .ourb_ctnr .subtitle_more .view_more {top: -1px;}
 main .ourb_ctnr .our_contents {max-width: 1260px; width: 100%; display: flex; justify-content: space-between; margin: 0 auto;}
 main .ourb_ctnr .our_contents li {width: calc((100% - 60px) / 4);}
-main .ourb_ctnr .our_contents li .li_top {border-bottom: 1px dashed #999; stroke-dasharray: 10; stroke-dashoffset: 4px;}
+main .ourb_ctnr .our_contents li .li_top {border-bottom: 4px dotted #999; margin-bottom: 20px;}
 main .ourb_ctnr .our_contents li .li_top .user_img {max-width: 300px; max-height: 300px;}
 main .ourb_ctnr .our_contents li .li_top .user_img img {width: 100%;}
 main .ourb_ctnr .our_contents li .li_top .user_txt {display: flex; flex-flow: column nowrap; margin: 20px 0;}
 main .ourb_ctnr .our_contents li .li_top .user_txt img {width: 99px; height: 15px;}
 main .ourb_ctnr .our_contents li .li_top .user_txt em {margin: 20px 0; font-size: 0.94rem; font-weight: 600; letter-spacing: -0.02em;}
-main .ourb_ctnr .our_contents li .li_top .user_txt span {color: #999; font-size: 0.88rem; letter-spacing: -0.02em; line-height: 1.4;}
-main .ourb_ctnr .our_contents li .li_btm {}
-main .ourb_ctnr .our_contents li .li_btm a {}
-main .ourb_ctnr .our_contents li .li_btm a .itm_img {}
-main .ourb_ctnr .our_contents li .li_btm a .itm_img img {}
-main .ourb_ctnr .our_contents li .li_btm a .itm_info {}
-main .ourb_ctnr .our_contents li .li_btm a .itm_info .itm_name {}
-main .ourb_ctnr .our_contents li .li_btm a .itm_info .itm_price {}
-main .ourb_ctnr .our_contents li .li_btm .like {}
+main .ourb_ctnr .our_contents li .li_top .user_txt span {
+    width: 100%; height: 40px; color: #999; font-size: 0.88rem; letter-spacing: -0.02em; line-height: 1.4;
+    text-overflow: ellipsis; overflow: hidden;
+}
+main .ourb_ctnr .our_contents li .li_btm {display: flex; justify-content: space-between;}
+main .ourb_ctnr .our_contents li .li_btm a.user_item {display: flex; flex-flow: row nowrap; align-items: center;}
+main .ourb_ctnr .our_contents li .li_btm a.user_item .itm_img {max-width: 60px; max-height: 60px; border-radius: 12px; overflow: hidden; margin-right: 30px;}
+main .ourb_ctnr .our_contents li .li_btm a.user_item .itm_img img {width: 100%;}
+main .ourb_ctnr .our_contents li .li_btm a.user_item .itm_info {}
+main .ourb_ctnr .our_contents li .li_btm a.user_item .itm_info .itm_name {max-width: 142px; font-weight: 600; margin-bottom: 12px;}
+main .ourb_ctnr .our_contents li .li_btm a.user_item .itm_info .itm_price {font-size: 0.94rem; letter-spacing: -0.02em;}
+main .ourb_ctnr .our_contents li .li_btm .like {margin-top: 9px;}
 main .ourb_ctnr .our_contents li .li_btm .like img {}
-
-/* 리뷰란 dashed 속성 수정중 */
