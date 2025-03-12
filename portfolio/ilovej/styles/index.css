@@ -1,0 +1,308 @@
+main {}
+/* ==================================================================== 메인슬라이드 + 동통 */
+main .main_bnr {width: 100%; height: 700px; margin-bottom: 120px;}
+main .main_bnr .main_swiper {width: 100%; height: 100%;}
+main .main_bnr .main_swiper .swiper-wrapper {}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide {
+    background-position: center; background-size: cover;
+}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .contents {
+    width: 100%; position: absolute; left: 50%; bottom: 20%; transform: translateX(-50%);
+    color: #fff; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25); text-align: center;
+}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .contents h1 {margin-bottom: 10px; font-size: 2.5rem; font-weight: 500; letter-spacing: -0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .swiper-slide .contents p {font-weight: 500; letter-spacing: -0.02em;}
+/* ==================================================================== 슬라이드 개별 */
+main .main_bnr .main_swiper .swiper-wrapper .slide1 {background-image: url(../images/main_001.jpg);}
+main .main_bnr .main_swiper .swiper-wrapper .slide2 {background-image: url(../images/main_002.jpg);}
+main .main_bnr .main_swiper .swiper-wrapper .slide3 {background-image: url(../images/main_003.jpg);}
+main .main_bnr .main_swiper .swiper-wrapper .slide4 {background-image: url(../images/main_002.jpg);}
+/* ==================================================================== 슬라이드 제어 */
+main .main_bnr .main_swiper .progress_btn {}
+main .main_bnr .main_swiper .progress_btn .swiper-pagination {}
+main .main_bnr .main_swiper .progress_btn .swiper-pagination-bullet {background-color: #fff; opacity: 1; width: 12px; height: 12px; transition: all 0.3s;}
+main .main_bnr .main_swiper .progress_btn .swiper-pagination-bullet-active {background-color: #FF852B; width: 24px; border-radius: 12px;}
+main .main_bnr .main_swiper .progress_btn .swiper-button-prev {color: #fff;}
+main .main_bnr .main_swiper .progress_btn .swiper-button-next {color: #fff;}
+/* ==================================================================== ctnr 공통 */
+main .ctnr {max-width: 1660px; width: 100%; padding: 0 80px; margin: 0 auto 120px;}
+main .ctnr h1 {color: #222; font-size: 2.5rem; font-weight: 500; letter-spacing: -0.02em;}
+main .ctnr .sub_title {color: #999; font-size: 1.13rem; letter-spacing: -0.02em;}
+main .ctnr .category {display: flex;}
+main .ctnr .category a {padding: 6px 16px 8px; margin-right: 10px; color: #999; border: 1px solid #ccc; border-radius: 15px;}
+main .ctnr .category a.active {border: 1px solid #000; color: #fff; background-color: #222;}
+main .ctnr .category a:last-child {margin: 0;}
+main .ctnr .itm_wrap {display: flex; flex-flow: column nowrap;}
+main .ctnr .itm_wrap > * {margin-bottom: 10px;}
+main .ctnr .itm_wrap > *:last-child {margin: 0;}
+main .ctnr .itm_wrap .itm_img {}
+main .ctnr .itm_wrap .itm_img img {width: 100%;}
+main .ctnr .tags_wish_contents {display: flex; justify-content: space-between;}
+main .ctnr .tags_wish_contents .tags {display: flex;}
+main .ctnr .tags_wish_contents .tags li {
+    padding: 4px 6px; margin-right: 6px; color: #fff; border-radius: 6px;
+    font-size: 0.63rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main .ctnr .tags_wish_contents .tags .tag_new {background-color: #FB91B4;}
+main .ctnr .tags_wish_contents .tags .tag_hot {background-color: #F74A36;}
+main .ctnr .tags_wish_contents .tags .tag_4xl {background-color: #FF852B;}
+main .ctnr .wish {width: 16px; height: 16px; display: inline-block;}
+main .ctnr .wish img {width: 100%;}
+main .ctnr .itm_info .itm_name {display: inline-block; letter-spacing: -0.02em; margin-bottom: 10px;}
+main .ctnr .itm_info .itm_price {font-weight: 500; letter-spacing: -0.02em;}
+main .ctnr .itm_info .itm_price .itm_price_before {margin-left: 10px; color: #999; font-size: 0.88rem; letter-spacing: -0.02em; text-decoration: line-through;}
+/* ==================================================================== md */
+main .md_ctnr {display: flex; justify-content: space-between;}
+main .md_ctnr .bnr_contents {
+    width: 40%; height: 1000px; padding: 50px; position: sticky; left: 0; top: 134.08px;
+    background-image: url(../images/md_bnr.jpg); background-size: cover; background-position: center;
+}
+main .md_ctnr .bnr_contents h1 {width: max-content; padding: 5px 10px; margin-bottom: 16px; background-color: rgba(255, 255, 255, 0.8);}
+main .md_ctnr .bnr_contents .sub_title {width: max-content; padding: 5px 10px; color: #555; background-color: rgba(255, 255, 255, 0.8);}
+main .md_ctnr .bnr_contents .sub_title:nth-of-type(1) {margin-bottom: 8px;}
+main .md_ctnr .itm_contents {width: 58.6%; display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .md_ctnr .itm_contents .itm_wrap {width: calc((100% - 40px) / 3); margin-top: 30px;}
+main .md_ctnr .itm_contents .itm_wrap:nth-of-type(1),
+main .md_ctnr .itm_contents .itm_wrap:nth-of-type(2),
+main .md_ctnr .itm_contents .itm_wrap:nth-of-type(3) {margin: 0;}
+main .md_ctnr .itm_contents .itm_wrap .itm_img {max-width: 280px; max-height: 340px;}
+main .md_ctnr .itm_contents .itm_wrap .itm_img img {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .tags {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .tags li {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .tags .tag_new {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .tags .tag_hot {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .tags .tag_4xl {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .wish {}
+main .md_ctnr .itm_contents .itm_wrap .tags_wish_contents .wish img {}
+main .md_ctnr .itm_contents .itm_wrap .itm_info {}
+main .md_ctnr .itm_contents .itm_wrap .itm_info .itm_name {}
+main .md_ctnr .itm_contents .itm_wrap .itm_info .itm_price {}
+/* ==================================================================== new best 공통 */
+main .new_best_ctnr {}
+main .new_best_ctnr h1 {margin-bottom: 12px;}
+main .new_best_ctnr .sub_title {margin-bottom: 30px;}
+main .new_best_ctnr .category {margin-bottom: 30px;}
+main .new_best_ctnr .category a {}
+main .new_best_ctnr .category a.active {}
+main .new_best_ctnr .swiper_bnr_contents {display: flex; justify-content: space-between;}
+main .new_best_ctnr .swiper_bnr_contents .swiper {max-width: 958px; width: 63.8%; margin: 0;}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper {}
+/* ==================================================================== 슬라이드 공통 */
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_img {width: 100%;}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_img img {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_new {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_hot {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_4xl {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .wish {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_name {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_price {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_price .itm_price_before {}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-pagination {top: auto; bottom: 2px; height: 2px;}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-pagination-progressbar {background: #d9d9d9;}
+main .new_best_ctnr .swiper_bnr_contents .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: #222;}
+
+/* ==================================================================== new */
+main .new_ctnr {}
+main .new_ctnr h1 {}
+main .new_ctnr .sub_title {}
+main .new_ctnr .category {}
+main .new_ctnr .category a {}
+main .new_ctnr .category a.active {}
+main .new_ctnr .swiper_bnr_contents {}
+main .new_ctnr .swiper_bnr_contents .new_swiper {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper {}
+/* ==================================================================== 슬라이드 공통 */
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_img {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_img img {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_new {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_hot {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .tags .tag_4xl {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .tags_wish_contents .wish {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_name {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_price {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_info .itm_price .itm_price_before {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-pagination {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-pagination-progressbar {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {}
+/* ==================================================================== 슬라이드 개별 */
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .slide1 {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .slide2 {}
+main .new_ctnr .swiper_bnr_contents .new_swiper .swiper-wrapper .slide3 {}
+/* ==================================================================== new 오른쪽 배너 */
+main .new_ctnr .swiper_bnr_contents .new_bnr {max-width: 512px; width: 34.1%;}
+main .new_ctnr .swiper_bnr_contents .new_bnr a {display: block;}
+main .new_ctnr .swiper_bnr_contents .new_bnr a img {width: 100%;}
+/* ==================================================================== best */
+main .best_ctnr {}
+main .best_ctnr h1 {}
+main .best_ctnr .sub_title {}
+main .best_ctnr .category {}
+main .best_ctnr .category a {}
+main .best_ctnr .category a.active {}
+main .best_ctnr .swiper_bnr_contents {}
+/* ==================================================================== best 왼쪽 배너 */
+main .best_ctnr .swiper_bnr_contents .best_bnr {max-width: 512px; width: 34.1%;}
+main .best_ctnr .swiper_bnr_contents .best_bnr a {display: block;}
+main .best_ctnr .swiper_bnr_contents .best_bnr a img {width: 100%;}
+/* ==================================================================== 슬라이드 공통 */
+main .best_ctnr .swiper_bnr_contents .best_swiper {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .swiper-slide {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .swiper-slide .itm_wrap {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .swiper-slide .itm_wrap .itm_img{}
+/* ==================================================================== 슬라이드 개별 */
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .slide1 {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .slide2 {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .slide3 {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .slide4 {}
+main .best_ctnr .swiper_bnr_contents .best_swiper .swiper-wrapper .slide5 {}
+/* ==================================================================== event */
+main .event_ctnr {max-width:none; width: 100%; padding: 0; background-color: #FBF5E5;}
+main .event_ctnr a {display: block; max-width: 1920px; width: 100%; margin: 0 auto;}
+main .event_ctnr a img {width: 100%;}
+/* ==================================================================== collection */
+main .collect_ctnr {}
+main .collect_ctnr h1 {margin-bottom: 30px;}
+main .collect_ctnr .collect_contents {display: flex; justify-content: space-between;}
+main .collect_ctnr .collect_contents .coll {width: calc((100% - 60px) / 3); border-radius: 12px; overflow: hidden;}
+main .collect_ctnr .collect_contents .coll > a {
+    height: 400px; padding: 30px 40px; margin-bottom: 20px; display: flex; flex-flow: column nowrap; justify-content: flex-end;
+    background-position: center; background-size: cover;
+}
+main .collect_ctnr .collect_contents .coll > a p {padding: 4px 10px 6px; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8); width: max-content;}
+main .collect_ctnr .collect_contents .coll > a .coll_title {font-size: 1.50rem; font-weight: 500; letter-spacing: -0.02em;}
+main .collect_ctnr .collect_contents .coll > a .coll_sub {
+    display: flex; align-items: center;
+    font-size: 1.13rem; letter-spacing: -0.02em;
+}
+main .collect_ctnr .collect_contents .coll > a .coll_sub img {width: 18px; height: 18px; margin-left: 10px; transform: translateY(1.5px);}
+main .collect_ctnr .collect_contents .coll .itm_contents {display: flex; justify-content: space-between;}
+main .collect_ctnr .collect_contents .coll .itm_contents li {width: calc((100% - 20px) / 3); position: relative;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap {display: block;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_img {width: 100%;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_img img {width: 100%;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_info {width: 100%; padding: 20px; position: absolute; left: 0; bottom: 0; opacity: 0; transition: all 0.3s;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_info > * {
+    padding: 5px 10px; display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3); color: #fff;
+}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_info span {
+    max-width: 100%; margin-bottom: 6px; font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;
+    text-wrap: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+main .collect_ctnr .collect_contents .coll .itm_contents li .itm_hover_wrap .itm_info em {font-size: 0.75rem; font-weight: 600; letter-spacing: -0.02em;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .wish {position: absolute; top: 20px; right: 20px; opacity: 0; transition: all 0.3s;}
+main .collect_ctnr .collect_contents .coll .itm_contents li .wish img {}
+main .collect_ctnr .collect_contents .coll .itm_contents li:hover .itm_info {opacity: 1;} /* hover */
+main .collect_ctnr .collect_contents .coll .itm_contents li:hover .wish {opacity: 1;} /* hover */
+/* ==================================================================== coll 개별 */
+main .collect_ctnr .collect_contents .coll1 {}
+main .collect_ctnr .collect_contents .coll1 > a {background-image: url(../images/coll1.jpg);}
+main .collect_ctnr .collect_contents .coll2 {}
+main .collect_ctnr .collect_contents .coll2 > a {background-image: url(../images/coll2.jpg);}
+main .collect_ctnr .collect_contents .coll3 {}
+main .collect_ctnr .collect_contents .coll3 > a {background-image: url(../images/coll3.jpg);}
+/* ==================================================================== acc */
+main .acc_ctnr {}
+main .acc_ctnr h1 {margin-bottom: 30px;}
+main .acc_ctnr .acc_contents {display: flex; justify-content: space-between; align-items: center;}
+main .acc_ctnr .acc_contents .column {display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .acc_ctnr .acc_contents .column li {display: inline-block; position: relative; border-radius: 12px; overflow: hidden;}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap {width: 100%; display: block;}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_img {width: 100%;}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_img img {width: 100%;}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_info {
+    width: 100%; padding: 40px; position: absolute; left: 0; bottom: 0; display: flex; flex-flow: column nowrap;
+    opacity: 0; transition: all 0.3s;
+}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_info > * {
+    padding: 5px 10px; display: block;
+    background-color: rgba(0, 0, 0, 0.3); color: #fff;
+}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_info span {
+    margin-bottom: 6px; letter-spacing: -0.02em; width: min-content;
+    text-wrap: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+main .acc_ctnr .acc_contents .column li .itm_hover_wrap .itm_info em {width: min-content; font-weight: 500; letter-spacing: -0.02em;}
+main .acc_ctnr .acc_contents .column li .wish {position: absolute; top: 40px; right: 40px; opacity: 0; transition: all 0.3s;}
+main .acc_ctnr .acc_contents .column li .wish img {}
+main .acc_ctnr .acc_contents .column1 {width: 24%;}
+main .acc_ctnr .acc_contents .column1 li:nth-of-type(1) {margin-bottom: 20px;}
+main .acc_ctnr .acc_contents .column2 {width: 29.3%;}
+main .acc_ctnr .acc_contents .column2 li:nth-of-type(1) {width: calc((100% - 20px) / 2); margin-bottom: 20px;}
+main .acc_ctnr .acc_contents .column2 li:nth-of-type(2) {width: calc((100% - 20px) / 2); margin-bottom: 20px;}
+main .acc_ctnr .acc_contents .column3 {width: 26.66%;}
+main .acc_ctnr .acc_contents .column4 {width: 16%;}
+main .acc_ctnr .acc_contents .column4 li:nth-of-type(1) {margin-bottom: 20px;}
+main .acc_ctnr .acc_contents .column li:hover .itm_hover_wrap .itm_info {opacity: 1;} /* hover */
+main .acc_ctnr .acc_contents .column li:hover .wish {opacity: 1;} /* hover */
+/* ==================================================================== review */
+main .review_ctnr {}
+main .review_ctnr h1 {margin-bottom: 30px;}
+main .review_ctnr .review_contents {display: flex; justify-content: space-between;}
+main .review_ctnr .review_contents li {width: calc((100% - 80px) / 5); border-radius: 12px; overflow: hidden;}
+main .review_ctnr .review_contents li .li_top {
+    display: flex; flex-flow: column nowrap; padding-bottom: 10px; margin-bottom: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .review_ctnr .review_contents li .li_top > * {margin-bottom: 20px;}
+main .review_ctnr .review_contents li .li_top .user_img {width: 100%;}
+main .review_ctnr .review_contents li .li_top .user_img img {width: 100%;}
+main .review_ctnr .review_contents li .li_top .score_name {display: flex; justify-content: space-between;}
+main .review_ctnr .review_contents li .li_top .score_name img {width: 86px; height: 14px;}
+main .review_ctnr .review_contents li .li_top .score_name span {color: #555; font-size: 0.88rem; letter-spacing: -0.02em;}
+main .review_ctnr .review_contents li .li_top .user_txt {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .review_ctnr .review_contents li .li_btm {display: flex; justify-content: space-between; align-items: center;}
+main .review_ctnr .review_contents li .li_btm .user_item {display: flex; align-items: center;}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_img {width: 50px; height: 50px; margin-right: 16px; border-radius: 12px; overflow: hidden;}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_img img {width: 100%;}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_info {}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_info p {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_info .itm_name {margin-bottom: 10px;}
+main .review_ctnr .review_contents li .li_btm .user_item .itm_info .itm_price {}
+main .review_ctnr .review_contents li .li_btm .wish {}
+/* ==================================================================== insta */
+main .insta_ctnr {max-width: none; padding: 50px 0; display: flex; justify-content: center; background-color: rgba(255, 133, 43, 0.15); overflow: hidden;}
+main .insta_ctnr .insta_info {max-width: 500px; width: 26%; transform: translateX(42%);}
+main .insta_ctnr .insta_info:before {
+    content: ''; display: block; width: 89.8%; height: 107%; background-color: #fff;
+    position: absolute; left: -50px; top: -50px; z-index: -1; box-shadow: 3px 3px 0 rgba(255, 133, 43, 0.5);
+}
+main .insta_ctnr .insta_info h1 {position: relative;}
+main .insta_ctnr .insta_info h1:before {
+    content: ''; display: block; width: 242px; height: 30px; background-color: rgba(255, 133, 43, 0.5);
+    position: absolute; left: -11px; top: 22px; z-index: -1;
+}
+main .insta_ctnr .insta_info > a {margin: 50px 0; display: flex; align-items: center; position: relative;}
+main .insta_ctnr .insta_info > a:before {
+    content: ''; display: block; width: 46px; height: 46px; position: absolute; left: 0; top: 0;
+    border-radius: 50%; border: 2px solid rgba(255, 133, 43, 0.5); background-color: #fff; z-index: -1;
+}
+main .insta_ctnr .insta_info > a img {width: 50px; height: 50px; margin-right: 12px;}
+main .insta_ctnr .insta_info > a span {color: #999; font-size: 1.13rem; letter-spacing: -0.02em;}
+main .insta_ctnr .insta_info p {color: #999; font-size: 1.13rem; letter-spacing: -0.02em;}
+main .insta_ctnr .insta_info .sub_title {}
+main .insta_ctnr .insta_info .sub_title:nth-of-type(2) {margin: 12px 0 50px;}
+main .insta_ctnr .insta_info .sns_contents {display: flex;}
+main .insta_ctnr .insta_info .sns_contents a {width: 40px; height: 40px; background-size: cover; background-position: center;}
+main .insta_ctnr .insta_info .sns_contents .insta {background-image: url(../images/sns_instagram.png);}
+main .insta_ctnr .insta_info .sns_contents .insta:hover {background-image: url(../images/sns_instagram_on.png);}
+main .insta_ctnr .insta_info .sns_contents .youtube {margin: 0 12px; background-image: url(../images/sns_youtube.png);}
+main .insta_ctnr .insta_info .sns_contents .youtube:hover {margin: 0 12px; background-image: url(../images/sns_youtube_on.png);}
+main .insta_ctnr .insta_info .sns_contents .kakao {background-image: url(../images/sns_kakao.png);}
+main .insta_ctnr .insta_info .sns_contents .kakao:hover {background-image: url(../images/sns_kakao_on.png);}
+main .insta_ctnr .insta_img {max-width: 1390px; width: 72.3%; display: flex; flex-flow: row wrap; justify-content: space-between; transform: translateX(15.1%);}
+main .insta_ctnr .insta_img a {width: calc((100% - 30px) / 4);}
+main .insta_ctnr .insta_img a:first-child {margin-bottom: 10px;}
+main .insta_ctnr .insta_img a img {width: 100%;}

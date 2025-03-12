@@ -91,16 +91,19 @@ main .info_container .detail_contents .delivery_charge dt a {width: 12px; margin
 main .info_container .detail_contents .delivery_charge dt a img {width: 100%;}
 /* ----------------------------------------------------------------------------- 배송비 팝업 */
 main .info_container .detail_contents .delivery_charge .d_charge_open {
-  display: none;
-  position: absolute; left: 0; top: calc(100% + 12px);
+  display: none; background-color: #fff; padding: 20px; width: 90%; z-index: 10;
+  position: absolute; left: 0; top: calc(100% + 12px); border: 1px solid #000; border-radius: 12px;
 }
-main .info_container .detail_contents .delivery_charge .d_charge_open p {}
+main .info_container .detail_contents .delivery_charge .d_charge_open p {
+  display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid #000;
+  font-size: 0.81rem; font-weight: 500; letter-spacing: -0.02em;
+}
 main .info_container .detail_contents .delivery_charge .d_charge_open p a {}
 main .info_container .detail_contents .delivery_charge .d_charge_open p a img {/* width: 100%; */}
-main .info_container .detail_contents .delivery_charge .d_charge_open ul {}
-main .info_container .detail_contents .delivery_charge .d_charge_open ul dt {}
-main .info_container .detail_contents .delivery_charge .d_charge_open ul dt dd {}
-main .info_container .detail_contents .delivery_charge .d_charge_open ul dt dd span {}
+main .info_container .detail_contents .delivery_charge .d_charge_open dl {margin-top: 16px;}
+main .info_container .detail_contents .delivery_charge .d_charge_open dl dt {width: 100px; font-size: 0.75rem; letter-spacing: -0.02em;}
+main .info_container .detail_contents .delivery_charge .d_charge_open dl dd {font-size: 0.75rem; letter-spacing: -0.02em; line-height: 1.4;}
+main .info_container .detail_contents .delivery_charge .d_charge_open dl dd span {color: #999; margin-top: 6px;}
 /* ----------------------------------------------------------------------------- 컬러 */
 main .info_container .detail_contents .color {align-items: center;}
 main .info_container .detail_contents .color dt {}
@@ -278,16 +281,27 @@ main .product .review_container .user_contents .r_menu .filter li a {display: in
 main .product .review_container .user_contents .r_menu .filter li a img {width: 12px; margin-left: 4px;}
 /* ----------------------------------------------------------------------------- 리뷰 필터 팝업 공통 */
 main .product .review_container .user_contents .r_menu .filter li div {
-  background-color: lightblue;
-  border: 2px solid #1A1A1A;
-  width: 200px; position: absolute; left: 0; top: calc(100% + 10px); display: flex; flex-flow: column;
+  width: 220px; position: absolute; left: 0; top: calc(100% + 10px); display: flex; flex-flow: column;
+  border: 1.5px solid #1A1A1A; border-radius: 12px; padding: 16px;
+  background-color: #fff;
 }
-main .product .review_container .user_contents .r_menu .filter li div label {}
-main .product .review_container .user_contents .r_menu .filter li div label span {}
-main .product .review_container .user_contents .r_menu .filter li div label span img {}
-main .product .review_container .user_contents .r_menu .filter li div label input {}
+main .product .review_container .user_contents .r_menu .filter li div label {
+  display: inline-block; margin-bottom: 10px; font-size: 0.88rem; letter-spacing: -0.02em;
+}
+main .product .review_container .user_contents .r_menu .filter li div label img {margin-right: 6px;}
+main .product .review_container .user_contents .r_menu .filter li div label:last-child {margin: 0;}
+main .product .review_container .user_contents .r_menu .filter li div input {}
+main .product .review_container .user_contents .r_menu .filter li div input:checked+label {background-repeat: no-repeat; background-position: right;}
 /* ----------------------------------------------------------------------------- 리뷰 필터 팝업 개별 */
 main .product .review_container .user_contents .r_menu .filter li .f_score {}
+main .product .review_container .user_contents .r_menu .filter li .f_score input[name=f_score]:checked+label {background-image: url(../images/check_16.png);}
+main .product .review_container .user_contents .r_menu .filter li .f_height {}
+main .product .review_container .user_contents .r_menu .filter li .f_height input[name=f_height]:checked+label {background-image: url(../images/check_16.png);}
+main .product .review_container .user_contents .r_menu .filter li .f_weight {}
+main .product .review_container .user_contents .r_menu .filter li .f_weight input[name=f_weight]:checked+label {background-image: url(../images/check_16.png);}
+main .product .review_container .user_contents .r_menu .filter li .f_size {}
+main .product .review_container .user_contents .r_menu .filter li .f_size input[name=f_size]:checked+label {background-image: url(../images/check_16.png);}
+/* ----------------------------------------------------------------------------- 리뷰 검색 */
 main .product .review_container .user_contents .r_menu .r_search {width: 160px; padding: 8px 12px; border: 0.5px solid #999; border-radius: 10px;}
 main .product .review_container .user_contents .r_menu .r_search img {width: 12px; margin-right: 12px;}
 main .product .review_container .user_contents .r_menu .r_search #r_search_input {width: calc(100% - 36px); height: 14px;}

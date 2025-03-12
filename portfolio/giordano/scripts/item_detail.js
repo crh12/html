@@ -3,6 +3,9 @@ const container = document.querySelectorAll('.container');
 const like24 = document.querySelector('.like24 img');
 const share = document.querySelector('.share');
 const shareOpen = document.querySelector('.share_open');
+const deliveryBtn = document.querySelector('.delivery_charge a');
+const deliveryPop = document.querySelector('.d_charge_open');
+const deliveryClose = document.querySelector('.d_charge_open a');
 const color = document.querySelectorAll('.color dd a');
 const size = document.querySelectorAll('.size dd a');
 const productNum = document.querySelector('#product_num');
@@ -15,6 +18,7 @@ const dMenu = document.querySelectorAll('.d_title li');
 const dMore = document.querySelector('#d_more');
 const dContent = document.querySelector('.d_content');
 const reviewAlign = document.querySelectorAll('.review_container .align a');
+const filterA = document.querySelectorAll('.filter li a');
 const filterPop = document.querySelectorAll('.filter li div');
 const cartPopup = document.querySelector('.cart_open_bg');
 const cartBtn = document.querySelector('#cart_btn');
@@ -93,6 +97,16 @@ shareOpen.addEventListener('mouseout',()=>{
   shareOpen.style.display = 'none';
 });
 
+deliveryBtn.addEventListener('click', (e)=>{
+  e.preventDefault();
+  deliveryPop.style.display = 'block'
+});
+
+deliveryClose.addEventListener('click', (e)=>{
+  e.preventDefault();
+  deliveryPop.style.display = 'none'
+});
+
 for(let i of color){
   i.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -163,14 +177,14 @@ for (let i of reviewAlign){
   })
 };
 
-for (let i of filterPop){
-  i.parentElement.addEventListener('click', (e)=>{
+for (let i of filterA){
+  i.addEventListener('click', (e)=>{
     e.preventDefault();
-    if (i.style.display == 'none') {
+    if (i.nextElementSibling.style.display == 'none') {
       displayNone(filterPop);
-      i.style.display = 'flex';
+      i.nextElementSibling.style.display = 'flex';
     }
-    else i.style.display = 'none';
+    else i.nextElementSibling.style.display = 'none';
   });
 };
 
