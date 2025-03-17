@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 // ------------------------------------------------------------ main bnr
 const mainSwiper = new Swiper('.main_swiper',{
     // autoplay:{delay:2500,},
